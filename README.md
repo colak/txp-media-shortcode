@@ -28,6 +28,7 @@ To embed the media, use `==<txp::media from="xxx" media="yyy" txt="my text here"
 1. from
 2. media
 3. txt
+4. url
 
 ### Details
 
@@ -70,7 +71,10 @@ To embed the media, use `==<txp::media from="xxx" media="yyy" txt="my text here"
             <td> IndieSound </td>
             <td> is </td>
         </tr>
-
+        <tr>
+            <td> SoundCloud </td>
+            <td> sc </td>
+        </tr>
 </table>
 
 
@@ -80,6 +84,8 @@ To embed the media, use `==<txp::media from="xxx" media="yyy" txt="my text here"
 * For a YoutTube address such as https://www.youtube.com/watch?v=zlZTghhCuxg, the video id is `zlZTghhCuxg`
 
 3. Use the `txt` attribute should you wish to have a descriptive text in the GDPR container. This text is no longer visible and it is replaced by the `embed` container once the cookie for the particular provider is accepted.
+
+4. The `url` attribute is only used for services like Soundcloud where the media id does not appear in the url of the page that hosts the media file.
 
 ## Support
 

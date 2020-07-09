@@ -23,6 +23,8 @@ To embed the media, use `==<txp::media from="xxx" media="yyy" txt="my text here"
 2. media
 3. txt
 
+### Details
+
 1. For hosting providers use the `from` attribute as follows
 
 <table>
@@ -72,7 +74,11 @@ To embed the media, use `==<txp::media from="xxx" media="yyy" txt="my text here"
 
 2. Insert the id of the media file in the `media` attribute. The id can normally be found in the url of the video. For example:
 
-* For a vimeo address such as https://vimeo.com/336049258, the video id is `336049258`
-* For a YoutTube address such as https://www.youtube.com/watch?v=zlZTghhCuxg, the video id is `zlZTghhCuxg`
+** For a vimeo address such as https://vimeo.com/336049258, the video id is `336049258`
+** For a YoutTube address such as https://www.youtube.com/watch?v=zlZTghhCuxg, the video id is `zlZTghhCuxg`
 
 3. Use the `txt` attribute should you wish to have a descriptive text in the GDPR container. This text is no longer visible and it is replaced by the `embed` container once the cookie for the particular provider is accepted.
+
+## Support
+
+

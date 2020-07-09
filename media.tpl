@@ -109,7 +109,7 @@
 </txp:if_yield>
 
 <txp:hide>IndieSound</txp:hide>
-<txp:if_yield name="from" value="ab">
+<txp:if_yield name="from" value="is">
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_indiesound_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_indiesound_cookie'>

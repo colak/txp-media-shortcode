@@ -16,12 +16,12 @@ Shortcodes are normally slower in execution than php plugins.
 ## Installing
 
 1. Copy the latest txp snippet from the [GitHub project page](https://github.com/colak/txp-media-shortcode/blob/master/media.tpl), 
-2. Create a new miscellanious form in your Textpattern administration interface and name it 'media',
+2. Create a new miscellanious form in your Textpattern administration interface and name it 'media`,
 3. Paste the code into the form administration and save.
 
 ## Usage
 
-To embed the media, use `==<txp::media from="xxx" media="yyy" txt="my text here" />==` in your articles. Replace `xxx` and `yyy' as appropriate. 
+To embed the media, use `==<txp::media from="xxx" media="yyy" txt="my text here" />==` in your articles. Replace `xxx` and `yyy` as appropriate. 
 
 ## Attributes
 

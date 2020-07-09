@@ -6,6 +6,12 @@ This textpattern shortcode draws inspiration from [Nicolas Morand's](https://git
 
 * [Textpattern 4.7+](https://textpattern.com/)
 * [oui_cookie](https://forum.textpattern.com/viewtopic.php?id=47048)
+* The media hosts' url schemas and embed codes. 
+
+## Advantages and disadvantages of shortcodes
+
+Shortcodes are easy to edit by those without any knowledge of php but with sufficient knowledge of html and txp tags. As such, for those keeping their textpattern installation up to date, the shortcode should keep on working seamlessly. 
+Shortcodes are normally slower in execution than php plugins.
 
 ## Installing
 

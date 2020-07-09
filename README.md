@@ -64,10 +64,6 @@ To embed the media, use `==<txp::media from="xxx" media="yyy" txt="my text here"
             <td> IndieSound </td>
             <td> is </td>
         </tr>
-        <tr>
-            <td> c </td>
-            <td> d </td>
-        </tr>
 
 </table>
 
@@ -81,4 +77,4 @@ To embed the media, use `==<txp::media from="xxx" media="yyy" txt="my text here"
 
 ## Support
 
-
+I can answer any questions about this shortcode on https://forum.textpattern.com/viewtopic.php?pid=324388

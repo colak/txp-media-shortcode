@@ -126,3 +126,24 @@
 			</txp:oui_if_cookie>
 	</txp:if_yield>
 </txp:if_yield>
+
+<txp:hide>SoundCloud</txp:hide>
+<txp:if_yield name="from" value="sc">
+	<txp:if_yield name="media">
+		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_soundcloud_cookie' duration="+1 year" values="yes" />
+			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_soundcloud_cookie'>
+				<div class="embed-container" id="<txp:yield name="media" />"><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<txp:yield name="media" />&color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe></div>
+			<txp:else />
+				<div class="gdpr">
+					<txp:if_yield name="txt"><txp:yield name="txt" textile /></txp:if_yield>
+					<txp:if_yield name="url">
+						<p>Hosted by SoundCloud on <a rel="external noopener" href="<txp:yield name="url" />"><txp:yield name="url" /></a>.</p>
+					<txp:else />
+						<p>Hosted by  <a rel="external noopener" href="https://soundcloud.com/">SoundCloud</a>.</p>
+					</txp:if_yield>
+					<p><a rel="external noopener" href="https://soundcloud.com/pages/privacy">SoundCloud&#8217;s private policy</a>.</p>
+					<p class="accept"><a rel="nofollow" href="?<txp:site_name trim="/\s+/" replace="_" />_soundcloud_cookie=yes#m_<txp:yield name="media" />">Listen to it here</a></p>
+				</div>
+		</txp:oui_if_cookie>
+	</txp:if_yield>
+</txp:if_yield>

@@ -21,13 +21,13 @@ Shortcodes are normally slower in execution than php plugins.
 
 ## Usage
 
-To embed the media, use `==<txp::media from="xxx" media="yyy" txt="my text here" />==` in your articles. Replace `xxx` and `yyy` as appropriate. 
+To embed the media, use `==<txp::media from="xxx" media="yyy" title="my text here" />==` in your articles. Replace `xxx` and `yyy` as appropriate. 
 
 ## Attributes
 
 1. from
 2. media
-3. txt
+3. title
 4. url
 
 ### Details
@@ -83,7 +83,7 @@ To embed the media, use `==<txp::media from="xxx" media="yyy" txt="my text here"
 * For a vimeo address such as https://vimeo.com/336049258, the video id is `336049258`
 * For a YoutTube address such as https://www.youtube.com/watch?v=zlZTghhCuxg, the video id is `zlZTghhCuxg`
 
-3. Use the `txt` attribute should you wish to have a descriptive text in the GDPR container. This text is replaced by the `embed` container once the cookie for the particular provider is accepted.
+3. Use the `title` attribute should you wish to have a descriptive text in the GDPR container. This text is replaced by the `embed` container once the cookie for the particular provider is accepted.
 
 4. The `url` attribute is only used for services like Soundcloud where the media id does not appear in the url of the page that hosts the media file.
 
@@ -91,7 +91,7 @@ To embed the media, use `==<txp::media from="xxx" media="yyy" txt="my text here"
 
 1. Embed on vimeo 
 
-`<txp::media from="v" media="336049258" txt="My awesome video" />`
+`<txp::media from="v" media="336049258" title="My awesome video" />`
 
 Resulting code before cookie is accepted
 
@@ -109,7 +109,7 @@ Resulting code after cookie is accepted
 
 2. Embed on SoundCloud
 
-`<txp::media from="sc" media="336049258" txt="News from Nowhere" />`
+`<txp::media from="sc" media="336049258" title="News from Nowhere" />`
 
 Resulting code before cookie is accepted
 
@@ -128,7 +128,7 @@ Resulting code after cookie is accepted
 
 3. Embed on SoundCloud using the url attribute
 
-`<txp::media from="sc" media="336049258" txt="News from Nowhere" url="https://soundcloud.com/furtherfield/news-from-where-we-are-1" />`
+`<txp::media from="sc" media="336049258" title="News from Nowhere" url="https://soundcloud.com/furtherfield/news-from-where-we-are-1" />`
 
 Resulting code before cookie is accepted
 

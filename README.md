@@ -19,7 +19,7 @@ To embed the media, use `==<txp::media from="xxx" media="yyy" txt="my text here"
 
 ## Attributes
 
-For hosting providers use the from attribute as follows
+For hosting providers use the `from` attribute as follows
 
 <table>
         <tr>
@@ -65,3 +65,7 @@ For hosting providers use the from attribute as follows
 
 </table>
 
+Insert the id of the media file in the `media`attribute. The id can normally be found in the url of the video. For example:
+
+* For a vimeo address such as https://vimeo.com/336049258, the video id is `336049258`
+* For a YoutTube address such as https://www.youtube.com/watch?v=zlZTghhCuxg the video id is `zlZTghhCuxg`

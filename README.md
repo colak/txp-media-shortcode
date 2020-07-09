@@ -83,9 +83,63 @@ To embed the media, use `==<txp::media from="xxx" media="yyy" txt="my text here"
 * For a vimeo address such as https://vimeo.com/336049258, the video id is `336049258`
 * For a YoutTube address such as https://www.youtube.com/watch?v=zlZTghhCuxg, the video id is `zlZTghhCuxg`
 
-3. Use the `txt` attribute should you wish to have a descriptive text in the GDPR container. This text is no longer visible and it is replaced by the `embed` container once the cookie for the particular provider is accepted.
+3. Use the `txt` attribute should you wish to have a descriptive text in the GDPR container. This text is replaced by the `embed` container once the cookie for the particular provider is accepted.
 
 4. The `url` attribute is only used for services like Soundcloud where the media id does not appear in the url of the page that hosts the media file.
+
+##  Examples
+
+1. Embed on vimeo 
+
+`<txp::media from="v" media="336049258" txt="My awesome video" />`
+
+Resulting code before cookie is accepted
+
+	<div class="gdpr">
+		<p>My awesome video</p>
+		<p>Hosted by Vimeo on <a rel="external noopener" href="https://vimeo.com/336049258">vimeo.com/336049258</a>.</p>
+		<p><a rel="external noopener" href="https://vimeo.com/privacy">Vimeo&#8217;s private policy</a>.</p>
+		<p class="accept"><a rel="nofollow" href="?My_Site_vimeo_cookie=yes#m_336049258">View it here</a></p>
+	</div>
+
+Resulting code after cookie is accepted
+
+	<div class="embed-container" id="m_336049258"><iframe src="https://player.vimeo.com/video/336049258?title=0&amp;byline=0&amp;portrait=0" allowfullscreen></iframe></div>
+
+
+2. Embed on SoundCloud
+
+`<txp::media from="sc" media="336049258" txt="News from Nowhere" />`
+
+Resulting code before cookie is accepted
+
+	<div class="gdpr">
+		<p>News from Nowhere</p>
+        	<p>Hosted by  <a rel="external noopener" href="https://soundcloud.com/">SoundCloud</a>.</p>
+		<p><a rel="external noopener" href="https://soundcloud.com/pages/privacy">SoundCloud&#8217;s private policy</a>.</p>
+		<p class="accept"><a rel="nofollow" href="?My_Site_soundcloud_cookie=yes#m_336049258">Listen to it here</a></p>
+	</div>
+
+Resulting code after cookie is accepted
+
+        <div class="embed-container" id="<txp:yield name="media" />">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/336049258&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+        </div>
+
+3. Embed on SoundCloud using the url attribute
+
+`<txp::media from="sc" media="336049258" txt="News from Nowhere" url="https://soundcloud.com/furtherfield/news-from-where-we-are-1" />`
+
+Resulting code before cookie is accepted
+
+	<div class="gdpr">
+		<p>News from Nowhere</p>
+		<p>Hosted by SoundCloud on <a rel="external noopener" href="https://soundcloud.com/furtherfield/news-from-where-we-are-1">https://soundcloud.com/furtherfield/news-from-where-we-are-1</a>.</p>
+		<p><a rel="external noopener" href="https://soundcloud.com/pages/privacy">SoundCloud&#8217;s private policy</a>.</p>
+		<p class="accept"><a rel="nofollow" href="?My_Site_soundcloud_cookie=yes#m_336049258">Listen to it here</a></p>
+	</div>
+
+The resulting code after the cookie is selected is the same as the one in the second example.
 
 ## Support
 

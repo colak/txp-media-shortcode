@@ -25,7 +25,7 @@
 				<div class="embed-container" id="m_<txp:yield name="media" />"><iframe src="https://www.youtube.com/embed/<txp:yield name="media" />?rel=0" frameborder="0" allowfullscreen></iframe></div>
 			<txp:else />
 				<div class="gdpr">
-					<txp:if_yield name="txt"><txp:yield name="txt" textile /></txp:if_yield>
+					<txp:if_yield name="title"><txp:yield name="title" textile /></txp:if_yield>
 					<p>Hosted by YouTube on <a rel="external noopener" href="https://youtube.com/<txp:yield name="media" />">youtube.com/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://youtube.com/privacy">YouTube&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow" href="?<txp:site_name trim="/\s+/" replace="_" />_youtube_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
@@ -42,7 +42,7 @@
 				<div class="embed-container" id="m_<txp:yield name="media" />"><iframe src="https://player.vimeo.com/video/<txp:yield name="media" />?title=0&amp;byline=0&amp;portrait=0" allowfullscreen></iframe></div>
 			<txp:else />
 				<div class="gdpr">
-					<txp:if_yield name="txt"><txp:yield name="txt" textile /></txp:if_yield>
+					<txp:if_yield name="title"><txp:yield name="title" textile /></txp:if_yield>
 					<p>Hosted by Vimeo on <a rel="external noopener" href="https://vimeo.com/<txp:yield name="media" />">vimeo.com/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://vimeo.com/privacy">Vimeo&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow" href="?<txp:site_name trim="/\s+/" replace="_" />_vimeo_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
@@ -59,7 +59,7 @@
 				<div class="embed-container" id="m_<txp:yield name="media" />"><iframe frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/<txp:yield name="media" />" allowfullscreen></iframe></div>
 			<txp:else />
 				<div class="gdpr">
-					<txp:if_yield name="txt"><txp:yield name="txt" textile /></txp:if_yield>
+					<txp:if_yield name="title"><txp:yield name="title" textile /></txp:if_yield>
 					<p>Hosted by DailyMotion on <a rel="external noopener" href="https://vimeo.com/<txp:yield name="media" />">DailyMotion.com/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://www.dailymotion.com/legal/privacy">DailyMotion&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow" href="?<txp:site_name trim="/\s+/" replace="_" />_dailymotion_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
@@ -99,7 +99,7 @@
 				</div>
 			<txp:else />
 				<div class="gdpr">
-					<txp:if_yield name="txt"><txp:yield name="txt" textile /></txp:if_yield>
+					<txp:if_yield name="title"><txp:yield name="title" textile /></txp:if_yield>
 					<p>Hosted by AudioBoom on <a rel="external noopener" href="https://audioboom.com/posts/<txp:yield name="media" />">audioboom.com/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://audioboom.com/about/privacy">AudioBoom&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow" href="?<txp:site_name trim="/\s+/" replace="_" />_audioboom_cookie=yes#m_<txp:yield name="media" />">Listen to it here</a></p>
@@ -118,7 +118,7 @@
 				</div>
 			<txp:else />
 				<div class="gdpr">
-					<txp:if_yield name="txt"><txp:yield name="txt" textile /></txp:if_yield>
+					<txp:if_yield name="title"><txp:yield name="title" textile /></txp:if_yield>
 					<p>Hosted by IndieSound on <a rel="external noopener" href="https://www.indiesound.com/track/<txp:yield name="media" />">indiesound.com/track/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://www.indiesound.com/blog/terms-conditions">IndieSound&#8217;s terms &amp; conditions</a>.</p>
 					<p class="accept"><a rel="nofollow" href="?<txp:site_name trim="/\s+/" replace="_" />_indiesound_cookie=yes#m_<txp:yield name="media" />">Listen to it here</a></p>
@@ -135,7 +135,7 @@
 				<div class="embed-container" id="<txp:yield name="media" />"><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<txp:yield name="media" />&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe></div>
 			<txp:else />
 				<div class="gdpr">
-					<txp:if_yield name="txt"><txp:yield name="txt" textile /></txp:if_yield>
+					<txp:if_yield name="title"><txp:yield name="title" textile /></txp:if_yield>
 					<txp:if_yield name="url">
 						<p>Hosted by SoundCloud on <a rel="external noopener" href="<txp:yield name="url" />"><txp:yield name="url" /></a>.</p>
 					<txp:else />

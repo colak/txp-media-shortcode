@@ -81,7 +81,7 @@ To embed the media, use `==<txp::media from="xxx" media="yyy" title="my text her
 2. Insert the id of the media file in the `media` attribute. The id can normally be found in the url of the video. For example:
 
 * For a Vimeo address such as https://vimeo.com/336049258, the video id is `336049258`
-* For a YoutTube address such as https://www.youtube.com/watch?v=zlZTghhCuxg, the video id is `zlZTghhCuxg`
+* For a YouTube address such as https://www.youtube.com/watch?v=zlZTghhCuxg, the video id is `zlZTghhCuxg`
 
 3. Use the `title` attribute should you wish to have a descriptive text in the GDPR container. This text is replaced by the `embed` container once the cookie for the particular provider is accepted.
 

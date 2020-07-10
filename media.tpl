@@ -164,3 +164,22 @@
 		</txp:oui_if_cookie>
 	</txp:if_yield>
 </txp:if_yield>
+
+<txp:hide>Other</txp:hide>
+
+<txp:hide>Google Maps</txp:hide>
+
+<txp:if_yield name="from" value="gm">
+	<txp:if_yield name="media">
+		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_google_maps_cookie' duration="+1 year" values="yes" />
+			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_google_maps_cookie'>
+				<div class="embed-container"><iframe src="https://www.google.com/maps/d/embed?mid=<txp:yield name="media" />" width="720" height="480"></iframe></div>
+			<txp:else />
+				<div class="gdpr">
+					<p class="centre">We have indicated the location(s) of this project on Google Maps on</p>
+					<p><a rel="external noopener" href="https://www.google.com/maps/d/embed?mid=<txp:yield name="media" />">www.google.com/maps/d/embed?mid=<txp:yield name="media" /></a>.
+					<p><a rel="external noopener" href="https://policies.google.com/">privacy policy</a>.</p>
+					<p class="accept"><a rel= "nofollow noindex" href="?<txp:site_name trim="/\s+/" replace="_" />_google_maps_cookie=yes#m_<txp:yield name="media" />">Listen to it here</a></p>
+		</txp:oui_if_cookie>
+	</txp:if_yield>
+</txp:if_yield>

@@ -173,7 +173,6 @@ https://github.com/colak/txp-media-shortcode
 <txp:hide>Other</txp:hide>
 
 <txp:hide>Google Maps</txp:hide>
-
 <txp:if_yield name="from" value="gm">
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_google_maps_cookie' duration="+1 year" values="yes" />

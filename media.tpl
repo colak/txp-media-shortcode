@@ -1,3 +1,8 @@
+<txp:hide> 
+The latest source code and explanations about how to use this shortcode can be found on 
+https://github.com/colak/txp-media-shortcode
+</txp:hide>
+
 <txp:hide>Video</txp:hide>
 
 <txp:hide>Local mp4 video</txp:hide>

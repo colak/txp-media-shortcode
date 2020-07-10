@@ -122,7 +122,9 @@ Resulting code before cookie is accepted
 
 Resulting code after cookie is accepted
 
-	<div class="embed-container" id="m_336049258"><iframe src="https://player.vimeo.com/video/336049258?title=0&amp;byline=0&amp;portrait=0" allowfullscreen></iframe></div>
+	<div class="embed-container" id="m_336049258">
+		<iframe src="https://player.vimeo.com/video/336049258?title=0&amp;byline=0&amp;portrait=0" allowfullscreen></iframe>
+	</div>
 
 
 2. Embed on SoundCloud

@@ -90,7 +90,7 @@ To embed the media, use `==<txp::media from="xxx" media="yyy" title="my text her
             <td> sc </td>
         </tr>
         <tr>
-            <td> Google Maps, created in and shared from [My Maps](https://www.google.com/mymaps) </td>
+            <td> Google Maps, created in and shared from My Maps (https://www.google.com/mymaps) </td>
             <td> gm </td>
         </tr>
 </table>

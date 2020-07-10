@@ -22,7 +22,7 @@ Shortcodes are normally slower in execution than php plugins.
 
 ## Cookies
 
-According to GDPR, webmasters should never serve any tracking cookies without their visitors' consent. The cookies served by the oui_cookie plugin do not track, but most media hosting providers do include tracking in their embeddable content. As such, and in order to make websites GDPR compliant this shortcode does not load any cookie loaded embedded content without the explicit acceptance of the site visitors. I have made oui_cookies to last of one year. 
+According to GDPR, webmasters should never serve any tracking cookies without their visitors' consent. The GDPR gives the right to any EU citizen to legally institute legal proceedings against any website owner, regardless of the website's or owner's location. The cookies served by the oui_cookie plugin do not track, but most media hosting providers do include tracking in their embeddable content. As such, and in order to make websites GDPR compliant this shortcode does not load any cookie loaded embedded content without the explicit acceptance of the site visitors. I have made oui_cookies to last of one year. 
 
 This however is but only one of the steps needed for full adherence to the EU law which also requests for a privacy policy and a description of the first and third party cookies served. Examples of such pages can be found in the neme.org site on:
 

@@ -83,7 +83,7 @@ To embed the media, use `==<txp::media from="xxx" media="yyy" title="my text her
 * For a Vimeo address such as https://vimeo.com/336049258, the video id is `336049258`
 * For a YouTube address such as https://www.youtube.com/watch?v=zlZTghhCuxg, the video id is `zlZTghhCuxg`
 
-3. Use the `title` attribute should you wish to have a descriptive text in the GDPR container. This text is replaced by the `embed` container once the cookie for the particular provider is accepted.
+3. Use the `title` attribute should you wish to have a textile enabled descriptive text in the GDPR container. This text is replaced by the `embed` container once the cookie for the particular provider is accepted.
 
 4. The `url` attribute is only used for services like Soundcloud where the media id does not appear in the url of the page that hosts the media file.
 

@@ -68,6 +68,23 @@
 	</txp:if_yield>
 </txp:if_yield>
 
+<txp:hide>Giphy</txp:hide>
+<txp:if_yield name="from" value="gp">
+	<txp:if_yield name="media">
+		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_giphy_cookie' duration="+1 year" values="yes" />
+			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_giphy_cookie'>
+				<div class="embed-container" id="m_<txp:yield name="media" />"><iframe allowfullscreen="" frameBorder="0" height="100%" src="https://giphy.com/embed/<txp:yield name="media" />/video" style="left:0;position:absolute;top:0" width="100%"></iframe></div>
+			<txp:else />
+				<div class="gdpr">
+					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<p>Hosted by Giphy on <a rel="external noopener" href="https://giphy.com/videos/<txp:yield name="media" />">giphy.com/videos/<txp:yield name="media" /></a>.</p>
+					<p><a rel="external noopener" href="https://support.giphy.com/hc/en-us/articles/360032872931-GIPHY-Privacy-Policy">Giphy&#8217;s private policy</a>.</p>
+					<p class="accept"><a rel="nofollow" href="?<txp:site_name trim="/\s+/" replace="_" />_giphy_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
+				</div>
+			</txp:oui_if_cookie>
+	</txp:if_yield>
+</txp:if_yield>	
+
 <txp:hide>Audio</txp:hide>
 
 <txp:hide>Local mp3 audio</txp:hide>

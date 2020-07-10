@@ -89,6 +89,10 @@ To embed the media, use `==<txp::media from="xxx" media="yyy" title="my text her
             <td> SoundCloud </td>
             <td> sc </td>
         </tr>
+        <tr>
+            <td> Google Maps </td>
+            <td> gm </td>
+        </tr>
 </table>
 
 

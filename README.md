@@ -20,6 +20,15 @@ Shortcodes are normally slower in execution than php plugins.
 3. Paste the code into the form administration and save.
 4. Copy and paste the provided css in your style sheet.
 
+## Cookies
+
+According to GDPR, webmasters should never serve any tracking cookies without their visitors' consent. The cookies served by the oui_cookie plugin do not track, but most media hosting providers do include tracking in their embeddable content. As such, and in order to make websites GDPR compliant this shortcode does not load any cookie loaded embedded content without the explicit acceptance of the site visitors. I have made oui_cookies to last of one year. 
+
+This however is but only one of the steps needed for full adherence to the EU law which also requests for a privacy policy and a description of the first and third party cookies served. Examples of such pages can be found in the neme.org site on:
+
+* http://www.neme.org/about/privacy-policy
+* http://www.neme.org/about/cookies
+
 ## Usage
 
 To embed the media, use `==<txp::media from="xxx" media="yyy" title="my text here" />==` in your articles. Replace `xxx` and `yyy` as appropriate. 

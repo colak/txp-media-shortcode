@@ -57,6 +57,10 @@ To embed the media, use `==<txp::media from="xxx" media="yyy" title="my text her
             <td> dm </td>
         </tr>
         <tr>
+            <td> Giphy </td>
+            <td> gp </td>
+        </tr>
+        <tr>
             <td> Local mp3 audio </td>
             <td> local_a </td>
         </tr>

@@ -157,7 +157,7 @@ Resulting code before cookie is accepted
 		<p class="accept"><a rel="nofollow" href="?My_Site_soundcloud_cookie=yes#m_336049258">Listen to it here</a></p>
 	</div>
 
-The resulting code after the cookie is selected is the same as the one in the second example.
+The resulting code after the cookie is accepted is the same as the one in the second example.
 
 ## Support
 

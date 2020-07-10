@@ -148,4 +148,4 @@ The resulting code after the cookie is selected is the same as the one in the se
 
 ## Support
 
-I can answer any questions about this shortcode on https://forum.textpattern.com/viewtopic.php?pid=324388
+Please post any questions or requests on https://forum.textpattern.com/viewtopic.php?pid=324388

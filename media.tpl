@@ -18,9 +18,19 @@ https://github.com/colak/txp-media-shortcode
 <txp:hide>Videos from Internet Archive</txp:hide>
 <txp:if_yield name="from" value="iav">
 	<txp:if_yield name="media">
-		<div class="embed-container" id="m_<txp:yield name="media" />">
-			<iframe src="https://archive.org/embed/<txp:yield name="media" />" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
-		</div>
+		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie' duration="+1 year" values="yes" />
+			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie'>
+				<div class="embed-container" id="m_<txp:yield name="media" />">
+					<iframe src="https://archive.org/embed/<txp:yield name="media" />" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+				</div>
+			<txp:else />
+				<div class="gdpr">
+					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<p>Hosted by the Internet Archive on <a rel="external noopener" href="https://archive.org/embed/<txp:yield name="media" />">archive.org/embed/<txp:yield name="media" /></a>.</p>
+					<p><a rel="external noopener" href="https://archive.org/about/terms.php">Internet Archive&#8217;s private policy</a>.</p>
+					<p class="accept"><a rel="nofollow noindex" href="?<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
+				</div>
+		</txp:oui_if_cookie>
 	</txp:if_yield>
 </txp:if_yield>
 
@@ -115,9 +125,19 @@ https://github.com/colak/txp-media-shortcode
 <txp:hide>Internet Archive audio</txp:hide>
 <txp:if_yield name="from" value="iaa">
 	<txp:if_yield name="media">
-		<div class="embed-container" id="m_<txp:yield name="media" />">
-			<iframe src="https://archive.org/embed/<txp:yield name="media" />.mk4" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
-		</div>
+		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie' duration="+1 year" values="yes" />
+			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie'>
+				<div class="embed-container" id="m_<txp:yield name="media" />">
+					<iframe src="https://archive.org/embed/<txp:yield name="media" />.mk4" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+				</div>
+			<txp:else />
+				<div class="gdpr">
+					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<p>Hosted by the Internet Archive on <a rel="external noopener" href="https://archive.org/embed/<txp:yield name="media" />">archive.org/embed/<txp:yield name="media" /></a>.</p>
+					<p><a rel="external noopener" href="https://archive.org/about/terms.php">Internet Archive&#8217;s private policy</a>.</p>
+					<p class="accept"><a rel="nofollow noindex" href="?<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
+				</div>
+		</txp:oui_if_cookie>
 	</txp:if_yield>
 </txp:if_yield>
 

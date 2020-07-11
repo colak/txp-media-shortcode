@@ -31,7 +31,11 @@ This however is but only one of the steps needed for full adherence to the EU la
 
 ## Usage
 
-To embed the media, use `==<txp::media from="xxx" media="yyy" title="my text here" />==` in your articles. Replace `xxx` and `yyy` as appropriate. 
+To embed the media, simply use 
+
+	==<txp::media from="xxx" media="yyy" title="my text here" />==
+	
+In your articles. Replace `xxx` and `yyy` as appropriate. 
 
 ## Attributes
 

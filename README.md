@@ -49,6 +49,13 @@ In your articles. Replace `xxx` and `yyy` as appropriate.
 1. For hosting providers use the `from` attribute as follows
 
 <table>
+	<thead>
+	<tr>
+		<th scope="col">Media hosts</th>
+		<th scope="col">values</th>
+	</tr>
+	</thead>
+	<tbody>
         <tr>
             <td> Local mp4 video </td>
             <td> local_v </td>
@@ -97,6 +104,7 @@ In your articles. Replace `xxx` and `yyy` as appropriate.
             <td> <a href="https://www.google.com/mymaps">Google Maps</a>, created in and shared from the <i>My Maps</i> API </td>
             <td> gm </td>
         </tr>
+	<tbody>
 </table>
 
 

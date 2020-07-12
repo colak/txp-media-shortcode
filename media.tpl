@@ -8,10 +8,12 @@ https://github.com/colak/txp-media-shortcode
 <txp:hide>Local mp4 video</txp:hide>
 <txp:if_yield name="from" value="local_v">
 	<txp:if_yield name="media">
-		<video width="100%" height="100%" controls>
-			<source src="/files/<txp:yield name="media" />.mp4" type="video/mp4">
-			<p>Your browser does not support the video tag.</p>
-		</video>
+		<div class="embed-container" itemscope itemtype="http://schema.org/VideoObject">
+			<video width="100%" height="100%" controls>
+				<source src="/files/<txp:yield name="media" />.mp4" type="video/mp4">
+				<p>Your browser does not support the video tag.</p>
+			</video>
+		</div>
 	</txp:if_yield>
 </txp:if_yield>
 
@@ -115,10 +117,12 @@ https://github.com/colak/txp-media-shortcode
 <txp:hide>Local mp3 audio</txp:hide>
 <txp:if_yield name="from" value="local_a">
 	<txp:if_yield name="media">
-		<audio controls style="width:100%">
-  			<source src="/files/<txp:yield name="media" />.mp3" type="audio/mpeg">
-  			<p>Your browser does not support the audio element.</p>
-		</audio>
+		<div class="embed-container" itemscope itemtype="http://schema.org/AudioObject">
+			<audio controls style="width:100%">
+  				<source src="/files/<txp:yield name="media" />.mp3" type="audio/mpeg">
+  				<p>Your browser does not support the audio element.</p>
+			</audio>
+		</div>
 	</txp:if_yield>
 </txp:if_yield>
 

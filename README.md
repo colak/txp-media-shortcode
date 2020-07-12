@@ -167,7 +167,7 @@ The resulting code after the cookie is accepted is the same as the one in the se
 
 ## Licence 
 
-This shortcode is distributed as free software. Users can adapt, transform, build upon, copy, and redistribute it in any medium or format for any commercial or non-commercial purpose.
+This shortcode is distributed as free software. Users can adapt, transform, build upon, copy, and redistribute it in any medium or format for any commercial or non-commercial purposes.
 
 ## Support
 

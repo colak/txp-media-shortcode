@@ -165,6 +165,10 @@ Resulting code before cookie is accepted
 
 The resulting code after the cookie is accepted is the same as the one in the second example.
 
+## Licence 
+
+This shortcode is distributed as free software. Users can adapt, transform, build upon, copy, and redistribute it in any medium or format for any commercial or non-commercial purpose.
+
 ## Support
 
-Please post any questions requests, or bugs on https://forum.textpattern.com/viewtopic.php?pid=324388
+Please post any questions requests, or bugs on https://forum.textpattern.com/viewtopic.php?id=50879

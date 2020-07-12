@@ -30,7 +30,7 @@ https://github.com/colak/txp-media-shortcode
 					<p><a rel="external noopener" href="https://archive.org/about/terms.php">Internet Archive&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex" href="?<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>
-		</txp:oui_if_cookie>
+			</txp:oui_if_cookie>
 	</txp:if_yield>
 </txp:if_yield>
 
@@ -49,7 +49,7 @@ https://github.com/colak/txp-media-shortcode
 					<p><a rel="external noopener" href="https://youtube.com/privacy">YouTube&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex" href="?<txp:site_name trim="/\s+/" replace="_" />_youtube_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>
-		</txp:oui_if_cookie>
+			</txp:oui_if_cookie>
 	</txp:if_yield>
 </txp:if_yield>
 
@@ -68,7 +68,7 @@ https://github.com/colak/txp-media-shortcode
 					<p><a rel="external noopener" href="https://vimeo.com/privacy">Vimeo&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex" href="?<txp:site_name trim="/\s+/" replace="_" />_vimeo_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>
-		</txp:oui_if_cookie>
+			</txp:oui_if_cookie>
 	</txp:if_yield>
 </txp:if_yield>
 
@@ -198,7 +198,7 @@ https://github.com/colak/txp-media-shortcode
 					<p><a rel="external noopener" href="https://soundcloud.com/pages/privacy">SoundCloud&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel= "nofollow noindex" href="?<txp:site_name trim="/\s+/" replace="_" />_soundcloud_cookie=yes#m_<txp:yield name="media" />">Listen to it here</a></p>
 				</div>
-		</txp:oui_if_cookie>
+			</txp:oui_if_cookie>
 	</txp:if_yield>
 </txp:if_yield>
 
@@ -219,6 +219,6 @@ https://github.com/colak/txp-media-shortcode
 					<p><a rel="external noopener" href="https://policies.google.com/">privacy policy</a>.</p>
 					<p class="accept"><a rel= "nofollow noindex" href="?<txp:site_name trim="/\s+/" replace="_" />_google_maps_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>
-		</txp:oui_if_cookie>
+			</txp:oui_if_cookie>
 	</txp:if_yield>
 </txp:if_yield>

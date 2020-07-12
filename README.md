@@ -54,23 +54,23 @@ In your articles. Replace `xxx` and `yyy` as appropriate.
             <td> local_v </td>
         </tr>
         <tr>
-            <td> Internet Archive video </td>
+            <td> <a href="https://archive.org/details/movies">Internet Archive video</a> </td>
             <td> iav </td>
         </tr>
         <tr>
-            <td> YouTube </td>
+            <td> <a href="https://www.youtube.com/">YouTube</a> </td>
             <td> yt </td>
         </tr>
         <tr>
-            <td> Vimeo </td>
+            <td> <a href="https://www.vimeo.com/">Vimeo</a> </td>
             <td> v </td>
         </tr>
         <tr>
-            <td> DailyMotion </td>
+            <td> <a href="https://www.dailymotion.com/">DailyMotion</a> </td>
             <td> dm </td>
         </tr>
         <tr>
-            <td> Giphy </td>
+            <td> <a href="https://giphy.com/">Giphy</a> </td>
             <td> gp </td>
         </tr>
         <tr>
@@ -78,23 +78,23 @@ In your articles. Replace `xxx` and `yyy` as appropriate.
             <td> local_a </td>
         </tr>
         <tr>
-            <td> Internet Archive audio </td>
+            <td> <a href="https://archive.org/details/audio">Internet Archive audio</a> </td>
             <td> iaa </td>
         </tr>
         <tr>
-            <td> AudioBoom </td>
+            <td> <a href="https://audioboom.com/">AudioBoom</a> </td>
             <td> ab </td>
         </tr>
         <tr>
-            <td> IndieSound </td>
+            <td> <a href="https://www.indiesound.com/">IndieSound</a> </td>
             <td> is </td>
         </tr>
         <tr>
-            <td> SoundCloud </td>
+            <td> <a href="https://soundcloud.com/">SoundCloud</a> </td>
             <td> sc </td>
         </tr>
         <tr>
-            <td> Google Maps, created in and shared from the <i>My Maps</i> API (https://www.google.com/mymaps) </td>
+            <td> <a href="https://www.google.com/mymaps">Google Maps</a>, created in and shared from the <i>My Maps</i> API (https://www.google.com/mymaps) </td>
             <td> gm </td>
         </tr>
 </table>

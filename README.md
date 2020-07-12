@@ -94,7 +94,7 @@ In your articles. Replace `xxx` and `yyy` as appropriate.
             <td> sc </td>
         </tr>
         <tr>
-            <td> <a href="https://www.google.com/mymaps">Google Maps</a>, created in and shared from the <i>My Maps</i> API (https://www.google.com/mymaps) </td>
+            <td> <a href="https://www.google.com/mymaps">Google Maps</a>, created in and shared from the <i>My Maps</i> API </td>
             <td> gm </td>
         </tr>
 </table>

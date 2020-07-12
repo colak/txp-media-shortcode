@@ -175,7 +175,7 @@ The resulting code after the cookie is accepted is the same as the one in the se
 
 ## Licence 
 
-This shortcode is distributed as free software. Users can adapt, transform, build upon, copy, and redistribute it in any medium or format for any commercial or non-commercial purposes.
+This shortcode is distributed as free software. Read about it on https://github.com/colak/txp-media-shortcode/blob/master/LICENCE.md
 
 ## Support
 

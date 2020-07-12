@@ -218,7 +218,7 @@ https://github.com/colak/txp-media-shortcode
 					<p><a rel="external noopener" href="https://www.google.com/maps/d/embed?mid=<txp:yield name="media" />">www.google.com/maps/d/embed?mid=<txp:yield name="media" /></a>.
 					<p><a rel="external noopener" href="https://policies.google.com/">privacy policy</a>.</p>
 					<p class="accept"><a rel= "nofollow noindex" href="?<txp:site_name trim="/\s+/" replace="_" />_google_maps_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
-				</di>
+				</div>
 		</txp:oui_if_cookie>
 	</txp:if_yield>
 </txp:if_yield>

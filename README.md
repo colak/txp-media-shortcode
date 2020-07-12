@@ -1,4 +1,7 @@
-# txp-media-shortcode Introduction
+# txp-media-shortcode 
+
+
+## Introduction
 
 This textpattern shortcode draws inspiration from [Nicolas Morand's](https://github.com/NicolasGraph) oui_player plugin and tries to produce similar results using textapattern's native tags but also make the players [GDPR](https://gdpr-info.eu/) compliant. In the case of locally hosted media no cookie consent is required. This work was encouraged by [Stef Dawson](https://forum.textpattern.com/viewtopic.php?pid=324309#p324309), who first developed the smd_macro textpattern plugin which later became part of txp's core code thanks to Oleg Loukianov's reworking of the native `<txp:yield />` tag.
 
@@ -175,7 +178,7 @@ The resulting code after the cookie is accepted is the same as the one in the se
 
 ## Licence 
 
-This shortcode is distributed as free software. Read about it on https://github.com/colak/txp-media-shortcode/blob/master/LICENCE.md
+This shortcode is distributed as free software. Read about it on https://github.com/colak/txp-media-shortcode/blob/master/LICENCE.md.
 
 ## Support
 

@@ -20,7 +20,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />">
+				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
 					<iframe src="https://archive.org/embed/<txp:yield name="media" />" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 				</div>
 			<txp:else />
@@ -39,7 +39,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_youtube_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_youtube_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />">
+				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
 					<iframe src="https://www.youtube.com/embed/<txp:yield name="media" />?rel=0" frameborder="0" allowfullscreen></iframe>
 				</div>
 			<txp:else />
@@ -58,7 +58,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_vimeo_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_vimeo_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />">
+				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
 					<iframe src="https://player.vimeo.com/video/<txp:yield name="media" />?title=0&amp;byline=0&amp;portrait=0" allowfullscreen></iframe>
 				</div>
 			<txp:else />
@@ -77,7 +77,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_dailymotion_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_dailymotion_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />">
+				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
 					<iframe frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/<txp:yield name="media" />" allowfullscreen></iframe>
 				</div>
 			<txp:else />
@@ -96,7 +96,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_giphy_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_giphy_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />">
+				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
 					<iframe allowfullscreen="" frameBorder="0" height="100%" src="https://giphy.com/embed/<txp:yield name="media" />/video" style="left:0;position:absolute;top:0" width="100%"></iframe>
 				</div>
 			<txp:else />
@@ -165,7 +165,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_indiesound_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_indiesound_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />">
+				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/AudioObject">
 					<iframe width="100%" frameborder="no" scrolling="no" src="https://www.indiesound.com/embed/<txp:yield name="media" />"></iframe>
 				</div>
 			<txp:else />
@@ -184,7 +184,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_soundcloud_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_soundcloud_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />">
+				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/AudioObject">
 					<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<txp:yield name="media" />&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
 				</div>
 			<txp:else />
@@ -209,7 +209,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_google_maps_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_google_maps_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />">
+				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/AudioObject">
 					<iframe src="https://www.google.com/maps/d/embed?mid=<txp:yield name="media" />" width="720" height="480"></iframe>
 				</div>
 			<txp:else />

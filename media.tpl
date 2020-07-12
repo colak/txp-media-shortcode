@@ -137,7 +137,7 @@ https://github.com/colak/txp-media-shortcode
 					<p><a rel="external noopener" href="https://archive.org/about/terms.php">Internet Archive&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex" href="?<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>
-		</txp:oui_if_cookie>
+			</txp:oui_if_cookie>
 	</txp:if_yield>
 </txp:if_yield>
 

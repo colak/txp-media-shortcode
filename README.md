@@ -122,7 +122,7 @@ In your articles. Replace `xxx` and `yyy` as appropriate.
 
 ##  Examples
 
-1. Embed on vimeo 
+1. Embed a video hosted by Vimeo on your website
 
 `<txp::media from="v" media="336049258" title="My awesome video" />`
 
@@ -141,6 +141,18 @@ Resulting code after cookie is accepted
 		<iframe src="https://player.vimeo.com/video/336049258?title=0&amp;byline=0&amp;portrait=0" allowfullscreen></iframe>
 	</div>
 
+The `title` attribute is textile enabled. As such you can have
+
+`<txp::media from="v" media="336049258" title="h3. My awesome video" />`
+
+Resulting code before cookie is accepted
+
+	<div class="gdpr">
+		<h3>My awesome video</h3>
+		<p>Hosted by Vimeo on <a rel="external noopener" href="https://vimeo.com/336049258">vimeo.com/336049258</a>.</p>
+		<p><a rel="external noopener" href="https://vimeo.com/privacy">Vimeo&#8217;s private policy</a>.</p>
+		<p class="accept"><a rel="nofollow" href="?My_Site_vimeo_cookie=yes#m_336049258">View it here</a></p>
+	</div>
 
 2. Embed on SoundCloud
 

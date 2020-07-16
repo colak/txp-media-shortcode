@@ -116,16 +116,22 @@ https://github.com/colak/txp-media-shortcode
 <txp:hide>Audio</txp:hide>
 
 <txp:hide>Local mp3 audio</txp:hide>
-<txp:if_yield name="from" value="local_a">
-	<txp:if_yield name="media">
-		<div class="embed-container" itemscope itemtype="http://schema.org/AudioObject">
-			<audio controls style="width:100%">
-  				<source src="<txp:site_url />files/<txp:yield name="media" />.mp3" type="audio/mpeg">
-  				<p>Your browser does not support the audio element.</p>
-			</audio>
-		</div>
-	</txp:if_yield>
-</txp:if_yield>
+<audio controls>
+<txp:variable name="audio_file" value='<txp:yield name="media" />' />
+	<txp:if_variable name="audio_file">
+		<txp:if_yield name="m4a">
+			<source src="/files/<txp:variable name="audio_file" />.m4a" type="audio/m4a">
+		</txp:if_yield>
+		<txp:if_yield name="mp3">
+			<source src="/files/<txp:variable name="audio_file" />.mp3" type="audio/mpeg">
+		</txp:if_yield>
+		<txp:if_yield name="ogg">
+			<source src="/files/<txp:variable name="audio_file" />.ogg" type="audio/ogg">
+		</txp:if_yield>
+	</txp:if_variable>
+		<p>Your browser does not support the audio element.</p>
+</audio>
+
 
 <txp:hide>Internet Archive audio</txp:hide>
 <txp:if_yield name="from" value="iaa">

@@ -120,16 +120,16 @@ https://github.com/colak/txp-media-shortcode
 <txp:variable name="audio_file" value='<txp:yield name="media" />' />
 	<txp:if_variable name="audio_file">
 		<txp:if_yield name="m4a">
-			<source src="/files/<txp:variable name="audio_file" />.m4a" type="audio/m4a">
+			<source src="<txp:site_url />files/<txp:variable name="audio_file" />.m4a" type="audio/m4a">
 		</txp:if_yield>
 		<txp:if_yield name="mp3">
-			<source src="/files/<txp:variable name="audio_file" />.mp3" type="audio/mpeg">
+			<source src="<txp:site_url /><txp:variable name="audio_file" />.mp3" type="audio/mpeg">
 		</txp:if_yield>
 		<txp:if_yield name="ogg">
-			<source src="/files/<txp:variable name="audio_file" />.ogg" type="audio/ogg">
+			<source src="<txp:site_url /><txp:variable name="audio_file" />.ogg" type="audio/ogg">
 		</txp:if_yield>
-	</txp:if_variable>
 		<p>Your browser does not support the audio element.</p>
+	</txp:if_variable>
 </audio>
 
 

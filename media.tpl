@@ -104,7 +104,7 @@ https://github.com/colak/txp-media-shortcode
 			<txp:else />
 				<div class="gdpr">
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
-					<p>Hosted by Giphy on <a rel="external noopener" href="https://giphy.com/<txp:if_yield name="type">videos<txp:else />gifs</txp:if_yield>/<txp:yield name="media" />">giphy.com/<txp:if_yield name="type">videos<txp:else />gifs</txp:if_yield>/<txp:yield name="media" /></a>.</p>
+					<p>Hosted by Giphy on <a rel="external noopener" href="https://giphy.com/<txp:if_yield name="url">videos<txp:else />gifs</txp:if_yield>/<txp:yield name="media" />">giphy.com/<txp:if_yield name="url">videos<txp:else />gifs</txp:if_yield>/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://support.giphy.com/hc/en-us/articles/360032872931-GIPHY-Privacy-Policy">Giphy&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel= "nofollow noindex" href="?<txp:site_name trim="/\s+/" replace="_" />_giphy_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>

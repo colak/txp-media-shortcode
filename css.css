@@ -47,3 +47,8 @@ video {
   width: 100%    !important;
   height: auto   !important;
 }
+
+img {
+  width:100%;
+  height: auto;
+}

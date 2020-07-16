@@ -10,7 +10,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<div class="embed-container" itemscope itemtype="http://schema.org/VideoObject">
 			<video width="100%" height="100%" controls>
-				<source src="<txp:site_url /><txp:yield name="media" />.mp4" type="video/mp4">
+				<source src="<txp:site_url />files/<txp:yield name="media" />.mp4" type="video/mp4">
 				<p>Your browser does not support the video tag.</p>
 			</video>
 		</div>

@@ -10,7 +10,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<div class="embed-container" itemscope itemtype="http://schema.org/VideoObject">
 			<video width="100%" height="100%" controls>
-				<source src="/files/<txp:yield name="media" />.mp4" type="video/mp4">
+				<source src="<txp:site_url /><txp:yield name="media" />.mp4" type="video/mp4">
 				<p>Your browser does not support the video tag.</p>
 			</video>
 		</div>
@@ -99,7 +99,7 @@ https://github.com/colak/txp-media-shortcode
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_giphy_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_giphy_cookie'>
 				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
-					<iframe allowfullscreen="" frameBorder="0" height="100%" src="https://giphy.com/embed/<txp:yield name="media" />/video" style="left:0;position:absolute;top:0" width="100%"></iframe>
+					<iframe allowfullscreen="" frameBorder="0" height="100%" src="https://giphy.com/embed/<txp:yield name="media" />" style="left:0;position:absolute;top:0" width="100%"></iframe>
 				</div>
 			<txp:else />
 				<div class="gdpr">
@@ -119,7 +119,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<div class="embed-container" itemscope itemtype="http://schema.org/AudioObject">
 			<audio controls style="width:100%">
-  				<source src="/files/<txp:yield name="media" />.mp3" type="audio/mpeg">
+  				<source src="<txp:site_url />files/<txp:yield name="media" />.mp3" type="audio/mpeg">
   				<p>Your browser does not support the audio element.</p>
 			</audio>
 		</div>
@@ -132,7 +132,7 @@ https://github.com/colak/txp-media-shortcode
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie'>
 				<div class="embed-container" id="m_<txp:yield name="media" />">
-					<iframe src="https://archive.org/embed/<txp:yield name="media" />.mk4" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+					<iframe src="https://archive.org/embed/<txp:yield name="media" />" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 				</div>
 			<txp:else />
 				<div class="gdpr">

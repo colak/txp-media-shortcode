@@ -46,6 +46,7 @@ In your articles. Replace `xxx` and `yyy` as appropriate.
 2. media
 3. title
 4. url
+5. type
 
 ### Details
 

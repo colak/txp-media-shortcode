@@ -291,7 +291,7 @@ Where the ## is the id number of your selected image from the database.
 
 The resulting code will be
 
-	<video width="100%" height="100%" controls poster="32.jpg">
+	<video width="100%" height="100%" controls poster="http(s)://site.tld/images/32.jpg">
 		<source src="http(s)://site.tld/files/my_video.mp4" type="video/mp4">
 		<source src="http(s)://site.tld/files/my_video.webm" type="video/webm">
 	</video>

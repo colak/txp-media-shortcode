@@ -115,7 +115,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_giphy_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_giphy_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
+				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/<txp:if_yield name="url">VideoObject<txp:else />ImageObject</txp:if_yield>">"
 					<iframe allowfullscreen="" frameBorder="0" height="100%" src="https://giphy.com/embed/<txp:yield name="media" />" style="left:0;position:absolute;top:0" width="100%"></iframe>
 				</div>
 			<txp:else />

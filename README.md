@@ -100,7 +100,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 		<tr>
 			<td> <a href="https://giphy.com/">Giphy</a> </td>
 			<td> gp </td>
-			<td> see example 5 </td>
+			<td> Simply deals with different tipes of url served by the host. See example 5 </td>
 			<td>  </td>
 		</tr>
 		<tr>

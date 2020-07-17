@@ -49,8 +49,6 @@ In your articles. Replace `xxx` and `yyy` as appropriate.
 
 ### Details
 
-1. For hosting providers use the `from` attribute as follows
-
 <table>
 	<thead>
 		<tr>

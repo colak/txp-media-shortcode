@@ -27,7 +27,7 @@ https://github.com/colak/txp-media-shortcode
 				<txp:if_yield name="flac">
 					<source src="<txp:site_url /><txp:variable name="video_file" />.ogg" type="video/flac">
 				</txp:if_yield>
-				<p>Your browser does not support the audio element.</p>
+				<p>Your browser does not support the video element.</p>
 			</txp:if_variable>
 		</audio>
 	</txp:if_yield>

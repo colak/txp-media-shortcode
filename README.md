@@ -92,7 +92,7 @@ In your articles. Replace `xxx` and `yyy` as appropriate.
 		<tr>
 			<td> <a href="https://giphy.com/">Giphy</a> </td>
 			<td> gp </td>
-			<td> see 2nd Giphy example </td>
+			<td> see example 5 </td>
 			<td>  </td>
 		</tr>
 		<tr>
@@ -122,7 +122,7 @@ In your articles. Replace `xxx` and `yyy` as appropriate.
 		<tr>
 			<td> <a href="https://soundcloud.com/">SoundCloud</a> </td>
 			<td> sc </td>
-			<td> url in SoundCloud: See 2nd Soundcloud example. </td>
+			<td> url in SoundCloud: See example 2. </td>
 			<td>  </td>
 		</tr>
 		<tr>

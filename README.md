@@ -62,7 +62,7 @@ In your articles. Replace `xxx` and `yyy` as appropriate.
 		<tr>
 			<td> Local video </td>
 			<td> local_v </td>
-			<td> Loads a posterframe with image id. See example 5. </td>
+			<td> Loads a posterframe with image id. See example 6. </td>
 			<td> mp4, ogg, mpeg-4, flac, webm </td>
 		</tr>
 		<tr>
@@ -146,7 +146,7 @@ In your articles. Replace `xxx` and `yyy` as appropriate.
 
 ##  Examples
 
-1. Embed a video hosted by Vimeo on your website
+### 1. Embed a video hosted by Vimeo on your website
 
 `<txp::media from="v" media="336049258" title="My awesome video" />`
 
@@ -178,7 +178,7 @@ Resulting code before cookie is accepted
 		<p class="accept"><a rel="nofollow" href="?My_Site_vimeo_cookie=yes#m_336049258">View it here</a></p>
 	</div>
 
-2. Embed on SoundCloud
+### 2. Embed on SoundCloud
 
 `<txp::media from="sc" media="336049258" title="News from Nowhere" />`
 
@@ -197,7 +197,7 @@ Resulting code after cookie is accepted
 		<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/336049258&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
 	</div>
 
-3. Embed on SoundCloud using the url attribute
+### 3. Embed on SoundCloud using the url attribute
 
 `<txp::media from="sc" media="336049258" title="News from Nowhere" url="https://soundcloud.com/furtherfield/news-from-where-we-are-1" />`
 
@@ -212,7 +212,7 @@ Resulting code before cookie is accepted
 
 The resulting code after the cookie is accepted is the same as the one in the second example.
 
-4. Embed local audio
+### 4. Embed local audio
 
 The html5 audio tag, allows for the embedding of multiple formats to enhance compatibility with the various browsers and computer setups. To embed music residing in your installation's files directory, first upload the audio files using the same name followed by the extension. In your articles call the file name and state the extensions you have encoded those files to. (Currently the tag supports m4a, mp3, mp4, aac, webm, flac and ogg).  
 
@@ -225,7 +225,7 @@ The resulting code will be
 		<source src="http(s)://site.tld/files/files/my_title.mp3" type="audio/mpeg">
 	</audio>
 
-5. Embed from Giphy
+### 5. Embed from Giphy
 
 Giphy which offers two types of urls based on the media type, gif and video.
 
@@ -270,7 +270,7 @@ Resulting code after cookie is accepted
 		<iframe src="https://giphy.com/embed/QZyYmcnN7uYgx6uGyL" frameBorder="0" allowFullScreen></iframe>
 	</div>
 
-5. Embed a local video in diferent formats
+### 6. Embed a local video in diferent formats
 
 The html5 video tag, allows for the embeding of multiple formats to enhance compatibility with the various brousers and computer setups. To embed your videos residing in your installation's files directory, first upload the video files using the same name followed by the extention. In your articles call the file name and state the extentions you have encoded those files to. (Currently the tag supports  mp4, ogg, mpeg-4, flac, webm).  
 

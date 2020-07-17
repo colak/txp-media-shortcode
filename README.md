@@ -122,7 +122,7 @@ In your articles. Replace `xxx` and `yyy` as appropriate.
 		<tr>
 			<td> <a href="https://soundcloud.com/">SoundCloud</a> </td>
 			<td> sc </td>
-			<td> url in soundclud </td>
+			<td> url in SoundCloud </td>
 			<td>  </td>
 		</tr>
 		<tr>

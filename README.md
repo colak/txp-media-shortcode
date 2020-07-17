@@ -62,7 +62,7 @@ In your articles. Replace `xxx` and `yyy` as appropriate.
 		<tr>
 			<td> Local video </td>
 			<td> local_v </td>
-			<td>  </td>
+			<td> To load a posterframe use image id.See example 5. </td>
 			<td> mp4, ogg, mpeg-4, flac, webm </td>
 		</tr>
 		<tr>
@@ -214,15 +214,15 @@ The resulting code after the cookie is accepted is the same as the one in the se
 
 4. Embed local audio
 
-The html5 audio tag, allows for the embeding of multible formats to enhance compatibility with the various brousers and computer setups. To embed audio files residing in your installation's files directory, first upload the audio files using the same name followed by the extention. In your articles call the file name and state the extentions you have encoded those files to. (Currently the tag supports m4a, mp3, mp4, aac, webm, flac and ogg).  
+The html5 audio tag, allows for the embeding of multible formats to enhance compatibility with the various brousers and computer setups. To embed music residing in your installation's files directory, first upload the audio files using the same name followed by the extention. In your articles call the file name and state the extentions you have encoded those files to. (Currently the tag supports m4a, mp3, mp4, aac, webm, flac and ogg).  
 
 `<txp::media from="local_a" media="my_title" m4a mp3 />`
 
 The resulting code will be
 
 	<audio controls>
-		<source src="/files/my_title.m4a" type="audio/m4a">
-		<source src="/files/my_title.mp3" type="audio/mpeg">
+		<source src="http(s)://site.tld/files/files/my_title.m4a" type="audio/m4a">
+		<source src="http(s)://site.tld/files/files/my_title.mp3" type="audio/mpeg">
 	</audio>
 
 5. Embed from Giphy
@@ -270,6 +270,31 @@ Resulting code after cookie is accepted
 		<iframe src="https://giphy.com/embed/QZyYmcnN7uYgx6uGyL" frameBorder="0" allowFullScreen></iframe>
 	</div>
 
+5. Embed a local video in diferent formats
+
+The html5 video tag, allows for the embeding of multible formats to enhance compatibility with the various brousers and computer setups. To embed your videos residing in your installation's files directory, first upload the video files using the same name followed by the extention. In your articles call the file name and state the extentions you have encoded those files to. (Currently the tag supports  mp4, ogg, mpeg-4, flac, webm).  
+
+`<txp::media from="local_v" media="my_title" mp4 webm />`
+
+The resulting code will be
+
+	<video width="100%" height="100%" controls>
+		<source src="http(s)://site.tld/files/my_video.mp4" type="video/mp4">
+		<source src="http(s)://site.tld/files/my_video.webm" type="video/webm">
+	</video>
+
+If you wish to include a posterframe for the video use
+
+`<txp::media from="local_v" media="my_title" mp4 webm url="##" />`
+
+Where the ## is the id number of your selected image from the database.
+
+The resulting code will be
+
+	<video width="100%" height="100%" controls posterframe="##.ext">
+		<source src="http(s)://site.tld/files/my_video.mp4" type="video/mp4">
+		<source src="http(s)://site.tld/files/my_video.webm" type="video/webm">
+	</video>
 
 ## Licence 
 

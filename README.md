@@ -216,7 +216,7 @@ The resulting code after the cookie is accepted is the same as the one in the se
 
 4. Embed local audio
 
-The html5 audio tag, allows for the embeding of multible embeding formats in order to enhance compatibility with the various brousers and computer setups. To embed audio files residing in your installation's files directory, first upload the audio files using the same name followed by the extention. In your articles call the file name and state the extentions you have encoded those files to. (Currently the tag supports m4a, mp3, and ogg).  
+The html5 audio tag, allows for the embeding of multible embeding formats in order to enhance compatibility with the various brousers and computer setups. To embed audio files residing in your installation's files directory, first upload the audio files using the same name followed by the extention. In your articles call the file name and state the extentions you have encoded those files to. (Currently the tag supports m4a, mp3, mp4, aac, webm, flac and ogg).  
 
 `<txp::media from="local_a" media="my_title" m4a mp3 />`
 

@@ -214,7 +214,7 @@ The resulting code after the cookie is accepted is the same as the one in the se
 
 4. Embed local audio
 
-The html5 audio tag, allows for the embeding of multible embeding formats in order to enhance compatibility with the various brousers and computer setups. To embed audio files residing in your installation's files directory, first upload the audio files using the same name followed by the extention. In your articles call the file name and state the extentions you have encoded those files to. (Currently the tag supports m4a, mp3, mp4, aac, webm, flac and ogg).  
+The html5 audio tag, allows for the embeding of multible formats to enhance compatibility with the various brousers and computer setups. To embed audio files residing in your installation's files directory, first upload the audio files using the same name followed by the extention. In your articles call the file name and state the extentions you have encoded those files to. (Currently the tag supports m4a, mp3, mp4, aac, webm, flac and ogg).  
 
 `<txp::media from="local_a" media="my_title" m4a mp3 />`
 
@@ -224,6 +224,52 @@ The resulting code will be
 		<source src="/files/my_title.m4a" type="audio/m4a">
 		<source src="/files/my_title.mp3" type="audio/mpeg">
 	</audio>
+
+5. Embed from Giphy
+
+Giphy which offers two types of urls based on the media type, gif and video.
+
+* giphy.com/gifs/name
+* giphy.com/videos/name
+
+To embed a gif from Giphy use
+
+`<txp::media from="gp" media="QZyYmcnN7uYgx6uGyL" title="News Breonna Taylor" />`
+
+Resulting code before cookie is accepted
+
+	<div class="gdpr">
+		<p>News Breonna Taylor</p>
+		<p>Hosted by Giphy on <a rel="external noopener" href="https://giphy.com/gifs/QZyYmcnN7uYgx6uGyL">giphy.com/gifs/QZyYmcnN7uYgx6uGyL</a>.</p>
+		<p><a rel="external noopener" href="https://support.giphy.com/hc/en-us/articles/360032872931-GIPHY-Privacy-Policy">Giphy&#8217;s private policy</a>.</p>
+		<p class="accept"><a rel="nofollow" href="?My_Site_giphy_cookie=yes#m_QZyYmcnN7uYgx6uGyL">View to it here</a></p>
+	</div>
+
+Resulting code after cookie is accepted
+
+	<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/ImageObject">
+		<iframe src="https://giphy.com/embed/QZyYmcnN7uYgx6uGyL" frameBorder="0" allowFullScreen></iframe>
+	</div>
+
+To embed a video from Giphy use
+
+`<txp::media from="gp" media="QZyYmcnN7uYgx6uGyL" title="News Breonna Taylor" url />`
+
+Resulting code before cookie is accepted
+
+	<div class="gdpr">
+		<p>News Breonna Taylor</p>
+		<p>Hosted by Giphy on <a rel="external noopener" href="https://giphy.com/gifs/QZyYmcnN7uYgx6uGyL">giphy.com/videos/QZyYmcnN7uYgx6uGyL</a>.</p>
+		<p><a rel="external noopener" href="https://support.giphy.com/hc/en-us/articles/360032872931-GIPHY-Privacy-Policy">Giphy&#8217;s private policy</a>.</p>
+		<p class="accept"><a rel="nofollow" href="?My_Site_giphy_cookie=yes#m_QZyYmcnN7uYgx6uGyL">View to it here</a></p>
+	</div>
+
+Resulting code after cookie is accepted
+
+	<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
+		<iframe src="https://giphy.com/embed/QZyYmcnN7uYgx6uGyL" frameBorder="0" allowFullScreen></iframe>
+	</div>
+
 
 ## Licence 
 

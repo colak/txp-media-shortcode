@@ -19,7 +19,7 @@ Shortcodes are normally slower in execution than php plugins.
 ## Installing
 
 1. Copy the latest txp snippet from the [GitHub project page](https://github.com/colak/txp-media-shortcode/blob/master/media.tpl), 
-2. Create a new miscellanious form in your Textpattern administration interface and name it `media`,
+2. Create a new miscellaneous form in your Textpattern administration interface and name it `media`,
 3. Paste the code into the form administration and save.
 4. Copy and paste the provided [css](https://github.com/colak/txp-media-shortcode/blob/master/css.css) in your style sheet and edit it to your liking.
 
@@ -214,7 +214,7 @@ The resulting code after the cookie is accepted is the same as the one in the se
 
 4. Embed local audio
 
-The html5 audio tag, allows for the embeding of multible formats to enhance compatibility with the various brousers and computer setups. To embed music residing in your installation's files directory, first upload the audio files using the same name followed by the extention. In your articles call the file name and state the extentions you have encoded those files to. (Currently the tag supports m4a, mp3, mp4, aac, webm, flac and ogg).  
+The html5 audio tag, allows for the embedding of multiple formats to enhance compatibility with the various browsers and computer setups. To embed music residing in your installation's files directory, first upload the audio files using the same name followed by the extension. In your articles call the file name and state the extensions you have encoded those files to. (Currently the tag supports m4a, mp3, mp4, aac, webm, flac and ogg).  
 
 `<txp::media from="local_a" media="my_title" m4a mp3 />`
 
@@ -272,7 +272,7 @@ Resulting code after cookie is accepted
 
 5. Embed a local video in diferent formats
 
-The html5 video tag, allows for the embeding of multible formats to enhance compatibility with the various brousers and computer setups. To embed your videos residing in your installation's files directory, first upload the video files using the same name followed by the extention. In your articles call the file name and state the extentions you have encoded those files to. (Currently the tag supports  mp4, ogg, mpeg-4, flac, webm).  
+The html5 video tag, allows for the embeding of multiple formats to enhance compatibility with the various brousers and computer setups. To embed your videos residing in your installation's files directory, first upload the video files using the same name followed by the extention. In your articles call the file name and state the extentions you have encoded those files to. (Currently the tag supports  mp4, ogg, mpeg-4, flac, webm).  
 
 `<txp::media from="local_v" media="my_title" mp4 webm />`
 
@@ -283,7 +283,7 @@ The resulting code will be
 		<source src="http(s)://site.tld/files/my_video.webm" type="video/webm">
 	</video>
 
-If you wish to include a posterframe for the video use
+If you wish to include a poster-frame for the video use
 
 `<txp::media from="local_v" media="my_title" mp4 webm url="32" />`
 

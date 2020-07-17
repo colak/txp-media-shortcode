@@ -92,14 +92,14 @@ In your articles. Replace `xxx` and `yyy` as appropriate.
 		<tr>
 			<td> <a href="https://giphy.com/">Giphy</a> </td>
 			<td> gp </td>
-			<td> any </td>
+			<td> see 2nd Giphy example </td>
 			<td>  </td>
 		</tr>
 		<tr>
 			<td> Local mp3 audio </td>
 			<td> local_a </td>
 			<td>  </td>
-			<td> m4a, mp3, ogg, mp4, sac, webm, flac </td>
+			<td> m4a, mp3, ogg, mp4, sac, webm, flac: See local audio example. </td>
 		</tr>
 		<tr>
 			<td> <a href="https://archive.org/details/audio">Internet Archive audio</a> </td>
@@ -122,7 +122,7 @@ In your articles. Replace `xxx` and `yyy` as appropriate.
 		<tr>
 			<td> <a href="https://soundcloud.com/">SoundCloud</a> </td>
 			<td> sc </td>
-			<td> url in SoundCloud </td>
+			<td> url in SoundCloud: See 2nd Soundcloud example. </td>
 			<td>  </td>
 		</tr>
 		<tr>

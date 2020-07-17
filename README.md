@@ -62,7 +62,7 @@ In your articles. Replace `xxx` and `yyy` as appropriate.
 		<tr>
 			<td> Local video </td>
 			<td> local_v </td>
-			<td> To load a posterframe use image id.See example 5. </td>
+			<td> Loads a posterframe with image id. See example 5. </td>
 			<td> mp4, ogg, mpeg-4, flac, webm </td>
 		</tr>
 		<tr>
@@ -99,7 +99,7 @@ In your articles. Replace `xxx` and `yyy` as appropriate.
 			<td> Local mp3 audio </td>
 			<td> local_a </td>
 			<td>  </td>
-			<td> m4a, mp3, ogg, mp4, sac, webm, flac: See local audio example. </td>
+			<td> m4a, mp3, ogg, mp4, sac, webm, flac: See example 4. </td>
 		</tr>
 		<tr>
 			<td> <a href="https://archive.org/details/audio">Internet Archive audio</a> </td>

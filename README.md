@@ -34,11 +34,18 @@ This however is but only one of the steps needed for full adherence to the EU la
 
 ## Usage
 
-To embed the media, simply use 
+1. To embed the media, simply use 
 
 	==<txp::media from="xxx" media="yyy" title="my text here" />==
-	
-In your articles. Replace `xxx` and `yyy` as appropriate. 
+
+2. Using the shorcode above, insert the id of the media file in the `media` attribute. The id can normally be found in the url of the video. For example:
+
+* For a Vimeo address such as https://vimeo.com/336049258, the video id is `336049258`
+* For a YouTube address such as https://www.youtube.com/watch?v=zlZTghhCuxg, the video id is `zlZTghhCuxg`
+
+3. Use the `title` attribute should you wish to have a textile enabled descriptive text in the GDPR container. This text is replaced by the `embed` container once the cookie for the particular provider is accepted.
+
+4. The `url` attribute is only used for services like Soundcloud where the media id does not appear in the url of the page that hosts the media file.
 
 ## Attributes
 
@@ -46,6 +53,7 @@ In your articles. Replace `xxx` and `yyy` as appropriate.
 2. media
 3. title
 4. url
+5. <i>others</i>. See examples.
 
 ### Details
 
@@ -133,16 +141,6 @@ In your articles. Replace `xxx` and `yyy` as appropriate.
 		</tr>
 	</tbody>
 </table>
-
-
-2. Insert the id of the media file in the `media` attribute. The id can normally be found in the url of the video. For example:
-
-* For a Vimeo address such as https://vimeo.com/336049258, the video id is `336049258`
-* For a YouTube address such as https://www.youtube.com/watch?v=zlZTghhCuxg, the video id is `zlZTghhCuxg`
-
-3. Use the `title` attribute should you wish to have a textile enabled descriptive text in the GDPR container. This text is replaced by the `embed` container once the cookie for the particular provider is accepted.
-
-4. The `url` attribute is only used for services like Soundcloud where the media id does not appear in the url of the page that hosts the media file.
 
 ##  Examples
 

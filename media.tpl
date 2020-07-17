@@ -1,5 +1,5 @@
 <txp:hide> 
-The latest source code and explanations about how to use this shortcode can be found on 
+The latest source code and explanations, and examples on how to use this shortcode can be found on 
 https://github.com/colak/txp-media-shortcode
 </txp:hide>
 

@@ -42,10 +42,14 @@ audio {
   filter: sepia(50%) saturate(100%) grayscale(1) contrast(80%) invert(80%);
   width: 100%;
   height: 30px;
+  clear:both;
+  margin: 1em 0;
 }
 video {
   width: 100%    !important;
   height: auto   !important;
+  clear:both;
+  margin: 1em 0;
 }
 img {
   width:100%;

@@ -12,7 +12,7 @@ https://github.com/colak/txp-media-shortcode
 		<audio controls>
 		<txp:variable name="video_file" value='<txp:yield name="media" />' />
 			<txp:if_variable name="video_file">
-				<video width="100%" height="100%" controls<txp:if_yield name="url"> poster="<txp:image id='<txp:yield name="url" />' /></txp:if_yield>>
+				<video width="100%" height="100%" controls<txp:if_yield name="url"> poster="<txp:images id='<txp:yield name="url" />'><txp:site_url />images/<txp:yield name="url" />.<txp:image_info type="ext" /></txp:images></txp:if_yield>>
 				<txp:if_yield name="mp4">
 					<source src="<txp:site_url />files/<txp:variable name="video_file" />.mp4" type="video/mp4">
 				</txp:if_yield>

@@ -53,61 +53,87 @@ In your articles. Replace `xxx` and `yyy` as appropriate.
 
 <table>
 	<thead>
-	<tr>
-		<th scope="col">Media hosts</th>
-		<th scope="col">values</th>
-	</tr>
+		<tr>
+			<th scope="col">Media hosts</th>
+			<th scope="col">from</th>
+			<th scope="col">url</th>
+			<th scope="col"><i>others</i></th>
+		</tr>
 	</thead>
 	<tbody>
-        <tr>
-            <td> Local mp4 video </td>
-            <td> local_v </td>
-        </tr>
-        <tr>
-            <td> <a href="https://archive.org/details/movies">Internet Archive video</a> </td>
-            <td> iav </td>
-        </tr>
-        <tr>
-            <td> <a href="https://www.youtube.com/">YouTube</a> </td>
-            <td> yt </td>
-        </tr>
-        <tr>
-            <td> <a href="https://www.vimeo.com/">Vimeo</a> </td>
-            <td> v </td>
-        </tr>
-        <tr>
-            <td> <a href="https://www.dailymotion.com/">DailyMotion</a> </td>
-            <td> dm </td>
-        </tr>
-        <tr>
-            <td> <a href="https://giphy.com/">Giphy</a> </td>
-            <td> gp </td>
-        </tr>
-        <tr>
-            <td> Local mp3 audio </td>
-            <td> local_a </td>
-        </tr>
-        <tr>
-            <td> <a href="https://archive.org/details/audio">Internet Archive audio</a> </td>
-            <td> iaa </td>
-        </tr>
-        <tr>
-            <td> <a href="https://audioboom.com/">AudioBoom</a> </td>
-            <td> ab </td>
-        </tr>
-        <tr>
-            <td> <a href="https://www.indiesound.com/">IndieSound</a> </td>
-            <td> is </td>
-        </tr>
-        <tr>
-            <td> <a href="https://soundcloud.com/">SoundCloud</a> </td>
-            <td> sc </td>
-        </tr>
-        <tr>
-            <td> <a href="https://www.google.com/mymaps">Google Maps</a>, created in and shared from the <i>My Maps</i> API </td>
-            <td> gm </td>
-        </tr>
-	<tbody>
+		<tr>
+			<td> Local video </td>
+			<td> local_v </td>
+			<td>  </td>
+			<td> mp4, ogg, mpeg-4, flac, webm </td>
+		</tr>
+		<tr>
+			<td> <a href="https://archive.org/details/movies">Internet Archive video</a> </td>
+			<td> iav </td>
+			<td>  </td>
+			<td>  </td>
+		</tr>
+		<tr>
+			<td> <a href="https://www.youtube.com/">YouTube</a> </td>
+			<td> yt </td>
+			<td>  </td>
+			<td>  </td>
+		</tr>
+		<tr>
+			<td> <a href="https://www.vimeo.com/">Vimeo</a> </td>
+			<td> v </td>
+			<td>  </td>
+			<td>  </td>
+		</tr>
+		<tr>
+			<td> <a href="https://www.dailymotion.com/">DailyMotion</a> </td>
+			<td> dm </td>
+			<td>  </td>
+			<td>  </td>
+		</tr>
+		<tr>
+			<td> <a href="https://giphy.com/">Giphy</a> </td>
+			<td> gp </td>
+			<td> any </td>
+			<td>  </td>
+		</tr>
+		<tr>
+			<td> Local mp3 audio </td>
+			<td> local_a </td>
+			<td>  </td>
+			<td> m4a, mp3, ogg, mp4, sac, webm, flac </td>
+		</tr>
+		<tr>
+			<td> <a href="https://archive.org/details/audio">Internet Archive audio</a> </td>
+			<td> iaa </td>
+			<td>  </td>
+			<td>  </td>
+		</tr>
+		<tr>
+			<td> <a href="https://audioboom.com/">AudioBoom</a> </td>
+			<td> ab </td>
+			<td>  </td>
+			<td>  </td>
+		</tr>
+		<tr>
+			<td> <a href="https://www.indiesound.com/">IndieSound</a> </td>
+			<td> is </td>
+			<td>  </td>
+			<td>  </td>
+		</tr>
+		<tr>
+			<td> <a href="https://soundcloud.com/">SoundCloud</a> </td>
+			<td> sc </td>
+			<td> url in soundclud </td>
+			<td>  </td>
+		</tr>
+		<tr>
+			<td> <a href="https://www.google.com/mymaps">Google Maps</a>, created in and shared from the <i>My Maps</i> API </td>
+			<td> gm </td>
+			<td>  </td>
+			<td>  </td>
+		</tr>
+	</tbody>
 </table>
 
 

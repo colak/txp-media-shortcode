@@ -324,4 +324,4 @@ Please post any questions requests, or bugs on https://forum.textpattern.com/vie
 
 ## Notes
 
-<p class="footnote" id="fn1"><sup>1</sup> Note that we have detected that embedded videos from youtube-nocookies do serve 3 cookies, 2 of which are from youtube, in their embeds. I have nevertheless included it here as, unlike Youtube, the embedded videos do not show related content when a video is paused or finished.</p> 
+<p class="footnote" id="fn1"><sup>1</sup> Note that we have detected that embedded videos from youtube-nocookies do serve 3 cookies, 2 of which are from youtube, in their embeds. I have nevertheless included it in the list as, unlike Youtube, the embedded videos do not show related content when a video is paused or finished.</p> 

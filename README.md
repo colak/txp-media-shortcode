@@ -36,7 +36,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 
 1. To embed the media, simply use 
 
-	==<txp::media from="xxx" media="yyy" title="my text here" />==
+`==<txp::media from="xxx" media="yyy" title="my text here" />==`
 
 2. Using the shorcode above, insert the id of the media file in the `media` attribute. The id can normally be found in the url of the video. For example:
 

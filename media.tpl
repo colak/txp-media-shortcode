@@ -38,7 +38,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
+				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
 					<iframe src="https://archive.org/embed/<txp:yield name="media" />" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 				</div>
 			<txp:else />
@@ -191,7 +191,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />">
+				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/AudioObject">
 					<iframe src="https://archive.org/embed/<txp:yield name="media" />" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 				</div>
 			<txp:else />
@@ -210,7 +210,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_audioboom_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_audioboom_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />">
+				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/AudioObject">
 					<iframe width="100%" height="300" src="https://embeds.audioboom.com/posts/<txp:yield name="media" />/embed/v4" frameborder="0" allowtransparency="allowtransparency" scrolling="no" title="Audioboom player" allow="autoplay"></iframe>
 				</div>
 			<txp:else />
@@ -273,7 +273,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_google_maps_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_google_maps_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/AudioObject">
+				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/hasMap">
 					<iframe src="https://www.google.com/maps/d/embed?mid=<txp:yield name="media" />" width="720" height="480"></iframe>
 				</div>
 			<txp:else />

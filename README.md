@@ -179,7 +179,7 @@ Resulting code before cookie is accepted
 
 Resulting code after cookie is accepted
 
-	<div class="embed-container" id="m_336049258">
+	<div class="embed-container" id="m_336049258" itemscope itemtype="http://schema.org/VideoObject">
 		<iframe src="https://player.vimeo.com/video/336049258?title=0&amp;byline=0&amp;portrait=0" allowfullscreen></iframe>
 	</div>
 
@@ -211,7 +211,7 @@ Resulting code before cookie is accepted
 
 Resulting code after cookie is accepted
 
-	<div class="embed-container" id="m_336049258">
+	<div class="embed-container" id="m_336049258" itemscope itemtype="http://schema.org/AudioObject">
 		<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/336049258&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
 	</div>
 
@@ -238,10 +238,12 @@ The html5 audio tag, allows for the embedding of multiple formats to enhance com
 
 The resulting code will be
 
-	<audio controls>
-		<source src="http(s)://site.tld/files/files/my_title.m4a" type="audio/m4a">
-		<source src="http(s)://site.tld/files/files/my_title.mp3" type="audio/mpeg">
-	</audio>
+	<span itemscope itemtype="http://schema.org/AudioObject">
+		<audio controls>
+			<source src="http(s)://site.tld/files/files/my_title.m4a" type="audio/m4a">
+			<source src="http(s)://site.tld/files/files/my_title.mp3" type="audio/mpeg">
+		</audio>
+	</span>
 
 ### 5. Embed from Giphy
 
@@ -296,23 +298,27 @@ The html5 video tag, allows for the embeding of multiple formats to enhance comp
 
 The resulting code will be
 
-	<video width="100%" height="100%" controls>
-		<source src="http(s)://site.tld/files/my_video.mp4" type="video/mp4">
-		<source src="http(s)://site.tld/files/my_video.webm" type="video/webm">
-	</video>
+	<span itemscope itemtype="http://schema.org/VideoObject">
+		<video width="100%" height="100%" controls>
+			<source src="http(s)://site.tld/files/my_video.mp4" type="video/mp4">
+			<source src="http(s)://site.tld/files/my_video.webm" type="video/webm">
+		</video>
+	</span>
 
 If you wish to include a poster-frame for the video use
 
 `<txp::media from="local_v" media="my_title" mp4 webm url="32" />`
 
-Where the ## is the id number of your selected image from the database.
+Where the `32` is the id number of your selected image from the database.
 
 The resulting code will be
 
-	<video width="100%" height="100%" controls poster="http(s)://site.tld/images/32.jpg">
-		<source src="http(s)://site.tld/files/my_video.mp4" type="video/mp4">
-		<source src="http(s)://site.tld/files/my_video.webm" type="video/webm">
-	</video>
+	<span itemscope itemtype="http://schema.org/VideoObject">
+		<video width="100%" height="100%" controls poster="http(s)://site.tld/images/32.jpg">
+			<source src="http(s)://site.tld/files/my_video.mp4" type="video/mp4">
+			<source src="http(s)://site.tld/files/my_video.webm" type="video/webm">
+		</video>
+	</span>
 
 ## Licence 
 

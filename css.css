@@ -47,7 +47,7 @@ audio {
 }
 video {
   width: 100%    !important;
-  height: auto   !important;
+  height: 100%   !important;
   clear:both;
   margin: 1em 0;
 }

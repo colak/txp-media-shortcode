@@ -105,7 +105,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 		</tr>
 		<tr>
 			<td> <a href="https://youtube-nocookie.com/">YouTube-nocookie</a> </td>
-			<td> ttnc </td>
+			<td> ytnc </td>
 			<td> </td>
 			<td>  </td>
 		</tr>

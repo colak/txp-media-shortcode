@@ -104,6 +104,12 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td>  </td>
 		</tr>
 		<tr>
+			<td> <a href="https://youtube-nocookie.com/">YouTube-nocookie</a> </td>
+			<td> ttnc </td>
+			<td> </td>
+			<td>  </td>
+		</tr>
+		<tr>
 			<td> Local mp3 audio </td>
 			<td> local_a </td>
 			<td>  </td>

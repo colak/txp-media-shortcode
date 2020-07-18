@@ -245,7 +245,7 @@ The resulting code will be
 
 ### 5. Embed from Giphy
 
-Giphy which offers two types of urls based on the media type, gif and video.
+Giphy offers two types of urls based on the media type, gif and video.
 
 * giphy.com/gifs/name
 * giphy.com/videos/name

@@ -87,7 +87,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> yt </td>
 			<td> </td>
 			<td> </td>
-			<td> </td>
+			<td> <a href="https://github.com/colak/txp-media-shortcode/#-embed-from-youtube">(7)</a> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.vimeo.com/">Vimeo</a> </td>
@@ -319,6 +319,29 @@ The resulting code will be
 			<source src="http(s)://site.tld/files/my_video.webm" type="video/webm">
 		</video>
 	</span>
+
+### 7. Embed from YouTube
+
+YouTube's url structures allow for the presentation of the video thumbnail before their cookies are served. As such the code below also embeds the thumbnail before the cookie is accepted. 
+
+`<txp::media from="yt" media="zlZTghhCuxg" title="Delivery for Mr. Assange" />`
+
+Resulting code before cookie is accepted
+
+	<div class="gdpr">
+		<img src="https://img.youtube.com/vi/zlZTghhCuxg/hqdefault.jpg" alt="Delivery for Mr. Assange" />
+		<p>Delivery for Mr. Assange</p>
+		<p>Hosted by Vimeo on <a rel="external noopener" href="https://youtube.com/watch?v=zlZTghhCuxg">youtube.com/watch?v=zlZTghhCuxg</a>.</p>
+		<p><a rel="external noopener" href="https://youtube.com/privacy">YouTube&#8217;s private policy</a>.</p>
+		<p class="accept"><a rel="nofollow" href="?My_Site_youtube_cookie=yes#m_zlZTghhCuxg">View it here</a></p>
+	</div>
+
+Resulting code after cookie is accepted
+
+	<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
+		<iframe src="https://www.youtube.com/embed/zlZTghhCuxg?rel=0" frameborder="0" allowfullscreen></iframe>
+	</div>
+
 
 ## Licence 
 

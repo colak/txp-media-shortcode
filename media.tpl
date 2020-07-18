@@ -21,6 +21,7 @@ https://github.com/colak/txp-media-shortcode
 					<txp:if_yield name="mpeg-4">
 						<source src="<txp:site_url /><txp:variable name="video_file" />.mpeg-4" type="video/mpeg-4">
 					</txp:if_yield>
+					<txp:if_yield name="webm">
 						<source src="<txp:site_url /><txp:variable name="video_file" />.webm" type="video/webm">
 					</txp:if_yield>
 					<txp:if_yield name="flac">

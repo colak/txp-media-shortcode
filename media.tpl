@@ -62,7 +62,7 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 			<txp:else />
 				<div class="gdpr">
-					<img src="https://img.youtube.com/vi/erLk59H86ww/<txp:yield name="media" />.jpg />
+					<img src="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg />
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
 					<p>Hosted by YouTube on <a rel="external noopener" href="https://youtube.com/<txp:yield name="media" />">youtube.com/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://youtube.com/privacy">YouTube&#8217;s private policy</a>.</p>
@@ -139,7 +139,7 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 			<txp:else />
 				<div class="gdpr">
-					<img src="https://img.youtube.com/vi/erLk59H86ww/<txp:yield name="media" />.jpg />
+					<img src="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg />
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
 					<p>Hosted by YouTube-nocookie on <a rel="external noopener" href="https://youtube-nocookie.com/ebed/<txp:yield name="media" />">youtube-nocookie.com/embed/<txp:yield name="media" /></a>.</p>
 					<p>We could not find YouTube-nocookie&#8217;s private policy.</p>

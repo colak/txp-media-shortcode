@@ -38,6 +38,12 @@
   -webkit-border-radius:5px;
   border-radius:5px;
 }
+.gdpr img {
+  width:100%;
+  height: auto;
+  clear:both;
+  margin: 1em 0;
+}
 audio {
   filter: sepia(50%) saturate(100%) grayscale(1) contrast(80%) invert(80%);
   width: 100%;
@@ -48,12 +54,6 @@ audio {
 video {
   width: 100%    !important;
   height: 100%   !important;
-  clear:both;
-  margin: 1em 0;
-}
-img {
-  width:100%;
-  height: auto;
   clear:both;
   margin: 1em 0;
 }

@@ -9,7 +9,7 @@ https://github.com/colak/txp-media-shortcode
 <txp:if_yield name="from" value="local_v">
 	<txp:if_yield name="media">
 		<div class="embed-container" itemscope itemtype="http://schema.org/VideoObject">
-		<audio controls>
+		<video controls>
 		<txp:variable name="video_file" value='<txp:yield name="media" />' />
 			<txp:if_variable name="video_file">
 				<video width="100%" height="100%" controls<txp:if_yield name="url"> poster="<txp:images id='<txp:yield name="url" />'><txp:site_url />images/<txp:yield name="url" />.<txp:image_info type="ext" /></txp:images></txp:if_yield>>
@@ -29,7 +29,7 @@ https://github.com/colak/txp-media-shortcode
 				</txp:if_yield>
 				<p>Your browser does not support the video element.</p>
 			</txp:if_variable>
-		</audio>
+		</video>
 	</txp:if_yield>
 </txp:if_yield>
 

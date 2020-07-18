@@ -64,86 +64,99 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<th scope="col">from</th>
 			<th scope="col">url</th>
 			<th scope="col"><i>others</i></th>
+			<th scope="col">Examples</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td> Local video </td>
 			<td> local_v </td>
-			<td> Loads a posterframe with image id. See example 6. </td>
+			<td> Loads a posterframe with image id. </td>
 			<td> mp4, ogg, mpeg-4, flac, webm </td>
+			<td> <a href="https://github.com/colak/txp-media-shortcode/#6-embed-a-local-video-in-diferent-formats">(6)</a>
 		</tr>
 		<tr>
 			<td> <a href="https://archive.org/details/movies">Internet Archive video</a> </td>
 			<td> iav </td>
-			<td>  </td>
-			<td>  </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.youtube.com/">YouTube</a> </td>
 			<td> yt </td>
-			<td>  </td>
-			<td>  </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.vimeo.com/">Vimeo</a> </td>
 			<td> v </td>
-			<td>  </td>
-			<td>  </td>
+			<td> </td>
+			<td> </td>
+			<td> <a href="https://github.com/colak/txp-media-shortcode/#1-embed-a-video-hosted-by-vimeo-on-your-website">(1)</a> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.dailymotion.com/">DailyMotion</a> </td>
 			<td> dm </td>
-			<td>  </td>
-			<td>  </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://giphy.com/">Giphy</a> </td>
 			<td> gp </td>
-			<td> Simply handles different types of url paths served by the host. See example 5 </td>
+			<td> Simply handles different types of url paths served by the host. </td>
 			<td>  </td>
+			<td> <a href="https://github.com/colak/txp-media-shortcode/#5-embed-from-giphy">(5)</a> </td>
 		</tr>
 		<tr>
-			<td> <a href="https://youtube-nocookie.com/">YouTube-nocookie</a><sup id="a1"><a href="#fn1">1</a></sup></td>
+			<td> <a href="https://youtube-nocookie.com/">YouTube-nocookie</a> <sup id="a1"><a href="#fn1">1</a></sup> </td>
 			<td> ytnc </td>
 			<td> </td>
-			<td>  </td>
+			<td> </td>
 		</tr>
 		<tr>
 			<td> Local mp3 audio </td>
 			<td> local_a </td>
-			<td>  </td>
-			<td> m4a, mp3, ogg, mp4, sac, webm, flac: See example 4. </td>
+			<td> </td>
+			<td> m4a, mp3, ogg, mp4, sac, webm, flac </td>
+			<td> <a href="https://github.com/colak/txp-media-shortcode/#4-embed-local-audio">(4)</a> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://archive.org/details/audio">Internet Archive audio</a> </td>
 			<td> iaa </td>
-			<td>  </td>
-			<td>  </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://audioboom.com/">AudioBoom</a> </td>
 			<td> ab </td>
-			<td>  </td>
-			<td>  </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.indiesound.com/">IndieSound</a> </td>
 			<td> is </td>
-			<td>  </td>
-			<td>  </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://soundcloud.com/">SoundCloud</a> </td>
 			<td> sc </td>
-			<td> url in SoundCloud: See example 2. </td>
-			<td>  </td>
+			<td> url in SoundCloud </td>
+			<td> </td>
+			<td> <a href="https://github.com/colak/txp-media-shortcode/#2-embed-on-soundcloud">(2)</a>, <a href="https://github.com/colak/txp-media-shortcode/#3-embed-on-soundcloud-using-the-url-attribute">(3)</a> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.google.com/mymaps">Google Maps</a>, created in and shared from the <i>My Maps</i> API </td>
 			<td> gm </td>
-			<td>  </td>
-			<td>  </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
 		</tr>
 	</tbody>
 </table>

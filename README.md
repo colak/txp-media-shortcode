@@ -87,7 +87,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> yt </td>
 			<td> </td>
 			<td> </td>
-			<td> <a href="https://github.com/colak/txp-media-shortcode/#-embed-from-youtube">(7)</a> </td>
+			<td> <a href="https://github.com/colak/txp-media-shortcode/#7-embed-from-youtube">(7)</a> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.vimeo.com/">Vimeo</a> </td>

@@ -104,7 +104,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td>  </td>
 		</tr>
 		<tr>
-			<td> <a href="https://youtube-nocookie.com/">YouTube-nocookie</a> </td>
+			<td> <a href="https://youtube-nocookie.com/">YouTube-nocookie</a><sup id="a1"><a href="#fn1">1</a></sup></td>
 			<td> ytnc </td>
 			<td> </td>
 			<td>  </td>
@@ -307,3 +307,7 @@ This shortcode is distributed as free software. Read about it on https://github.
 ## Support
 
 Please post any questions requests, or bugs on https://forum.textpattern.com/viewtopic.php?id=50879
+
+## Notes
+
+<p class="footnote" id="fn1"><sup>1</sup> Note that we have detected that youtube-nocookies do serve 3 cookies, 2 of which are from youtube, in their embeds. I have nevertheless  included it here as, unlike Youtube, the embeded videos do not show related content when a video is paused or finished.</p>

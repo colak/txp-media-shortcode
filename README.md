@@ -153,7 +153,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> <a href="https://github.com/colak/txp-media-shortcode/#2-embed-on-soundcloud">(2)</a>, <a href="https://github.com/colak/txp-media-shortcode/#3-embed-on-soundcloud-using-the-url-attribute">(3)</a> </td>
 		</tr>
 		<tr>
-			<td> <a href="https://www.google.com/mymaps">Google Maps</a>, created in and shared from the <i>My Maps</i> API </td>
+			<td> <a href="https://www.google.com/mymaps">Google Maps</a> <sup id="a2"><a href="#fn2">2</a></sup> </td>
 			<td> gm </td>
 			<td> </td>
 			<td> </td>
@@ -325,3 +325,4 @@ Please post any questions requests, or bugs on https://forum.textpattern.com/vie
 ## Notes
 
 <p class="footnote" id="fn1"><sup>1</sup> Note that we have detected that embedded videos from youtube-nocookies do serve 3 cookies, 2 of which are from youtube, in their embeds. I have nevertheless included it in the list as, unlike Youtube, the embedded videos do not show related content when a video is paused or finished.</p> 
+<p class="footnote" id="fn2"><sup>2</sup> Created in and shared from the <i>My Maps</i> API.</p>

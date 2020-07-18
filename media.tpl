@@ -63,7 +63,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 			<txp:else />
 				<div class="gdpr">
-					<img src="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg" alt="<txp:yield name="title" />" width="480" height="360" />
+					<picture>
+ 						 <source media="(min-width:650px)" srcset="https://img.youtube.com/vi/<txp:yield name="media" />/maxresdefault.jpg">
+ 						 <source media="(min-width:465px)" srcset="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg">
+						 <img src="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg" alt="<txp:yield name="title" />" width="480" height="360" />
+					</picture> 
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
 					<p>Hosted by YouTube on <a rel="external noopener" href="https://youtube.com/watch?v=<txp:yield name="media" />">youtube.com/watch?v=<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://youtube.com/privacy">YouTube&#8217;s private policy</a>.</p>
@@ -140,7 +144,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 			<txp:else />
 				<div class="gdpr">
-					<img src="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg  alt="<txp:yield name="title" />" width="480" height="360"/>
+					<picture>
+ 						 <source media="(min-width:650px)" srcset="https://img.youtube.com/vi/<txp:yield name="media" />/maxresdefault.jpg">
+ 						 <source media="(min-width:465px)" srcset="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg">
+						 <img src="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg" alt="<txp:yield name="title" />" width="480" height="360" />
+					</picture> 
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
 					<p>Hosted by YouTube-nocookie on <a rel="external noopener" href="https://youtube-nocookie.com/ebed/<txp:yield name="media" />">youtube-nocookie.com/embed/<txp:yield name="media" /></a>.</p>
 					<p>We could not find YouTube-nocookie&#8217;s private policy.</p>

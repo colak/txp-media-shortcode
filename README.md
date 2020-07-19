@@ -96,7 +96,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> v </td>
 			<td> </td>
 			<td> </td>
-			<td> <a href="https://github.com/colak/txp-media-shortcode/#1-embed-a-video-hosted-by-vimeo-on-your-website">(1)</a> </td>
+			<td> <a href="https://github.com/colak/txp-media-shortcode/#1-embed-from-vimeo">(1)</a> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.dailymotion.com/">DailyMotion</a> </td>
@@ -166,7 +166,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> sc </td>
 			<td> url in SoundCloud </td>
 			<td> </td>
-			<td> <a href="https://github.com/colak/txp-media-shortcode/#2-embed-on-soundcloud">(2)</a>, <a href="https://github.com/colak/txp-media-shortcode/#3-embed-on-soundcloud-using-the-url-attribute">(3)</a> </td>
+			<td> <a href="https://github.com/colak/txp-media-shortcode/#2-embed-from-soundcloud">(2)</a>, <a href="https://github.com/colak/txp-media-shortcode/#3-embed-from-soundcloud-using-the-url-attribute">(3)</a> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.google.com/mymaps">Google Maps</a> <sup id="a2"><a href="#fn2">2</a></sup> </td>
@@ -180,7 +180,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 
 ##  Examples
 
-### 1. Embed a video hosted by Vimeo on your website
+### 1. Embed from Vimeo
 
 `<txp::media from="v" media="336049258" title="My awesome video" />`
 
@@ -212,7 +212,7 @@ Resulting code before cookie is accepted
 		<p class="accept"><a rel="nofollow" href="?My_Site_vimeo_cookie=yes#m_336049258">View it here</a></p>
 	</div>
 
-### 2. Embed on SoundCloud
+### 2. Embed from SoundCloud
 
 `<txp::media from="sc" media="336049258" title="News from Nowhere" />`
 
@@ -231,7 +231,7 @@ Resulting code after cookie is accepted
 		<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/336049258&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
 	</div>
 
-### 3. Embed on SoundCloud using the url attribute
+### 3. Embed from SoundCloud using the url attribute
 
 `<txp::media from="sc" media="336049258" title="News from Nowhere" url="https://soundcloud.com/furtherfield/news-from-where-we-are-1" />`
 

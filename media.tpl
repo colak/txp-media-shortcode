@@ -107,7 +107,7 @@ https://github.com/colak/txp-media-shortcode
 			<txp:else />
 				<div class="gdpr">
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
-					<p>Hosted by DailyMotion on <a rel="external noopener" href="https://vimeo.com/<txp:yield name="media" />">DailyMotion.com/<txp:yield name="media" /></a>.</p>
+					<p>Hosted by DailyMotion on <a rel="external noopener" href="https://dailymotion.com/video/<txp:yield name="media" />">dailymotion.com/video/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://www.dailymotion.com/legal/privacy">DailyMotion&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel= "nofollow noindex" href="?<txp:site_name trim="/\s+/" replace="_" />_dailymotion_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>
@@ -150,7 +150,7 @@ https://github.com/colak/txp-media-shortcode
 						 <img src="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg" alt="<txp:yield name="title" />" width="480" height="360" />
 					</picture> 
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
-					<p>Hosted by YouTube-nocookie on <a rel="external noopener" href="https://youtube-nocookie.com/ebed/<txp:yield name="media" />">youtube-nocookie.com/embed/<txp:yield name="media" /></a>.</p>
+					<p>Served by YouTube-nocookie but originally resides on <a rel="external noopener" href="https://youtube.com/watch?v=<txp:yield name="media" />">youtube.com/watch?v=<txp:yield name="media" /></a>.</p>
 					<p>We could not find YouTube-nocookie&#8217;s private policy.</p>
 					<p class="accept"><a rel="nofollow noindex" href="?<txp:site_name trim="/\s+/" replace="_" />_youtubenocookie_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>
@@ -288,7 +288,7 @@ https://github.com/colak/txp-media-shortcode
 			<txp:else />
 				<div class="gdpr">
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
-					<p><a rel="external noopener" href="https://www.google.com/maps/d/embed?mid=<txp:yield name="media" />">www.google.com/maps/d/embed?mid=<txp:yield name="media" /></a>.
+					<p><a rel="external noopener" href="https://www.google.com/maps/d/embed?mid=<txp:yield name="media" />">google.com/maps/d/embed?mid=<txp:yield name="media" /></a>.
 					<p><a rel="external noopener" href="https://policies.google.com/">privacy policy</a>.</p>
 					<p class="accept"><a rel= "nofollow noindex" href="?<txp:site_name trim="/\s+/" replace="_" />_google_maps_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>

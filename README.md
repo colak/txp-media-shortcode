@@ -276,7 +276,7 @@ Resulting code before cookie is accepted
 
 Resulting code after cookie is accepted
 
-	<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/ImageObject">
+	<div class="embed-container" id="m_QZyYmcnN7uYgx6uGyL"  itemscope itemtype="http://schema.org/ImageObject">
 		<iframe src="https://giphy.com/embed/QZyYmcnN7uYgx6uGyL" frameBorder="0" allowFullScreen></iframe>
 	</div>
 
@@ -295,7 +295,7 @@ Resulting code before cookie is accepted
 
 Resulting code after cookie is accepted
 
-	<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
+	<div class="embed-container" id="m_QZyYmcnN7uYgx6uGyL"  itemscope itemtype="http://schema.org/VideoObject">
 		<iframe src="https://giphy.com/embed/QZyYmcnN7uYgx6uGyL" frameBorder="0" allowFullScreen></iframe>
 	</div>
 
@@ -347,10 +347,44 @@ Resulting code before cookie is accepted
 
 Resulting code after cookie is accepted
 
-	<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
+	<div class="embed-container" id="m_zlZTghhCuxg"  itemscope itemtype="http://schema.org/VideoObject">
 		<iframe src="https://www.youtube.com/embed/zlZTghhCuxg?rel=0" frameborder="0" allowfullscreen></iframe>
 	</div>
 
+### Embed from the Internet archive
+
+The Internet archive allows the embedding of both video and audio files.
+
+To embed from the Archive simply, use
+
+
+`<txp::media from="ia" media="MarxismTheoryThatSplitAWorld" title="Marxism : the Theory That Split the World" />`
+
+The resultig code befor cookie is accepted
+
+	<div class="gdpr">
+		<p>Marxism : the Theory That Split the World</p>
+		<p>Hosted by Vimeo on <a rel="external noopener" href="https://archive.org/details/MarxismTheoryThatSplitAWorld">archive.org/details/MarxismTheoryThatSplitAWorld</a>.</p>
+		<p><a rel="external noopener" href="https://archive.org/about/terms.php">Internet Archive&#8217;s private policy</a>.</p>
+		<p class="accept"><a rel="nofollow" href="?My_Site_youtube_cookie=yes#m_zlZTghhCuxg">View it here</a></p>
+		<p class="accept"><a rel="nofollow noindex" href="?My_Site_iarchive_cookie=yes#m_MarxismTheoryThatSplitAWorld">View it here</a></p>
+	</div>
+
+Resulting code after cookie is accepted
+
+	<div class="embed-container" id="m_MarxismTheoryThatSplitAWorld" itemscope itemtype="http://schema.org/VideoObject">
+		<iframe src="https://archive.org/embed/MarxismTheoryThatSplitAWorld" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	</div>
+
+You may notice that the parced code of the embed-container, after the cookie is accepted does not include ARIA. This is because the Object types (video or audio) need to be specified. You can do that by typing: `url="v"` or `url="a"`, where v is for video and a is for audio. 
+
+`<txp::media from="ia" media="MarxismTheoryThatSplitAWorld" title="Marxism : the Theory That Split the World" url="v" />`
+
+Resulting code after cookie is accepted
+
+	<div class="embed-container" id="m_MarxismTheoryThatSplitAWorld">
+		<iframe src="https://archive.org/embed/MarxismTheoryThatSplitAWorld" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	</div>
 
 ## Licence 
 

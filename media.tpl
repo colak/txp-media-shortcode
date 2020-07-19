@@ -34,12 +34,12 @@ https://github.com/colak/txp-media-shortcode
 	</txp:if_yield>
 </txp:if_yield>
 
-<txp:hide>Videos from Internet Archive</txp:hide>
-<txp:if_yield name="from" value="iav">
+<txp:hide>Internet Archive (Audio and Video)</txp:hide>
+<txp:if_yield name="from" value="ia">
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
+				<div class="embed-container" id="m_<txp:yield name="media" />"<txp:if_yield name="url" value="v"> itemscope itemtype="http://schema.org/VideoObject"</txp:if_yield><txp:if_yield name="url" value="a"> itemscope itemtype="http://schema.org/AudioObject"</txp:if_yield>>
 					<iframe src="https://archive.org/embed/<txp:yield name="media" />" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 				</div>
 			<txp:else />
@@ -232,25 +232,6 @@ https://github.com/colak/txp-media-shortcode
 			</span>
 		</txp:if_yield>
 	</txp:if_yield>
-
-<txp:hide>Internet Archive audio</txp:hide>
-<txp:if_yield name="from" value="iaa">
-	<txp:if_yield name="media">
-		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie' duration="+1 year" values="yes" />
-			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/AudioObject">
-					<iframe src="https://archive.org/embed/<txp:yield name="media" />" width="100%" height="30" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
-				</div>
-			<txp:else />
-				<div class="gdpr">
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
-					<p>Hosted by the Internet Archive on <a rel="external noopener" href="https://archive.org/details/<txp:yield name="media" />">archive.org/details/<txp:yield name="media" /></a>.</p>
-					<p><a rel="external noopener" href="https://archive.org/about/terms.php">Internet Archive&#8217;s private policy</a>.</p>
-					<p class="accept"><a rel="nofollow noindex" href="?<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
-				</div>
-			</txp:oui_if_cookie>
-	</txp:if_yield>
-</txp:if_yield>
 
 <txp:hide>AudioBoom</txp:hide>
 <txp:if_yield name="from" value="ab">

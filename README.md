@@ -358,32 +358,32 @@ The Internet archive allows the embedding of both video and audio files.
 To embed from the Archive simply, use
 
 
-`<txp::media from="ia" media="MarxismTheoryThatSplitAWorld" title="Marxism : the Theory That Split the World" />`
+`<txp::media from="ia" media="PiesAndaluzyjski" title="Luis Bunuel: Un chien Andalou, 1929" />`
 
 The resultig code befor cookie is accepted
 
 	<div class="gdpr">
-		<p>Marxism : the Theory That Split the World</p>
-		<p>Hosted by Vimeo on <a rel="external noopener" href="https://archive.org/details/MarxismTheoryThatSplitAWorld">archive.org/details/MarxismTheoryThatSplitAWorld</a>.</p>
+		<p>Luis Bunuel: Un chien Andalou, 1929</p>
+		<p>Hosted by Vimeo on <a rel="external noopener" href="https://archive.org/details/PiesAndaluzyjski">archive.org/details/PiesAndaluzyjski</a>.</p>
 		<p><a rel="external noopener" href="https://archive.org/about/terms.php">Internet Archive&#8217;s private policy</a>.</p>
-		<p class="accept"><a rel="nofollow" href="?My_Site_youtube_cookie=yes#m_zlZTghhCuxg">View it here</a></p>
-		<p class="accept"><a rel="nofollow noindex" href="?My_Site_iarchive_cookie=yes#m_MarxismTheoryThatSplitAWorld">View it here</a></p>
+		<p class="accept"><a rel="nofollow" href="?My_Site_youtube_cookie=yes#m_PiesAndaluzyjski">View it here</a></p>
+		<p class="accept"><a rel="nofollow noindex" href="?My_Site_iarchive_cookie=yes#m_PiesAndaluzyjski">View it here</a></p>
 	</div>
 
 Resulting code after cookie is accepted
 
-	<div class="embed-container" id="m_MarxismTheoryThatSplitAWorld" itemscope itemtype="http://schema.org/VideoObject">
-		<iframe src="https://archive.org/embed/MarxismTheoryThatSplitAWorld" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	<div class="embed-container" id="m_PiesAndaluzyjski">
+		<iframe src="https://archive.org/embed/PiesAndaluzyjski" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 	</div>
 
 You may notice that the parced code of the embed-container, after the cookie is accepted does not include ARIA. This is because the Object types (video or audio) need to be specified. You can do that by typing: `url="v"` or `url="a"`, where v is for video and a is for audio. 
 
-`<txp::media from="ia" media="MarxismTheoryThatSplitAWorld" title="Marxism : the Theory That Split the World" url="v" />`
+`<txp::media from="ia" media="PiesAndaluzyjski" title="Luis Bunuel: Un chien andalou, 1929" url="v" />`
 
 Resulting code after cookie is accepted
 
-	<div class="embed-container" id="m_MarxismTheoryThatSplitAWorld">
-		<iframe src="https://archive.org/embed/MarxismTheoryThatSplitAWorld" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	<div class="embed-container" id="m_PiesAndaluzyjski" itemscope itemtype="http://schema.org/VideoObject">
+		<iframe src="https://archive.org/embed/PiesAndaluzyjski" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 	</div>
 
 ## Licence 

@@ -153,6 +153,25 @@ https://github.com/colak/txp-media-shortcode
 	</txp:if_yield>
 </txp:if_yield>
 
+<txp:hide>MetaCafe</txp:hide>
+<txp:if_yield name="from" value="mc">
+	<txp:if_yield name="media">
+		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_metacafe_cookie' duration="+1 year" values="yes" />
+			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_metacafe_cookie'>
+				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
+					<iframe src="https://www.metacafe.com/embed/<txp:yield="media" />/" frameborder="0" allowfullscreen></iframe>
+				</div>
+			<txp:else />
+				<div class="gdpr">
+					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<p>Hosted by MetaCafe on <a rel="external noopener" href="https://www.metacafe.com/watch/<txp:yield name="media" />/">metacafe.com/watch/<txp:yield name="media" />/</a>.</p>
+					<p><a rel="external noopener" href="https://www.metacafe.com/privacy/policy/">MetaCafe&#8217;s private policy</a>.</p>
+					<p class="accept"><a rel="nofollow noindex" href="?<txp:site_name trim="/\s+/" replace="_" />_metacafe_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
+				</div>
+			</txp:oui_if_cookie>
+	</txp:if_yield>
+</txp:if_yield>
+
 <txp:hide>TED</txp:hide>
 <txp:if_yield name="from" value="ted">
 	<txp:if_yield name="media">

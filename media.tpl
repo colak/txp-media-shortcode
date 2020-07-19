@@ -178,7 +178,7 @@ https://github.com/colak/txp-media-shortcode
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_Coub_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_Coub_cookie'>
 				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
-					<iframe src="//coub.com/embed/<txp:yield="media" />?muted=false&autostart=false" allowfullscreen frameborder="0"  allow="autoplay" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+					<iframe src="//coub.com/embed/<txp:yield name="media" />?muted=false&amp;autostart=false&amp;originalSize=false&amp;startWithHD=false" allowfullscreen frameborder="0" allow="autoplay"></iframe>
 				</div>
 			<txp:else />
 				<div class="gdpr">

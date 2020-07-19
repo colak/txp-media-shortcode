@@ -159,7 +159,7 @@ https://github.com/colak/txp-media-shortcode
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_ted_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_ted_cookie'>
 				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
-					<iframe src="https://embed.ted.com/talks/<txp:yield name="media" />" width="854" height="480" frameborder="0" scrolling="no" allowfullscreen></iframe>
+					<iframe src="https://embed.ted.com/talks/<txp:yield name="media" />" frameborder="0" scrolling="no" allowfullscreen></iframe>
 				</div>
 			<txp:else />
 				<div class="gdpr">

@@ -39,10 +39,13 @@
   border-radius:5px;
 }
 .gdpr img {
-  width:100%;
+  width:97%;
   height: auto;
   clear:both;
-  margin: 1em 0;
+  margin: 1.5% 1.5% 0 1.5%;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;
 }
 audio {
   filter: sepia(50%) saturate(100%) grayscale(1) contrast(80%) invert(80%);

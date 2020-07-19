@@ -78,10 +78,10 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> <a href="#6-embed-a-local-video-in-diferent-formats">(6)</a>
 		</tr>
 		<tr>
-			<td> <a href="https://archive.org/details/movies">Internet Archive video</a> </td>
-			<td> iav </td>
+			<td> <a href="https://archive.org/">Internet Archive video and audio</a> </td>
+			<td> ia </td>
 			<td> </td>
-			<td> </td>
+			<td> Distingueshes video from audio objects for ARIA </td>
 			<td> </td>
 		</tr>
 		<tr>
@@ -139,13 +139,6 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> </td>
 			<td> m4a, mp3, ogg, mp4, sac, webm, flac </td>
 			<td> <a href="#4-embed-local-audio">(4)</a> </td>
-		</tr>
-		<tr>
-			<td> <a href="https://archive.org/details/audio">Internet Archive audio</a> </td>
-			<td> iaa </td>
-			<td> </td>
-			<td> </td>
-			<td> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://audioboom.com/">AudioBoom</a> </td>

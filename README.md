@@ -82,7 +82,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> ia </td>
 			<td> </td>
 			<td> Distingueshes video from audio objects for ARIA </td>
-			<td> </td>
+			<td> <a href="#embed-from-the-internet-archive">(8)</a> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.youtube.com/">YouTube</a> </td>
@@ -351,7 +351,7 @@ Resulting code after cookie is accepted
 		<iframe src="https://www.youtube.com/embed/zlZTghhCuxg?rel=0" frameborder="0" allowfullscreen></iframe>
 	</div>
 
-### Embed from the Internet archive
+### 8. Embed from the Internet archive
 
 The Internet archive allows the embedding of both video and audio files.
 

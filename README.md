@@ -89,14 +89,14 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> yt </td>
 			<td> </td>
 			<td> </td>
-			<td> <a href="https://github.com/colak/txp-media-shortcode/#7-embed-from-youtube">(7)</a> </td>
+			<td> <a href="#7-embed-from-youtube">(7)</a> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.vimeo.com/">Vimeo</a> </td>
 			<td> v </td>
 			<td> </td>
 			<td> </td>
-			<td> <a href="https://github.com/colak/txp-media-shortcode/#1-embed-from-vimeo">(1)</a> </td>
+			<td> <a href="#1-embed-from-vimeo">(1)</a> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.dailymotion.com/">DailyMotion</a> </td>
@@ -110,7 +110,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> gp </td>
 			<td> Simply handles different types of url paths served by the host. </td>
 			<td>  </td>
-			<td> <a href="https://github.com/colak/txp-media-shortcode/#5-embed-from-giphy">(5)</a> </td>
+			<td> <a href="#5-embed-from-giphy">(5)</a> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://peertube.video">PeerTube</a> </td>
@@ -138,7 +138,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> local_a </td>
 			<td> </td>
 			<td> m4a, mp3, ogg, mp4, sac, webm, flac </td>
-			<td> <a href="https://github.com/colak/txp-media-shortcode/#4-embed-local-audio">(4)</a> </td>
+			<td> <a href="#4-embed-local-audio">(4)</a> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://archive.org/details/audio">Internet Archive audio</a> </td>
@@ -166,7 +166,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> sc </td>
 			<td> url in SoundCloud </td>
 			<td> </td>
-			<td> <a href="https://github.com/colak/txp-media-shortcode/#2-embed-from-soundcloud">(2)</a>, <a href="https://github.com/colak/txp-media-shortcode/#3-embed-from-soundcloud-using-the-url-attribute">(3)</a> </td>
+			<td> <a href="#2-embed-from-soundcloud">(2)</a>, <a href="#3-embed-from-soundcloud-using-the-url-attribute">(3)</a> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.google.com/mymaps">Google Maps</a> <sup id="a2"><a href="#fn2">2</a></sup> </td>

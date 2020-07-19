@@ -82,7 +82,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> ia </td>
 			<td> </td>
 			<td> Distingueshes video from audio objects for ARIA </td>
-			<td> <a href="#embed-from-the-internet-archive">(8)</a> </td>
+			<td> <a href="#8-embed-from-the-internet-archive">(8)</a> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.youtube.com/">YouTube</a> </td>

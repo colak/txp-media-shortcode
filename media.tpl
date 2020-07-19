@@ -29,7 +29,7 @@ https://github.com/colak/txp-media-shortcode
 						</txp:if_yield>
 						<p>Your browser does not support the video element.</p>
 					</video>
-			</span>
+				</span>
 			</txp:if_variable>
 	</txp:if_yield>
 </txp:if_yield>

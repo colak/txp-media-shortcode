@@ -113,6 +113,13 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> <a href="https://github.com/colak/txp-media-shortcode/#5-embed-from-giphy">(5)</a> </td>
 		</tr>
 		<tr>
+			<td> <a href="https://peertube.video">PeerTube</a> </td>
+			<td> pt </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr>
 			<td> <a href="https://youtube-nocookie.com/">YouTube-nocookie</a> <sup id="a1"><a href="#fn1">1</a></sup> </td>
 			<td> ytnc </td>
 			<td> </td>

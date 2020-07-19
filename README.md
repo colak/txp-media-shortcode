@@ -75,7 +75,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> local_v </td>
 			<td> Loads a posterframe with image id. </td>
 			<td> mp4, ogg, mpeg-4, flac, webm </td>
-			<td> <a href="https://github.com/colak/txp-media-shortcode/#6-embed-a-local-video-in-diferent-formats">(6)</a>
+			<td> <a href="#6-embed-a-local-video-in-diferent-formats">(6)</a>
 		</tr>
 		<tr>
 			<td> <a href="https://archive.org/details/movies">Internet Archive video</a> </td>

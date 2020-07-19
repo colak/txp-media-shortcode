@@ -40,7 +40,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 
 `==<txp::media from="xxx" media="yyy" title="my text here" />==`
 
-2. Using the shorcode above, insert the id of the media file in the `media` attribute. The id can normally be found in the url of the video. For example:
+2. Using the shortcode above, insert the id of the media file in the `media` attribute. The id can normally be found in the url of the video. For example:
 
 * For a Vimeo address such as https://vimeo.com/336049258, the video id is `336049258`
 * For a YouTube address such as https://www.youtube.com/watch?v=zlZTghhCuxg, the video id is `zlZTghhCuxg`
@@ -301,7 +301,7 @@ Resulting code after cookie is accepted
 
 ### 6. Embed a local video in diferent formats
 
-The html5 video tag, allows for the embeding of multiple formats to enhance compatibility with the various brousers and computer setups. To embed your videos residing in your installation's files directory, first upload the video files using the same name followed by the extention. In your articles call the file name and state the extentions you have encoded those files to. (Currently the tag supports  mp4, ogg, mpeg-4, flac, webm). You may want to check the [status of video format support in each web browser](https://en.wikipedia.org/wiki/HTML5_video#Browser_support).
+The html5 video tag, allows for the embedding of multiple formats to enhance compatibility with the various browsers and computer setups. To embed your videos residing in your installation's files directory, first upload the video files using the same name followed by the extension. In your articles call the file name and state the extensions you have encoded those files to. (Currently the tag supports  mp4, ogg, mpeg-4, flac, webm). You may want to check the [status of video format support in each web browser](https://en.wikipedia.org/wiki/HTML5_video#Browser_support).
 
 `<txp::media from="local_v" media="my_title" mp4 webm />`
 
@@ -358,12 +358,12 @@ The Internet archive allows the embedding of both video and audio files.
 To embed from the Archive simply, use
 
 
-`<txp::media from="ia" media="PiesAndaluzyjski" title="Luis Bunuel: Un chien Andalou, 1929" />`
+`<txp::media from="ia" media="PiesAndaluzyjski" title="Luis Bunuel: Un Chien Andalou, 1929" />`
 
 The resultig code befor cookie is accepted
 
 	<div class="gdpr">
-		<p>Luis Bunuel: Un chien Andalou, 1929</p>
+		<p>Luis Bunuel: Un Chien Andalou, 1929</p>
 		<p>Hosted by Vimeo on <a rel="external noopener" href="https://archive.org/details/PiesAndaluzyjski">archive.org/details/PiesAndaluzyjski</a>.</p>
 		<p><a rel="external noopener" href="https://archive.org/about/terms.php">Internet Archive&#8217;s private policy</a>.</p>
 		<p class="accept"><a rel="nofollow" href="?My_Site_youtube_cookie=yes#m_PiesAndaluzyjski">View it here</a></p>
@@ -376,9 +376,9 @@ Resulting code after cookie is accepted
 		<iframe src="https://archive.org/embed/PiesAndaluzyjski" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 	</div>
 
-You may notice that the parced code of the embed-container, after the cookie is accepted does not include ARIA. This is because the Object types (video or audio) need to be specified. You can do that by typing: `url="v"` or `url="a"`, where v is for video and a is for audio. 
+You may notice that the parsed code of the embed-container, after the cookie is accepted does not include ARIA. This is because the Object types (video or audio) need to be specified. You can do that by typing: `url="v"` or `url="a"`, where v is for video and a is for audio. 
 
-`<txp::media from="ia" media="PiesAndaluzyjski" title="Luis Bunuel: Un chien andalou, 1929" url="v" />`
+`<txp::media from="ia" media="PiesAndaluzyjski" title="Luis Bunuel: Un Chien Andalou, 1929" url="v" />`
 
 Resulting code after cookie is accepted
 

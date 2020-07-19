@@ -9,7 +9,9 @@ This textpattern shortcode draws inspiration from [Nicolas Morand's](https://git
 
 * [Textpattern 4.7+](https://textpattern.com/)
 * [oui_cookie](https://forum.textpattern.com/viewtopic.php?id=47048)
-* The media hosts' url schemas and embed codes. 
+* The media hosts' url schemas and embed codes.
+* Georestrictions.
+* The availability of the content. Millions of videos and sound-files are taken off the web daily. This is because they are removed by the original uploader or blocked by the hosts (usually because of DMCA notices). 
 
 ## Advantages and disadvantages of shortcodes
 

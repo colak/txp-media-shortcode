@@ -369,5 +369,5 @@ Please post any questions requests, or bugs on https://forum.textpattern.com/vie
 
 ## Notes
 
-<p class="footnote" id="fn1"><sup>1</sup> I have detected that embedded videos from youtube-nocookies do serve 3 cookies, 2 of which are from youtube, in their embeds. I have nevertheless included it in the list as, unlike Youtube, the embedded videos do not show related content when a video is paused or finished.</p> 
+<p class="footnote" id="fn1"><sup>1</sup> I have detected that embedded videos from youtube-nocookies do serve 3 cookies, 2 of which are from youtube. I have nevertheless included it in the list as, unlike Youtube, the embedded videos do not show related content when a video is paused or finished.</p> 
 <p class="footnote" id="fn2"><sup>2</sup> Created in and shared from the <i>My Maps</i> API.</p>

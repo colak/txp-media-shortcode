@@ -137,7 +137,7 @@ https://github.com/colak/txp-media-shortcode
 <txp:hide>PeerTube</txp:hide>
 <txp:if_yield name="from" value="pt">
 	<txp:if_yield name="media">
-		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_youtubenocookie_cookie' duration="+1 year" values="yes" />
+		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_peertube_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_youtube_cookie'>
 				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
 					<iframe width="560" height="315" sandbox="allow-same-origin allow-scripts" src="https://peertube.video/videos/embed/<txp:yield name="media" />" frameborder="0" allowfullscreen></iframe>

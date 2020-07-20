@@ -417,7 +417,7 @@ Resulting code after cookie is accepted
 		<iframe src="https://archive.org/embed/PiesAndaluzyjski" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
 	</div>
 
-You may notice that the parsed code of the embed-container, after the cookie is accepted does not include ARIA. This is because the Object types (video or audio) need to be specified. You can do that by typing: `url="v"` or `url="a"`, where v is for video and a is for audio. 
+You may notice that the parsed code of the embed-container, after the cookie is accepted does not include ARIA. This is because the Object types (video or audio) need to be specified. You can do that by typing: `url="v"` or `url="a"`, where `v` is for video and `a` is for audio. 
 
 `<txp::media from="ia" media="PiesAndaluzyjski" title="Luis Bunuel: Un Chien Andalou, 1929" url="v" />`
 

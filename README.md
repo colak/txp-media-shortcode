@@ -182,6 +182,13 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> </td>
 			<td> </td>
 		</tr>
+		<tr>
+			<td> <a href="https://www.datawrapper.de">Datawrapper</a>  </td>
+			<td> dw </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
 	</tbody>
 </table>
 

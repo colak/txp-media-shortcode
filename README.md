@@ -118,7 +118,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> gp </td>
 			<td> Simply handles different types of url paths served by the host. </td>
 			<td> </td>
-			<td>  </td>
+			<td> NA </td>
 			<td> <a href="#5-embed-from-giphy">(5)</a> </td>
 		</tr>
 		<tr>

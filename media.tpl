@@ -353,7 +353,7 @@ https://github.com/colak/txp-media-shortcode
 	</txp:if_yield>
 </txp:if_yield>
 
-<txp:hide>Datawrapper</txp:hide>
+<txp:hide>c</txp:hide>
 <txp:if_yield name="from" value="dw">
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_datawrapper_cookie' duration="+1 year" values="yes" />
@@ -364,7 +364,7 @@ https://github.com/colak/txp-media-shortcode
 			<txp:else />
 				<div class="gdpr">
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
-					<p><a rel="external noopener" href="https://www.datawrapper.de/_/<txp:yield name="media" />">datawrapper.de/_/<txp:yield name="media" /></a>.
+					<p>Hosted by Datawrapper on <a rel="external noopener" href="https://www.datawrapper.de/_/<txp:yield name="media" />">datawrapper.de/_/<txp:yield name="media" /></a>.
 					<p><a rel="external noopener" href="https://www.datawrapper.de/privacy/">Datawrapper&#8217;s privacy policy</a>.</p>
 					<p class="accept"><a rel= "nofollow noindex" href="?<txp:site_name trim="/\s+/" replace="_" />_datawrapper_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>

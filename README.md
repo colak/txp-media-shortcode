@@ -86,7 +86,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> ia </td>
 			<td> Distinguishes video from audio objects for ARIA </td>
 			<td> </td>
-			<td> </td>
+			<td> NA </td>
 			<td> <a href="#8-embed-from-the-internet-archive">(8)</a> </td>
 		</tr>
 		<tr>
@@ -94,7 +94,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> yt </td>
 			<td> NA </td>
 			<td> </td>
-			<td> </td>
+			<td> NA </td>
 			<td> <a href="#7-embed-from-youtube">(7)</a> </td>
 		</tr>
 		<tr>
@@ -102,7 +102,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> v </td>
 			<td> NA </td>
 			<td> </td>
-			<td> </td>
+			<td> NA </td>
 			<td> <a href="#1-embed-from-vimeo">(1)</a> </td>
 		</tr>
 		<tr>
@@ -110,7 +110,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> dm </td>
 			<td> NA </td>
 			<td> </td>
-			<td> </td>
+			<td> NA </td>
 			<td> </td>
 		</tr>
 		<tr>
@@ -126,7 +126,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> pt </td>
 			<td> NA </td>
 			<td> </td>
-			<td> </td>
+			<td> NA </td>
 			<td> </td>
 		</tr>
 		<tr>
@@ -134,7 +134,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> ted </td>
 			<td> NA </td>
 			<td> </td>
-			<td> </td>
+			<td> NA </td>
 			<td> </td>
 		</tr>
 		<tr>
@@ -142,7 +142,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> ytnc </td>
 			<td> NA </td>
 			<td> </td>
-			<td> </td>
+			<td> NA </td>
 			<td> </td>
 		</tr>
 		<tr>
@@ -150,7 +150,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> mc </td>
 			<td> NA </td>
 			<td> </td>
-			<td> </td>
+			<td> NA </td>
 			<td> </td>
 		</tr>
 		<tr>
@@ -158,7 +158,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> cb </td>
 			<td> NA </td>
 			<td> </td>
-			<td> </td>
+			<td> NA </td>
 			<td> </td>
 		</tr>
 		<tr>
@@ -174,7 +174,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> ab </td>
 			<td> NA </td>
 			<td> </td>
-			<td> </td>
+			<td> NA </td>
 			<td> </td>
 		</tr>
 		<tr>
@@ -182,7 +182,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> is </td>
 			<td> NA </td>
 			<td> </td>
-			<td> </td>
+			<td> NA </td>
 			<td> </td>
 		</tr>
 		<tr>
@@ -190,7 +190,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> sc </td>
 			<td> url in SoundCloud </td>
 			<td> </td>
-			<td> </td>
+			<td> NA </td>
 			<td> <a href="#2-embed-from-soundcloud">(2)</a>, <a href="#3-embed-from-soundcloud-using-the-url-attribute">(3)</a> </td>
 		</tr>
 		<tr>
@@ -198,7 +198,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> gm </td>
 			<td> NA </td>
 			<td> </td>
-			<td> </td>
+			<td> NA </td>
 			<td> </td>
 		</tr>
 		<tr>
@@ -206,7 +206,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> dw </td>
 			<td> NA </td>
 			<td> </td>
-			<td> </td>
+			<td> NA </td>
 			<td> </td>
 		</tr>
 	</tbody>

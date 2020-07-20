@@ -56,8 +56,8 @@ This however is but only one of the steps needed for full adherence to the EU la
 1. from (required)
 2. media (required)
 3. title (recommended)
-4. url (only available for some hosts)
-5. <i>others</i>. See examples.
+4. url (Only available for some hosts)
+5. <i>others</i>. (Only available for locally served media. See examples.)
 
 ### Details
 

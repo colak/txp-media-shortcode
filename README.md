@@ -53,10 +53,10 @@ This however is but only one of the steps needed for full adherence to the EU la
 
 ## Attributes
 
-1. from
-2. media
-3. title
-4. url
+1. from (required)
+2. media (required)
+3. title (recommended)
+4. url (only available for some hosts)
 5. <i>others</i>. See examples.
 
 ### Details
@@ -67,6 +67,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<th scope="col">Media hosts</th>
 			<th scope="col">from</th>
 			<th scope="col">url</th>
+			<th scope="col">title</th>
 			<th scope="col"><i>others</i></th>
 			<th scope="col">Examples</th>
 		</tr>
@@ -76,6 +77,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> Local video </td>
 			<td> local_v </td>
 			<td> Loads a posterframe with image id. </td>
+			<td> NA </td>
 			<td> mp4, ogg, mpeg-4, flac, webm </td>
 			<td> <a href="#6-embed-a-local-video-in-diferent-formats">(6)</a>
 		</tr>
@@ -84,11 +86,13 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> ia </td>
 			<td> Distinguishes video from audio objects for ARIA </td>
 			<td> </td>
+			<td> </td>
 			<td> <a href="#8-embed-from-the-internet-archive">(8)</a> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.youtube.com/">YouTube</a> </td>
 			<td> yt </td>
+			<td> NA </td>
 			<td> </td>
 			<td> </td>
 			<td> <a href="#7-embed-from-youtube">(7)</a> </td>
@@ -96,6 +100,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 		<tr>
 			<td> <a href="https://www.vimeo.com/">Vimeo</a> </td>
 			<td> v </td>
+			<td> NA </td>
 			<td> </td>
 			<td> </td>
 			<td> <a href="#1-embed-from-vimeo">(1)</a> </td>
@@ -103,6 +108,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 		<tr>
 			<td> <a href="https://www.dailymotion.com/">DailyMotion</a> </td>
 			<td> dm </td>
+			<td> NA </td>
 			<td> </td>
 			<td> </td>
 			<td> </td>
@@ -111,12 +117,14 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> <a href="https://giphy.com/">Giphy</a> </td>
 			<td> gp </td>
 			<td> Simply handles different types of url paths served by the host. </td>
+			<td> </td>
 			<td>  </td>
 			<td> <a href="#5-embed-from-giphy">(5)</a> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://peertube.video">PeerTube</a> </td>
 			<td> pt </td>
+			<td> NA </td>
 			<td> </td>
 			<td> </td>
 			<td> </td>
@@ -124,6 +132,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 		<tr>
 			<td> <a href="https://ted.com">TED</a> </td>
 			<td> ted </td>
+			<td> NA </td>
 			<td> </td>
 			<td> </td>
 			<td> </td>
@@ -131,6 +140,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 		<tr>
 			<td> <a href="https://youtube-nocookie.com/">YouTube-nocookie</a> <sup id="a1"><a href="#fn1">1</a></sup> </td>
 			<td> ytnc </td>
+			<td> NA </td>
 			<td> </td>
 			<td> </td>
 			<td> </td>
@@ -138,6 +148,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 		<tr>
 			<td> <a href="https://metacafe.com/">MetaCafe</a> </td>
 			<td> mc </td>
+			<td> NA </td>
 			<td> </td>
 			<td> </td>
 			<td> </td>
@@ -145,6 +156,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 		<tr>
 			<td> <a href="https://coub.com/">Coub</a> </td>
 			<td> cb </td>
+			<td> NA </td>
 			<td> </td>
 			<td> </td>
 			<td> </td>
@@ -152,13 +164,15 @@ This however is but only one of the steps needed for full adherence to the EU la
 		<tr>
 			<td> Local mp3 audio </td>
 			<td> local_a </td>
-			<td> </td>
+			<td> NA </td>
+			<td> NA </td>
 			<td> m4a, mp3, ogg, mp4, sac, webm, flac </td>
 			<td> <a href="#4-embed-local-audio">(4)</a> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://audioboom.com/">AudioBoom</a> </td>
 			<td> ab </td>
+			<td> NA </td>
 			<td> </td>
 			<td> </td>
 			<td> </td>
@@ -166,6 +180,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 		<tr>
 			<td> <a href="https://www.indiesound.com/">IndieSound</a> </td>
 			<td> is </td>
+			<td> NA </td>
 			<td> </td>
 			<td> </td>
 			<td> </td>
@@ -175,11 +190,13 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> sc </td>
 			<td> url in SoundCloud </td>
 			<td> </td>
+			<td> </td>
 			<td> <a href="#2-embed-from-soundcloud">(2)</a>, <a href="#3-embed-from-soundcloud-using-the-url-attribute">(3)</a> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.google.com/mymaps">Google Maps</a> <sup id="a2"><a href="#fn2">2</a></sup> </td>
 			<td> gm </td>
+			<td> NA </td>
 			<td> </td>
 			<td> </td>
 			<td> </td>
@@ -187,6 +204,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 		<tr>
 			<td> <a href="https://www.datawrapper.de">Datawrapper</a>  </td>
 			<td> dw </td>
+			<td> NA </td>
 			<td> </td>
 			<td> </td>
 			<td> </td>

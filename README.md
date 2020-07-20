@@ -82,8 +82,8 @@ This however is but only one of the steps needed for full adherence to the EU la
 		<tr>
 			<td> <a href="https://archive.org/">Internet Archive video and audio</a> </td>
 			<td> ia </td>
-			<td> </td>
 			<td> Distinguishes video from audio objects for ARIA </td>
+			<td> </td>
 			<td> <a href="#8-embed-from-the-internet-archive">(8)</a> </td>
 		</tr>
 		<tr>

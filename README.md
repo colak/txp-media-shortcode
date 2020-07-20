@@ -15,7 +15,9 @@ This textpattern shortcode draws inspiration from [Nicolas Morand's](https://git
 
 ## Advantages and disadvantages of shortcodes
 
-Shortcodes are easy to edit by those without any knowledge of php but with sufficient knowledge of html and txp tags. As such, for those keeping their textpattern installation up to date, the shortcode should keep on working seamlessly. 
+Shortcodes are easy to edit by those without any knowledge of php but with sufficient knowledge of html and txp tags. 
+If you often embed media in your website, it is much easier to update the shortcode when providers change their embed scripts rather than find all instances of the embedded content in your articles.
+The shortcode's GDPR warnings are parsed automatically, which save on typing and remembering cookie names. When visitors accept a particular host's cookies, they do so for all embeds from that host site-wide. 
 Shortcodes are normally slower in execution than php plugins.
 
 ## Installing

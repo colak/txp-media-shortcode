@@ -11,7 +11,7 @@ This textpattern shortcode draws inspiration from [Nicolas Morand's](https://git
 * [oui_cookie](https://forum.textpattern.com/viewtopic.php?id=47048)
 * The media hosts' url schemas and embed codes.
 * Georestrictions and privacy settings of individual media.
-* The availability of the content. Millions of videos and sound-files are taken off the web daily. This is because they are removed by the original uploader or blocked by the hosts (usually because of DMCA notices). 
+* The availability of the content. Millions of videos and sound-files are taken off the web daily. This is because they are removed by the original uploader or blocked by the hosts (usually because of DMCA notices).
 
 ## Advantages and disadvantages of shortcodes
 

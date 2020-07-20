@@ -159,7 +159,7 @@ https://github.com/colak/txp-media-shortcode
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_metacafe_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_metacafe_cookie'>
 				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
-					<iframe src="https://www.metacafe.com/embed/<txp:yield="media" />/" frameborder="0" allowfullscreen></iframe>
+					<iframe src="https://www.metacafe.com/embed/<txp:yield name="media" />/" frameborder="0" allowfullscreen></iframe>
 				</div>
 			<txp:else />
 				<div class="gdpr">

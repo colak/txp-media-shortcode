@@ -294,6 +294,7 @@ The resulting code will be
 			<source src="http(s)://site.tld/files/files/my_title.m4a" type="audio/m4a">
 			<source src="http(s)://site.tld/files/files/my_title.mp3" type="audio/mpeg">
 			<source src="http(s)://site.tld/files/files/my_title.flac" type="audio/flac">
+			<p>Your browser does not support the audio element.</p>
 		</audio>
 	</span>
 
@@ -354,6 +355,7 @@ The resulting code will be
 		<video width="100%" height="100%" controls>
 			<source src="http(s)://site.tld/files/my_video.mp4" type="video/mp4">
 			<source src="http(s)://site.tld/files/my_video.webm" type="video/webm">
+			<p>Your browser does not support the video element.</p>
 		</video>
 	</span>
 

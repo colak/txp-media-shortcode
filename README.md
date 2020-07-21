@@ -77,7 +77,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td colspan="6"> <b>Video or audio</b> </td>
 		</tr>
 		<tr>
-			<td rowspan="2"> Local video or audio</td>
+			<td rowspan="2"> Local</td>
 			<td rowspan="2"> local </td>
 			<td> url="v" </td>
 			<td> Loads a posterframe with image id. </td>
@@ -91,7 +91,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> <a href="#4-embed-local-audio">(4)</a> </td>
 		</tr>
 		<tr>
-			<td rowspan="2"> <a href="https://archive.org/">Internet Archive video and audio</a> </td>
+			<td rowspan="2"> <a href="https://archive.org/">Internet Archive</a> </td>
 			<td rowspan="2"> ia </td>
 			<td> url="v" </td>
 			<td rowspan="2"> </td>

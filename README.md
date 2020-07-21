@@ -285,7 +285,7 @@ The resulting code after the cookie is accepted is the same as the one in the se
 
 The html5 audio tag, allows for the embedding of multiple formats to enhance compatibility with the various browsers and computer setups. To embed music residing in your installation's files directory, first upload the audio files using the same name followed by the extension. In your articles call the file name and state the extensions you have encoded those files to. (Currently the tag supports m4a, mp3, mp4, aac, webm, flac and ogg). You may want to check the [formats supported by different web browsers](https://en.wikipedia.org/wiki/HTML5_audio#Supported_audio_coding_formats).
 
-`<txp::media from="local" url="a" media="my_title" m4a mp3 />`
+`<txp::media from="local" url="a" media="my_title" m4a mp3 flac />`
 
 The resulting code will be
 
@@ -293,6 +293,7 @@ The resulting code will be
 		<audio controls>
 			<source src="http(s)://site.tld/files/files/my_title.m4a" type="audio/m4a">
 			<source src="http(s)://site.tld/files/files/my_title.mp3" type="audio/mpeg">
+			<source src="http(s)://site.tld/files/files/my_title.flac" type="audio/flac">
 		</audio>
 	</span>
 

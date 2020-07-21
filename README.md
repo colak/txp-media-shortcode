@@ -74,6 +74,9 @@ This however is but only one of the steps needed for full adherence to the EU la
 	</thead>
 	<tbody>
 		<tr>
+			<td colspan="6"> <b>Video or audio</b> </td>
+		</tr>
+		<tr>
 			<td rowspan="2"> Local video or audio</td>
 			<td rowspan="2"> local </td>
 			<td> url="v" </td>
@@ -97,6 +100,9 @@ This however is but only one of the steps needed for full adherence to the EU la
 		</tr>
 		<tr>
 			<td> url="a" </td>
+		</tr>
+		<tr>
+			<td colspan="6"> <b>Video</b> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.youtube.com/">YouTube</a> </td>
@@ -171,6 +177,9 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> </td>
 		</tr>
 		<tr>
+			<td colspan="6"> <b>Audio</b> </td>
+		</tr>
+		<tr>
 			<td> <a href="https://audioboom.com/">AudioBoom</a> </td>
 			<td> ab </td>
 			<td> NA </td>
@@ -193,6 +202,9 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> </td>
 			<td> NA </td>
 			<td> <a href="#2-embed-from-soundcloud">(2)</a>, <a href="#3-embed-from-soundcloud-using-the-url-attribute">(3)</a> </td>
+		</tr>
+		<tr>
+			<td colspan="6" style="background-color:#ffc;color:#000;"> <b>Others</b> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.google.com/mymaps">Google Maps</a> <sup id="a2"><a href="#fn2">2</a></sup> </td>

@@ -76,12 +76,13 @@ This however is but only one of the steps needed for full adherence to the EU la
 		<tr>
 			<td rowspan="2"> Local video or audio</td>
 			<td rowspan="2"> local </td>
-			<td rowspan="2"> Simply handles the video or the audio html5 elements </td>
+			<td> url="v" </td>
 			<td rowspan="2"> Loads a posterframe with image id. </td>
 			<td> mp4, ogg, mpeg-4, flac, webm </td>
 			<td rowspan="2"> <a href="#4-embed-local-audio">(4)</a>, <a href="6-embed-a-local-video">(6)</a>
 		</tr>
 		<tr>
+			<td> url="a" </td>
 			<td> m4a, mp3, ogg, mp4, sac, webm, flac </td>
 		</tr>
 		<tr>
@@ -93,12 +94,15 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> deprecated </a>
 		</tr>
 		<tr>
-			<td> <a href="https://archive.org/">Internet Archive video and audio</a> </td>
-			<td> ia </td>
-			<td> Distinguishes video from audio objects for ARIA </td>
-			<td> </td>
-			<td> NA </td>
-			<td> <a href="#8-embed-from-the-internet-archive">(8)</a> </td>
+			<td rowspan="2"> <a href="https://archive.org/">Internet Archive video and audio</a> </td>
+			<td rowspan="2"> ia </td>
+			<td> url="v" </td>
+			<td rowspan="2"> </td>
+			<td rowspan="2"> NA </td>
+			<td rowspan="2"> <a href="#8-embed-from-the-internet-archive">(8)</a> </td>
+		</tr>
+		<tr>
+			<td> url="a" </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.youtube.com/">YouTube</a> </td>

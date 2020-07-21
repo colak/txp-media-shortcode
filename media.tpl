@@ -3,9 +3,94 @@ The latest source code, explanations, and examples on how to use this shortcode 
 https://github.com/colak/txp-media-shortcode
 </txp:hide>
 
+<txp:hide>Local video or audio</txp:hide>
+<txp:if_yield name="from" value="local">
+	<txp:hide>Local video</txp:hide>
+	<txp:if_yield name="url" value="v">
+		<txp:if_yield name="media">
+			<txp:variable name="video_file" value='<txp:yield name="media" />' />
+			<txp:if_variable name="video_file">
+				<span itemscope itemtype="http://schema.org/VideoObject">
+					<video width="100%" height="100%" controls<txp:if_yield name="title"> poster="<txp:images id='<txp:yield name="title" />'><txp:site_url />images/<txp:yield name="title" />.<txp:image_info type="ext" /></txp:images>"</txp:if_yield>>
+						<txp:if_yield name="mp4">
+							<source src="<txp:site_url />files/<txp:variable name="video_file" />.mp4" type="video/mp4">
+						</txp:if_yield>
+						<txp:if_yield name="ogg">
+							<source src="<txp:site_url />files/<txp:variable name="video_file" />.ogg" type="video/ogg">
+						</txp:if_yield>
+						<txp:if_yield name="mpeg-4">
+							<source src="<txp:site_url />files/<txp:variable name="video_file" />.mpeg-4" type="video/mpeg-4">
+						</txp:if_yield>
+						<txp:if_yield name="webm">
+							<source src="<txp:site_url />files/<txp:variable name="video_file" />.webm" type="video/webm">
+						</txp:if_yield>
+						<txp:if_yield name="flac">
+							<source src="<txp:site_url />files/<txp:variable name="video_file" />.ogg" type="video/flac">
+						</txp:if_yield>
+						<p>Your browser does not support the video element.</p>
+					</video>
+				</span>
+			</txp:if_variable>
+		</txp:if_yield>
+	</txp:if_yield>
+	<txp:hide>Local audio</txp:hide>
+	<txp:if_yield name="url" value="a">
+	<txp:if_yield name="media">
+		<span itemscope itemtype="http://schema.org/AudioObject">
+			<audio controls>
+			<txp:variable name="audio_file" value='<txp:yield name="media" />' />
+				<txp:if_variable name="audio_file">
+					<txp:if_yield name="m4a">
+						<source src="<txp:site_url />files/<txp:variable name="audio_file" />.m4a" type="audio/m4a">
+					</txp:if_yield>
+					<txp:if_yield name="mp3">
+						<source src="<txp:site_url />files/<txp:variable name="audio_file" />.mp3" type="audio/mpeg">
+					</txp:if_yield>
+					<txp:if_yield name="ogg">
+						<source src="<txp:site_url />files/<txp:variable name="audio_file" />.ogg" type="audio/ogg">							
+					</txp:if_yield>
+					<txp:if_yield name="mp4">
+						<source src="<txp:site_url />files/<txp:variable name="audio_file" />.mp4" type="audio/mp4">
+					</txp:if_yield>
+					<txp:if_yield name="aac">
+						<source src="<txp:site_url />files/<txp:variable name="audio_file" />.aac" type="audio/aac">
+					</txp:if_yield>
+					<txp:if_yield name="webm">
+						<source src="<txp:site_url />files/<txp:variable name="audio_file" />.webm" type="audio/webm">
+					</txp:if_yield>
+					<txp:if_yield name="flac">
+						<source src="<txp:site_url />files/<txp:variable name="audio_file" />.ogg" type="audio/flac">
+					</txp:if_yield>
+					<p>Your browser does not support the audio element.</p>
+				</txp:if_variable>
+			</audio>
+		</span>
+	</txp:if_yield>
+	</txp:if_yield>
+</txp:if_yield>
+
+<txp:hide>Internet Archive (Audio and Video)</txp:hide>
+<txp:if_yield name="from" value="ia">
+	<txp:if_yield name="media">
+		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie' duration="+1 year" values="yes" />
+			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie'>
+				<div class="embed-container" id="m_<txp:yield name="media" />"<txp:if_yield name="url" value="v"> itemscope itemtype="http://schema.org/VideoObject"</txp:if_yield><txp:if_yield name="url" value="a"> itemscope itemtype="http://schema.org/AudioObject"</txp:if_yield>>
+					<iframe src="https://archive.org/embed/<txp:yield name="media" />" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+				</div>
+			<txp:else />
+				<div class="gdpr">
+					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<p>Hosted by the Internet Archive on <a rel="external noopener" href="https://archive.org/details/<txp:yield name="media" />">archive.org/details/<txp:yield name="media" /></a>.</p>
+					<p><a rel="external noopener" href="https://archive.org/about/terms.php">Internet Archive&#8217;s private policy</a>.</p>
+					<p class="accept"><a rel="nofollow noindex" href="?<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
+				</div>
+			</txp:oui_if_cookie>
+	</txp:if_yield>
+</txp:if_yield>
+
 <txp:hide>Video</txp:hide>
 
-<txp:hide>Local video</txp:hide>
+<txp:hide>Local video (to be deprecated)</txp:hide>
 <txp:if_yield name="from" value="local_v">
 	<txp:if_yield name="media">
 		<txp:variable name="video_file" value='<txp:yield name="media" />' />
@@ -31,25 +116,6 @@ https://github.com/colak/txp-media-shortcode
 					</video>
 				</span>
 			</txp:if_variable>
-	</txp:if_yield>
-</txp:if_yield>
-
-<txp:hide>Internet Archive (Audio and Video)</txp:hide>
-<txp:if_yield name="from" value="ia">
-	<txp:if_yield name="media">
-		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie' duration="+1 year" values="yes" />
-			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />"<txp:if_yield name="url" value="v"> itemscope itemtype="http://schema.org/VideoObject"</txp:if_yield><txp:if_yield name="url" value="a"> itemscope itemtype="http://schema.org/AudioObject"</txp:if_yield>>
-					<iframe src="https://archive.org/embed/<txp:yield name="media" />" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
-				</div>
-			<txp:else />
-				<div class="gdpr">
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
-					<p>Hosted by the Internet Archive on <a rel="external noopener" href="https://archive.org/details/<txp:yield name="media" />">archive.org/details/<txp:yield name="media" /></a>.</p>
-					<p><a rel="external noopener" href="https://archive.org/about/terms.php">Internet Archive&#8217;s private policy</a>.</p>
-					<p class="accept"><a rel="nofollow noindex" href="?<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
-				</div>
-			</txp:oui_if_cookie>
 	</txp:if_yield>
 </txp:if_yield>
 

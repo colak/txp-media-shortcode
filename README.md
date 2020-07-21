@@ -79,7 +79,7 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> url="v" </td>
 			<td> Loads a posterframe with image id. </td>
 			<td> mp4, ogg, mpeg-4, flac, webm </td>
-			<td> <a href="6-embed-a-local-video">(6)</a> </td>
+			<td> <a href="#6-embed-a-local-video">(6)</a> </td>
 		</tr>
 		<tr>
 			<td> url="a" </td>

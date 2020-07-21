@@ -74,12 +74,20 @@ This however is but only one of the steps needed for full adherence to the EU la
 	</thead>
 	<tbody>
 		<tr>
+			<td> Local video or audio</td>
+			<td> local </td>
+			<td> Simply handles the video or the audio html5 elements </td>
+			<td> Loads a posterframe with image id. </td>
+			<td> mp4, ogg, mpeg-4, flac, webm </td>
+			<td> <a href="#4-embed-local-audio">(4)</a>, <a href="6-embed-a-local-video">(6)</a>
+		</tr>
+		<tr>
 			<td> Local video </td>
 			<td> local_v </td>
 			<td> Loads a posterframe with image id. </td>
 			<td> NA </td>
 			<td> mp4, ogg, mpeg-4, flac, webm </td>
-			<td> <a href="#6-embed-a-local-video-in-diferent-formats">(6)</a>
+			<td> deprecated </a>
 		</tr>
 		<tr>
 			<td> <a href="https://archive.org/">Internet Archive video and audio</a> </td>
@@ -162,12 +170,12 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> </td>
 		</tr>
 		<tr>
-			<td> Local mp3 audio </td>
+			<td> Local audio </td>
 			<td> local_a </td>
 			<td> NA </td>
 			<td> NA </td>
 			<td> m4a, mp3, ogg, mp4, sac, webm, flac </td>
-			<td> <a href="#4-embed-local-audio">(4)</a> </td>
+			<td> deprecated </td>
 		</tr>
 		<tr>
 			<td> <a href="https://audioboom.com/">AudioBoom</a> </td>
@@ -284,7 +292,7 @@ The resulting code after the cookie is accepted is the same as the one in the se
 
 The html5 audio tag, allows for the embedding of multiple formats to enhance compatibility with the various browsers and computer setups. To embed music residing in your installation's files directory, first upload the audio files using the same name followed by the extension. In your articles call the file name and state the extensions you have encoded those files to. (Currently the tag supports m4a, mp3, mp4, aac, webm, flac and ogg). You may want to check the [formats supported by different web browsers](https://en.wikipedia.org/wiki/HTML5_audio#Supported_audio_coding_formats).
 
-`<txp::media from="local_a" media="my_title" m4a mp3 />`
+`<txp::media from="local" url="a" media="my_title" m4a mp3 />`
 
 The resulting code will be
 
@@ -340,11 +348,11 @@ Resulting code after cookie is accepted
 		<iframe src="https://giphy.com/embed/QZyYmcnN7uYgx6uGyL" frameBorder="0" allowFullScreen></iframe>
 	</div>
 
-### 6. Embed a local video in diferent formats
+### 6. Embed a local video
 
 The html5 video tag, allows for the embedding of multiple formats to enhance compatibility with the various browsers and computer setups. To embed your videos residing in your installation's files directory, first upload the video files using the same name followed by the extension. In your articles call the file name and state the extensions you have encoded those files to. (Currently the tag supports  mp4, ogg, mpeg-4, flac, webm). You may want to check the [status of video format support in each web browser](https://en.wikipedia.org/wiki/HTML5_video#Browser_support).
 
-`<txp::media from="local_v" media="my_title" mp4 webm />`
+`<txp::media from="local" url="v" media="my_title" mp4 webm />`
 
 The resulting code will be
 
@@ -357,7 +365,7 @@ The resulting code will be
 
 If you wish to include a poster-frame for the video use
 
-`<txp::media from="local_v" media="my_title" mp4 webm url="32" />`
+`<txp::media from="local" url="v" media="my_title" mp4 webm title="32" />`
 
 Where the `32` is the id number of your selected image from the database.
 

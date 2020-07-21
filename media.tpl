@@ -13,7 +13,7 @@ https://github.com/colak/txp-media-shortcode
 			<txp:variable name="video_file" value='<txp:yield name="media" />' />
 			<txp:if_variable name="video_file">
 				<span itemscope itemtype="http://schema.org/VideoObject">
-					<video width="100%" height="100%" controls<txp:if_yield name="title"> poster="<txp:images id='<txp:yield name="title" />'><txp:site_url />images/<txp:yield name="title" />.<txp:image_info type="ext" /></txp:images>"</txp:if_yield>>
+					<video width="100%" height="100%" controls<txp:if_yield name="title"> poster="<txp:images id='<txp:yield name="title" />'><txp:site_url />images/<txp:yield name="title" /><txp:image_info type="ext" /></txp:images>"</txp:if_yield>>
 						<txp:if_yield name="mp4">
 							<source src="<txp:site_url />files/<txp:variable name="video_file" />.mp4" type="video/mp4">
 						</txp:if_yield>

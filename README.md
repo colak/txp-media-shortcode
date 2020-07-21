@@ -319,12 +319,12 @@ Giphy offers two types of urls based on the media type, gif and video.
 
 To embed a gif from Giphy use
 
-`<txp::media from="gp" media="QZyYmcnN7uYgx6uGyL" title="News Breonna Taylor" />`
+`<txp::media from="gp" media="QZyYmcnN7uYgx6uGyL" title="We want justice" />`
 
 Resulting code before cookie is accepted
 
 	<div class="gdpr">
-		<p>News Breonna Taylor</p>
+		<p>We want justice</p>
 		<p>Hosted by Giphy on <a rel="external noopener" href="https://giphy.com/gifs/QZyYmcnN7uYgx6uGyL">giphy.com/gifs/QZyYmcnN7uYgx6uGyL</a>.</p>
 		<p><a rel="external noopener" href="https://support.giphy.com/hc/en-us/articles/360032872931-GIPHY-Privacy-Policy">Giphy&#8217;s private policy</a>.</p>
 		<p class="accept"><a rel="nofollow" href="?My_Site_giphy_cookie=yes#m_QZyYmcnN7uYgx6uGyL">View to it here</a></p>
@@ -338,21 +338,21 @@ Resulting code after cookie is accepted
 
 To embed a video from Giphy use
 
-`<txp::media from="gp" media="QZyYmcnN7uYgx6uGyL" title="News Breonna Taylor" url />`
+`<txp::media from="gp" media="YOMRpF8MSxjMqlPO6h" title="Tear Gas" url />`
 
 Resulting code before cookie is accepted
 
 	<div class="gdpr">
-		<p>News Breonna Taylor</p>
-		<p>Hosted by Giphy on <a rel="external noopener" href="https://giphy.com/gifs/QZyYmcnN7uYgx6uGyL">giphy.com/videos/QZyYmcnN7uYgx6uGyL</a>.</p>
+		<p>Tear Gas</p>
+		<p>Hosted by Giphy on <a rel="external noopener" href="https://giphy.com/videos/YOMRpF8MSxjMqlPO6h">giphy.com/videos/YOMRpF8MSxjMqlPO6h</a>.</p>
 		<p><a rel="external noopener" href="https://support.giphy.com/hc/en-us/articles/360032872931-GIPHY-Privacy-Policy">Giphy&#8217;s private policy</a>.</p>
-		<p class="accept"><a rel="nofollow" href="?My_Site_giphy_cookie=yes#m_QZyYmcnN7uYgx6uGyL">View to it here</a></p>
+		<p class="accept"><a rel="nofollow" href="?My_Site_giphy_cookie=yes#m_YOMRpF8MSxjMqlPO6h">View to it here</a></p>
 	</div>
 
 Resulting code after cookie is accepted
 
-	<div class="embed-container" id="m_QZyYmcnN7uYgx6uGyL"  itemscope itemtype="http://schema.org/VideoObject">
-		<iframe src="https://giphy.com/embed/QZyYmcnN7uYgx6uGyL" frameBorder="0" allowFullScreen></iframe>
+	<div class="embed-container" id="YOMRpF8MSxjMqlPO6h"  itemscope itemtype="http://schema.org/VideoObject">
+		<iframe src="https://giphy.com/embed/YOMRpF8MSxjMqlPO6h" frameBorder="0" allowFullScreen></iframe>
 	</div>
 
 ### 6. Embed a local video

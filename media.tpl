@@ -184,6 +184,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 			<txp:else />
 				<div class="gdpr">
+					<picture>
+ 						 <source media="(min-width:466px)" srcset="https://peertube.video/static/previews/<txp:yield name="media" />.jpg">
+ 						 <source media="(max-width:465px)" srcset="ttps://peertube.video/static/thumbnails/<txp:yield name="media" />.jpg">
+						 <img src="https://peertube.video/static/previews/<txp:yield name="media" />.jpg" alt="<txp:yield name="title" />" />
+					</picture> 
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
 					<p>Hosted by PeerTube on <a rel="external noopener" href="https://peertube.video/videos/watch/<txp:yield name="media" />">peertube.video/videos/watch/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://peertube.video/about/instance">PeerTube&#8217;s private policy</a>.</p>

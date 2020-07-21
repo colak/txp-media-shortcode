@@ -398,7 +398,7 @@ Resulting code before cookie is accepted
 	<div class="gdpr">
 		<img src="https://img.youtube.com/vi/zlZTghhCuxg/hqdefault.jpg" alt="Delivery for Mr. Assange" />
 		<p>Delivery for Mr. Assange</p>
-		<p>Hosted by Vimeo on <a rel="external noopener" href="https://youtube.com/watch?v=zlZTghhCuxg">youtube.com/watch?v=zlZTghhCuxg</a>.</p>
+		<p>Hosted by Vimeo on <a rel="external noopener" href=https://youtu.be/zlZTghhCuxg">youtu.be/zlZTghhCuxg</a>.</p>
 		<p><a rel="external noopener" href="https://youtube.com/privacy">YouTube&#8217;s private policy</a>.</p>
 		<p class="accept"><a rel="nofollow" href="?My_Site_youtube_cookie=yes#m_zlZTghhCuxg">View it here</a></p>
 	</div>

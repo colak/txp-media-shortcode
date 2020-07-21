@@ -88,14 +88,6 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> <a href="#4-embed-local-audio">(4)</a> </td>
 		</tr>
 		<tr>
-			<td> Local video </td>
-			<td> local_v </td>
-			<td> Loads a posterframe with image id. </td>
-			<td> NA </td>
-			<td> mp4, ogg, mpeg-4, flac, webm </td>
-			<td> deprecated </a>
-		</tr>
-		<tr>
 			<td rowspan="2"> <a href="https://archive.org/">Internet Archive video and audio</a> </td>
 			<td rowspan="2"> ia </td>
 			<td> url="v" </td>
@@ -177,14 +169,6 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td> </td>
 			<td> NA </td>
 			<td> </td>
-		</tr>
-		<tr>
-			<td> Local audio </td>
-			<td> local_a </td>
-			<td> NA </td>
-			<td> NA </td>
-			<td> m4a, mp3, ogg, mp4, sac, webm, flac </td>
-			<td> deprecated </td>
 		</tr>
 		<tr>
 			<td> <a href="https://audioboom.com/">AudioBoom</a> </td>

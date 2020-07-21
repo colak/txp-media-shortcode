@@ -77,13 +77,15 @@ This however is but only one of the steps needed for full adherence to the EU la
 			<td rowspan="2"> Local video or audio</td>
 			<td rowspan="2"> local </td>
 			<td> url="v" </td>
-			<td rowspan="2"> Loads a posterframe with image id. </td>
+			<td> Loads a posterframe with image id. </td>
 			<td> mp4, ogg, mpeg-4, flac, webm </td>
-			<td rowspan="2"> <a href="#4-embed-local-audio">(4)</a>, <a href="6-embed-a-local-video">(6)</a>
+			<td> <a href="6-embed-a-local-video">(6)</a> </td>
 		</tr>
 		<tr>
 			<td> url="a" </td>
+			<td> NA </td>
 			<td> m4a, mp3, ogg, mp4, sac, webm, flac </td>
+			<td> <a href="#4-embed-local-audio">(4)</a> </td>
 		</tr>
 		<tr>
 			<td> Local video </td>

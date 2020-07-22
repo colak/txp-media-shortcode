@@ -105,19 +105,19 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 			<txp:else />
 				<div class="gdpr">
-				<txp:if_yield name="0">
-				<txp:else />
-					<txp:if_yield name="img">
-						<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
-					<txp:else />
-						<picture>
+					<txp:if_yield name="0">
+						<txp:else />
+							<txp:if_yield name="img">
+								<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+							<txp:else />
+								<picture>
  							 <source media="(min-width:650px)" srcset="https://img.youtube.com/vi/<txp:yield name="media" />/maxresdefault.jpg">
  							 <source media="(min-width:465px)" srcset="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg">
 							 <img src="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg" alt="<txp:yield name="title" />" width="480" height="360" />
 						</picture> 
+							</txp:if_yield>
 					</txp:if_yield>
-				</txp:if_yield>
-				<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
 					<p>Hosted by YouTube on <a rel="external noopener" href="https://youtu.be/<txp:yield name="media" />">youtu.be/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://youtube.com/privacy">YouTube&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex" href="?<txp:site_name trim="/\s+/" replace="_" />_youtube_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
@@ -206,22 +206,22 @@ https://github.com/colak/txp-media-shortcode
 			<txp:else />
 			<div class="gdpr">
 				<txp:if_yield name="0">
-				<txp:else />
-					<txp:if_yield name="img">
-						<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
-					<else />
-						<picture>
- 							 <source media="(min-width:466px)" srcset="https://peertube.video/static/previews/<txp:yield name="media" />.jpg">
- 							 <source media="(max-width:465px)" srcset="ttps://peertube.video/static/thumbnails/<txp:yield name="media" />.jpg">
-							 <img src="https://peertube.video/static/previews/<txp:yield name="media" />.jpg" alt="<txp:yield name="title" />" />
-						</picture> 
-					</txp:if_yield>
+					<txp:else />
+						<txp:if_yield name="img">
+							<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+						<else />
+							<picture>
+ 								 <source media="(min-width:466px)" srcset="https://peertube.video/static/previews/<txp:yield name="media" />.jpg">
+ 								 <source media="(max-width:465px)" srcset="ttps://peertube.video/static/thumbnails/<txp:yield name="media" />.jpg">
+								 <img src="https://peertube.video/static/previews/<txp:yield name="media" />.jpg" alt="<txp:yield name="title" />" />
+							</picture> 
+						</txp:if_yield>
 				</txp:if_yield>
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
-					<p>Hosted by PeerTube on <a rel="external noopener" href="https://peertube.video/videos/watch/<txp:yield name="media" />">peertube.video/videos/watch/<txp:yield name="media" /></a>.</p>
-					<p><a rel="external noopener" href="https://peertube.video/about/instance">PeerTube&#8217;s private policy</a>.</p>
-					<p class="accept"><a rel="nofollow noindex" href="?<txp:site_name trim="/\s+/" replace="_" />_peertube_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
-				</div>
+				<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+				<p>Hosted by PeerTube on <a rel="external noopener" href="https://peertube.video/videos/watch/<txp:yield name="media" />">peertube.video/videos/watch/<txp:yield name="media" /></a>.</p>
+				<p><a rel="external noopener" href="https://peertube.video/about/instance">PeerTube&#8217;s private policy</a>.</p>
+				<p class="accept"><a rel="nofollow noindex" href="?<txp:site_name trim="/\s+/" replace="_" />_peertube_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
+			</div>
 			</txp:oui_if_cookie>
 	</txp:if_yield>
 </txp:if_yield>
@@ -302,18 +302,18 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 			<txp:else />
 				<div class="gdpr">
-				<txp:if_yield name="0">
-				<txp:else />
-					<txp:if_yield name="img">
-						<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+					<txp:if_yield name="0">
 					<txp:else />
-					<picture>
- 						 <source media="(min-width:650px)" srcset="https://img.youtube.com/vi/<txp:yield name="media" />/maxresdefault.jpg">
- 						 <source media="(min-width:465px)" srcset="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg">
-						 <img src="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg" alt="<txp:yield name="title" />" width="480" height="360" />
-					</picture> 
+						<txp:if_yield name="img">
+							<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+						<txp:else />
+						<picture>
+ 							 <source media="(min-width:650px)" srcset="https://img.youtube.com/vi/<txp:yield name="media" />/maxresdefault.jpg">
+ 							 <source media="(min-width:465px)" srcset="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg">
+							 <img src="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg" alt="<txp:yield name="title" />" width="480" height="360" />
+						</picture> 
+						</txp:if_yield>
 					</txp:if_yield>
-				</txp:if_yield>
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
 					<p>Served by YouTube-nocookie but originally resides on <a rel="external noopener" href="https://youtube.com/watch?v=<txp:yield name="media" />">youtube.com/watch?v=<txp:yield name="media" /></a>.</p>
 					<p>We could not find YouTube-nocookie&#8217;s private policy.</p>

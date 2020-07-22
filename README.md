@@ -400,7 +400,7 @@ The resulting code will be
 
 If you wish to include a poster-frame for the video use
 
-`<txp::media from="local" url="v" media="my_title" mp4 webm title="32" />`
+`<txp::media from="local" url="v" media="my_title" mp4 webm img="32" />`
 
 Where the `32` is the id number of your selected image from the database.
 
@@ -423,9 +423,13 @@ YouTube's url structures allow for the presentation of the video thumbnail befor
 Resulting code before cookie is accepted
 
 	<div class="gdpr">
-		<img src="https://img.youtube.com/vi/zlZTghhCuxg/hqdefault.jpg" alt="Delivery for Mr. Assange" />
+		<picture>
+			 <source media="(min-width:650px)" srcset="https://img.youtube.com/vi/zlZTghhCuxg/maxresdefault.jpg">
+ 			 <source media="(min-width:465px)" srcset="https://img.youtube.com/vi/<zlZTghhCuxg/hqdefault.jpg">
+			 <img src="https://img.youtube.com/vi/zlZTghhCuxg/hqdefault.jpg" alt="Delivery for Mr. Assange" width="480" height="360" />
+		</picture> 
 		<p>Delivery for Mr. Assange</p>
-		<p>Hosted by Vimeo on <a rel="external noopener" href=https://youtu.be/zlZTghhCuxg">youtu.be/zlZTghhCuxg</a>.</p>
+		<p>Hosted by YouTube on <a rel="external noopener" href=https://youtu.be/zlZTghhCuxg">youtu.be/zlZTghhCuxg</a>.</p>
 		<p><a rel="external noopener" href="https://youtube.com/privacy">YouTube&#8217;s private policy</a>.</p>
 		<p class="accept"><a rel="nofollow" href="?My_Site_youtube_cookie=yes#m_zlZTghhCuxg">View it here</a></p>
 	</div>
@@ -435,6 +439,24 @@ Resulting code after cookie is accepted
 	<div class="embed-container" id="m_zlZTghhCuxg"  itemscope itemtype="http://schema.org/VideoObject">
 		<iframe src="https://www.youtube.com/embed/zlZTghhCuxg?rel=0" frameborder="0" allowfullscreen></iframe>
 	</div>
+
+The default, pre cookie acceptance behaviour, calls the images from YouTube and some may find this unacceptable so I provided an option to include an image from the database. For that you can use:
+
+`<txp::media from="yt" media="zlZTghhCuxg" title="Delivery for Mr. Assange" img="34" />`
+
+Resulting code after cookie is accepted
+
+	<div class="gdpr">
+		<img src="http(s)://site.tld/34.jpg" alt="Delivery for Mr. Assange" width="720" height="576" /> 
+		<p>Delivery for Mr. Assange</p>
+		<p>Hosted by YouTube on <a rel="external noopener" href=https://youtu.be/zlZTghhCuxg">youtu.be/zlZTghhCuxg</a>.</p>
+		<p><a rel="external noopener" href="https://youtube.com/privacy">YouTube&#8217;s private policy</a>.</p>
+		<p class="accept"><a rel="nofollow" href="?My_Site_youtube_cookie=yes#m_zlZTghhCuxg">View it here</a></p>
+	</div>
+
+For those who wish not to include an image befor the cookie acceptance use 
+
+`<txp::media from="yt" media="zlZTghhCuxg" title="Delivery for Mr. Assange" img="0" />`
 
 ### 8. Embed from the Internet archive
 

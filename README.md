@@ -62,7 +62,8 @@ The above is but only one of the steps needed for full adherence to the EU law w
 2. media (required)
 3. title (recommended)
 4. url (Only available for some hosts)
-5. <i>others</i>. (Only available for locally served media. See examples.)
+5. img
+6. <i>others</i>. (Only available for locally served media. See examples.)
 
 ### Details
 
@@ -73,24 +74,27 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<th scope="col">from</th>
 			<th scope="col">url</th>
 			<th scope="col">title</th>
+			<th scope="col">img</th>
 			<th scope="col"><i>others</i></th>
 			<th scope="col">Examples</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td colspan="6"> <b>Video or audio</b> </td>
+			<td colspan="7"> <b>Video or audio</b> </td>
 		</tr>
 		<tr>
 			<td rowspan="2"> Local</td>
 			<td rowspan="2"> local </td>
 			<td> url="v" </td>
+			<td>  </td>
 			<td> Loads a posterframe with image id. </td>
 			<td> mp4, ogg, mpeg-4, flac, webm </td>
 			<td> <a href="#6-embed-a-local-video">(6)</a> </td>
 		</tr>
 		<tr>
 			<td> url="a" </td>
+			<td> NA </td>
 			<td> NA </td>
 			<td> m4a, mp3, ogg, mp4, sac, webm, flac </td>
 			<td> <a href="#4-embed-local-audio">(4)</a> </td>
@@ -100,20 +104,23 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td rowspan="2"> ia </td>
 			<td> url="v" </td>
 			<td rowspan="2"> </td>
+			<td>  </td>
 			<td rowspan="2"> NA </td>
 			<td rowspan="2"> <a href="#8-embed-from-the-internet-archive">(8)</a> </td>
 		</tr>
 		<tr>
 			<td> url="a" </td>
+			<td> NA </td>
 		</tr>
 		<tr>
-			<td colspan="6"> <b>Video</b> </td>
+			<td colspan="7"> <b>Video</b> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.youtube.com/">YouTube</a> </td>
 			<td> yt </td>
 			<td> NA </td>
 			<td> </td>
+			<td>  </td>
 			<td> NA </td>
 			<td> <a href="#7-embed-from-youtube">(7)</a> </td>
 		</tr>
@@ -121,6 +128,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="https://www.vimeo.com/">Vimeo</a> </td>
 			<td> v </td>
 			<td> NA </td>
+			<td> </td>
 			<td> </td>
 			<td> NA </td>
 			<td> <a href="#1-embed-from-vimeo">(1)</a> </td>
@@ -130,6 +138,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> dm </td>
 			<td> NA </td>
 			<td> </td>
+			<td> </td>
 			<td> NA </td>
 			<td> </td>
 		</tr>
@@ -137,6 +146,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="https://giphy.com/">Giphy</a> </td>
 			<td> gp </td>
 			<td> Simply handles different types of url paths served by the host. </td>
+			<td> </td>
 			<td> </td>
 			<td> NA </td>
 			<td> <a href="#5-embed-from-giphy">(5)</a> </td>
@@ -146,6 +156,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> pt </td>
 			<td> NA </td>
 			<td> </td>
+			<td> </td>
 			<td> NA </td>
 			<td> </td>
 		</tr>
@@ -153,6 +164,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="https://ted.com">TED</a> </td>
 			<td> ted </td>
 			<td> NA </td>
+			<td> </td>
 			<td> </td>
 			<td> NA </td>
 			<td> </td>
@@ -162,6 +174,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> ytnc </td>
 			<td> NA </td>
 			<td> </td>
+			<td> </td>
 			<td> NA </td>
 			<td> </td>
 		</tr>
@@ -169,6 +182,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="https://metacafe.com/">MetaCafe</a> </td>
 			<td> mc </td>
 			<td> NA </td>
+			<td> </td>
 			<td> </td>
 			<td> NA </td>
 			<td> </td>
@@ -178,17 +192,19 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> cb </td>
 			<td> NA </td>
 			<td> </td>
+			<td> </td>
 			<td> NA </td>
 			<td> </td>
 		</tr>
 		<tr>
-			<td colspan="6"> <b>Audio</b> </td>
+			<td colspan="7"> <b>Audio</b> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://audioboom.com/">AudioBoom</a> </td>
 			<td> ab </td>
 			<td> NA </td>
 			<td> </td>
+			<td> NA </td>
 			<td> NA </td>
 			<td> </td>
 		</tr>
@@ -198,6 +214,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> NA </td>
 			<td> </td>
 			<td> NA </td>
+			<td> NA </td>
 			<td> </td>
 		</tr>
 		<tr>
@@ -206,15 +223,17 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> url in SoundCloud </td>
 			<td> </td>
 			<td> NA </td>
+			<td> NA </td>
 			<td> <a href="#2-embed-from-soundcloud">(2)</a>, <a href="#3-embed-from-soundcloud-using-the-url-attribute">(3)</a> </td>
 		</tr>
 		<tr>
-			<td colspan="6" style="background-color:#ffc;color:#000;"> <b>Others</b> </td>
+			<td colspan="7" style="background-color:#ffc;color:#000;"> <b>Others</b> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.google.com/mymaps">Google Maps</a> <sup id="a2"><a href="#fn2">2</a></sup> </td>
 			<td> gm </td>
 			<td> NA </td>
+			<td> </td>
 			<td> </td>
 			<td> NA </td>
 			<td> </td>
@@ -223,6 +242,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="https://www.datawrapper.de">Datawrapper</a>  </td>
 			<td> dw </td>
 			<td> NA </td>
+			<td> </td>
 			<td> </td>
 			<td> NA </td>
 			<td> </td>

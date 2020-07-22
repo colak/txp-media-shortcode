@@ -139,7 +139,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> NA </td>
 			<td> </td>
 			<td> </td>
-			<td> NA </td>
+			<td> 0 </td>
 			<td> </td>
 		</tr>
 		<tr>

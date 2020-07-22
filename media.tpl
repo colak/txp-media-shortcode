@@ -35,6 +35,7 @@ https://github.com/colak/txp-media-shortcode
 			</txp:if_variable>
 		</txp:if_yield>
 	</txp:if_yield>
+
 	<txp:hide>Local audio</txp:hide>
 	<txp:if_yield name="url" value="a">
 		<txp:if_yield name="media">
@@ -110,11 +111,11 @@ https://github.com/colak/txp-media-shortcode
 						<txp:if_yield name="img">
 							<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
 						<txp:else />
-						<picture>
- 							 <source media="(min-width:650px)" srcset="https://img.youtube.com/vi/<txp:yield name="media" />/maxresdefault.jpg">
- 							 <source media="(min-width:465px)" srcset="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg">
-							 <img src="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg" alt="<txp:yield name="title" />" width="480" height="360" />
-						</picture> 
+							<picture>
+ 								 <source media="(min-width:650px)" srcset="https://img.youtube.com/vi/<txp:yield name="media" />/maxresdefault.jpg">
+ 								 <source media="(min-width:465px)" srcset="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg">
+								 <img src="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg" alt="<txp:yield name="title" />" width="480" height="360" />
+							</picture> 
 						</txp:if_yield>
 					</txp:if_yield>
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
@@ -158,11 +159,13 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 			<txp:else />
 				<div class="gdpr">
-					<txp:if_yield name="img" value="0">
+					<txp:if_yield name="0">
 					<txp:else />
-						<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
-					<txp:else />
-					<img src="https://s1.dmcdn.net/v/<txp:yield name="media" />/x240" alt="<txp:yield name="title" />" />
+						<txp:if_yield name="img">
+							<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+						<txp:else />
+						<img src="https://s1.dmcdn.net/v/<txp:yield name="media" />/x240" alt="<txp:yield name="title" />" />
+						</txp:if_yield>
 					</txp:if_yield>
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
 					<p>Hosted by DailyMotion on <a rel="external noopener" href="https://dailymotion.com/video/<txp:yield name="media" />">dailymotion.com/video/<txp:yield name="media" /></a>.</p>
@@ -210,11 +213,11 @@ https://github.com/colak/txp-media-shortcode
 					<txp:if_yield name="img">
 						<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
 					<else />
-					<picture>
- 						 <source media="(min-width:466px)" srcset="https://peertube.video/static/previews/<txp:yield name="media" />.jpg">
- 						 <source media="(max-width:465px)" srcset="ttps://peertube.video/static/thumbnails/<txp:yield name="media" />.jpg">
-						 <img src="https://peertube.video/static/previews/<txp:yield name="media" />.jpg" alt="<txp:yield name="title" />" />
-					</picture> 
+						<picture>
+ 							 <source media="(min-width:466px)" srcset="https://peertube.video/static/previews/<txp:yield name="media" />.jpg">
+ 							 <source media="(max-width:465px)" srcset="ttps://peertube.video/static/thumbnails/<txp:yield name="media" />.jpg">
+							 <img src="https://peertube.video/static/previews/<txp:yield name="media" />.jpg" alt="<txp:yield name="title" />" />
+						</picture> 
 					</txp:if_yield>
 				</txp:if_yield>
 				<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>

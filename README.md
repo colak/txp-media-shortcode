@@ -16,9 +16,14 @@ This textpattern shortcode draws inspiration from [Nicolas Morand's](https://git
 ## Advantages and disadvantages of shortcodes
 
 Shortcodes are easy to edit by those without any knowledge of php but with sufficient knowledge of html and txp tags. 
+
 If you often embed media in your website, it is much easier to update the shortcode when providers change their embed scripts rather than find all instances of the embedded content in your articles.
-The shortcode's GDPR warnings are parsed automatically, which save on typing and remembering cookie names. When visitors accept a particular host's cookies, they do so for all embeds from that host site-wide. 
-Shortcodes are normally slower in execution than php plugins.
+
+The shortcode's GDPR warnings are parsed automatically, which save on typing, remembering cookie names, and privacy policy links. 
+
+When visitors accept a particular host's cookies, they do so for all embeds from that host site-wide. 
+
+Shortcodes are normally slightly lower in execution than raw php, or txp plugins.
 
 ## Installing
 
@@ -29,9 +34,9 @@ Shortcodes are normally slower in execution than php plugins.
 
 ## Cookies
 
-According to GDPR, webmasters should never serve any tracking cookies without their visitors' consent. The GDPR gives the right to any EU citizen to legally institute legal proceedings against any website owner, regardless of the website's or owner's location. The cookies served by the oui_cookie plugin do not track, but most media hosting providers do include tracking in their embeddable content. As such, and in order to make websites GDPR compliant, this shortcode does not load any embedded content which comes with tracking cookies, without the explicit acceptance of the site visitors. I have made oui_cookies to last for a duration of one year. 
+According to GDPR, webmasters should never serve any tracking cookies without their visitors' explicit consent. The GDPR gives the right to any EU citizen to legally institute legal proceedings against any website owner, regardless of the website's or owner's location. The cookies served by the oui_cookie plugin do not track, but most media hosting providers do include tracking in their embeddable content. The acceptance cookies last for a duration of one year. 
 
-This however is but only one of the steps needed for full adherence to the EU law which also requests for a privacy policy and a description of the first and third party cookies served. Examples of such pages can be found in the neme.org site on:
+The above is but only one of the steps needed for full adherence to the EU law which also requests for a privacy policy and a description of the first and third party cookies served. Examples of such pages can be found in the neme.org site on:
 
 * http://www.neme.org/about/privacy-policy
 * http://www.neme.org/about/cookies

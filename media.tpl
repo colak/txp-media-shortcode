@@ -388,6 +388,9 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 			<txp:else />
 				<div class="gdpr">
+					<txp:if_yield name="img">
+						<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+					</txp:if_yield>
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
 					<p><a rel="external noopener" href="https://www.google.com/maps/d/embed?mid=<txp:yield name="media" />">google.com/maps/d/embed?mid=<txp:yield name="media" /></a>.
 					<p><a rel="external noopener" href="https://policies.google.com/">Google&#8217;s privacy policy</a>.</p>
@@ -407,6 +410,9 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 			<txp:else />
 				<div class="gdpr">
+					<txp:if_yield name="img">
+						<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+					</txp:if_yield>
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
 					<p>Hosted by Datawrapper on <a rel="external noopener" href="https://www.datawrapper.de/_/<txp:yield name="media" />">datawrapper.de/_/<txp:yield name="media" /></a>.
 					<p><a rel="external noopener" href="https://www.datawrapper.de/privacy/">Datawrapper&#8217;s privacy policy</a>.</p>

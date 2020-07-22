@@ -62,7 +62,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 2. media (required)
 3. title (recommended)
 4. url (Only available for some hosts)
-5. img
+5. img (optional id of an image from the database)
 6. <i>others</i>. (Only available for locally served media. See examples.)
 
 ### Details
@@ -254,11 +254,12 @@ The above is but only one of the steps needed for full adherence to the EU law w
 
 ### 1. Embed from Vimeo
 
-`<txp::media from="v" media="336049258" title="My awesome video" />`
+`<txp::media from="v" media="336049258" title="My awesome video" img="33" />`
 
 Resulting code before cookie is accepted
 
 	<div class="gdpr">
+		<txp:img src="http(s)://site.tld/images/33.jpg" width="720" height="576" alt="still from my ausome video" />
 		<p>My awesome video</p>
 		<p>Hosted by Vimeo on <a rel="external noopener" href="https://vimeo.com/336049258">vimeo.com/336049258</a>.</p>
 		<p><a rel="external noopener" href="https://vimeo.com/privacy">Vimeo&#8217;s private policy</a>.</p>
@@ -273,11 +274,12 @@ Resulting code after cookie is accepted
 
 The `title` attribute is textile enabled. As such you can have
 
-`<txp::media from="v" media="336049258" title="h3. My awesome video" />`
+`<txp::media from="v" media="336049258" title="h3. My awesome video" img="33" />`
 
 Resulting code before cookie is accepted
 
 	<div class="gdpr">
+		<txp:img src="http(s)://site.tld/images/33.jpg" width="720" height="576" alt="still from my ausome video" />
 		<h3>My awesome video</h3>
 		<p>Hosted by Vimeo on <a rel="external noopener" href="https://vimeo.com/336049258">vimeo.com/336049258</a>.</p>
 		<p><a rel="external noopener" href="https://vimeo.com/privacy">Vimeo&#8217;s private policy</a>.</p>

@@ -121,7 +121,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> NA </td>
 			<td> </td>
 			<td>  </td>
-			<td> NA </td>
+			<td> 0 </td>
 			<td> <a href="#7-embed-from-youtube">(7)</a> </td>
 		</tr>
 		<tr>
@@ -157,7 +157,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> NA </td>
 			<td> </td>
 			<td> </td>
-			<td> NA </td>
+			<td> 0 </td>
 			<td> </td>
 		</tr>
 		<tr>
@@ -175,7 +175,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> NA </td>
 			<td> </td>
 			<td> </td>
-			<td> NA </td>
+			<td> 0 </td>
 			<td> </td>
 		</tr>
 		<tr>
@@ -454,9 +454,9 @@ Resulting code after cookie is accepted
 		<p class="accept"><a rel="nofollow" href="?My_Site_youtube_cookie=yes#m_zlZTghhCuxg">View it here</a></p>
 	</div>
 
-For those who wish not to include an image befor the cookie acceptance use 
+For those who wish not to include an image before the cookie acceptance use 
 
-`<txp::media from="yt" media="zlZTghhCuxg" title="Delivery for Mr. Assange" img="0" />`
+`<txp::media from="yt" media="zlZTghhCuxg" title="Delivery for Mr. Assange" 0 />`
 
 ### 8. Embed from the Internet archive
 

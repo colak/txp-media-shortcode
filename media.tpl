@@ -11,7 +11,6 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="url" value="v">
 		<txp:if_yield name="media">
 			<txp:variable name="video_file" value='<txp:yield name="media" />' />
-			<txp:if_variable name="video_file">
 				<span itemscope itemtype="http://schema.org/VideoObject">
 					<video width="100%" height="100%" controls<txp:if_yield name="img"> poster="<txp:images id='<txp:yield name="img" />'><txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" /></txp:images>"</txp:if_yield>>
 						<txp:if_yield name="mp4">
@@ -29,10 +28,9 @@ https://github.com/colak/txp-media-shortcode
 						<txp:if_yield name="flac">
 							<source src="<txp:site_url />files/<txp:variable name="video_file" />.ogg" type="video/flac">
 						</txp:if_yield>
-						<p>Your browser does not support the video element.</p>
+							<p>Your browser does not support the video element.</p>
 					</video>
 				</span>
-			</txp:if_variable>
 		</txp:if_yield>
 	</txp:if_yield>
 
@@ -42,7 +40,6 @@ https://github.com/colak/txp-media-shortcode
 			<span itemscope itemtype="http://schema.org/AudioObject">
 				<audio controls>
 				<txp:variable name="audio_file" value='<txp:yield name="media" />' />
-					<txp:if_variable name="audio_file">
 						<txp:if_yield name="m4a">
 							<source src="<txp:site_url />files/<txp:variable name="audio_file" />.m4a" type="audio/m4a">
 						</txp:if_yield>
@@ -64,8 +61,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:if_yield name="flac">
 							<source src="<txp:site_url />files/<txp:variable name="audio_file" />.ogg" type="audio/flac">
 						</txp:if_yield>
-						<p>Your browser does not support the audio element.</p>
-					</txp:if_variable>
+							<p>Your browser does not support the audio element.</p>
 				</audio>
 			</span>
 		</txp:if_yield>

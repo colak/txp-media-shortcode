@@ -444,10 +444,10 @@ The default, pre cookie acceptance behaviour, calls the images from YouTube and 
 
 `<txp::media from="yt" media="zlZTghhCuxg" title="Delivery for Mr. Assange" img="34" />`
 
-Resulting code after cookie is accepted
+Resulting code before cookie is accepted
 
 	<div class="gdpr">
-		<img src="http(s)://site.tld/34.jpg" alt="Delivery for Mr. Assange" width="720" height="576" /> 
+		<img src="http(s)://site.tld/images/34.jpg" alt="Delivery for Mr. Assange" width="720" height="576" /> 
 		<p>Delivery for Mr. Assange</p>
 		<p>Hosted by YouTube on <a rel="external noopener" href=https://youtu.be/zlZTghhCuxg">youtu.be/zlZTghhCuxg</a>.</p>
 		<p><a rel="external noopener" href="https://youtube.com/privacy">YouTube&#8217;s private policy</a>.</p>
@@ -458,12 +458,20 @@ For those who wish not to include an image before the cookie acceptance use
 
 `<txp::media from="yt" media="zlZTghhCuxg" title="Delivery for Mr. Assange" 0 />`
 
+Resulting code before cookie is accepted
+
+	<div class="gdpr">
+		<p>Delivery for Mr. Assange</p>
+		<p>Hosted by YouTube on <a rel="external noopener" href=https://youtu.be/zlZTghhCuxg">youtu.be/zlZTghhCuxg</a>.</p>
+		<p><a rel="external noopener" href="https://youtube.com/privacy">YouTube&#8217;s private policy</a>.</p>
+		<p class="accept"><a rel="nofollow" href="?My_Site_youtube_cookie=yes#m_zlZTghhCuxg">View it here</a></p>
+	</div>
+
 ### 8. Embed from the Internet archive
 
 The Internet archive allows the embedding of both video and audio files.
 
-To embed from the Archive simply, use
-
+To embed a video from the the Archive simply, use
 
 `<txp::media from="ia" media="PiesAndaluzyjski" title="Luis Bunuel: Un Chien Andalou, 1929" />`
 

@@ -37,9 +37,9 @@ https://github.com/colak/txp-media-shortcode
 	<txp:hide>Local audio</txp:hide>
 	<txp:if_yield name="url" value="a">
 		<txp:if_yield name="media">
-			<span itemscope itemtype="http://schema.org/AudioObject">
-				<audio controls>
-				<txp:variable name="audio_file" value='<txp:yield name="media" />' />
+			<txp:variable name="audio_file" value='<txp:yield name="media" />' />
+				<span itemscope itemtype="http://schema.org/AudioObject">
+					<audio controls>
 						<txp:if_yield name="m4a">
 							<source src="<txp:site_url />files/<txp:variable name="audio_file" />.m4a" type="audio/m4a">
 						</txp:if_yield>
@@ -62,8 +62,8 @@ https://github.com/colak/txp-media-shortcode
 							<source src="<txp:site_url />files/<txp:variable name="audio_file" />.ogg" type="audio/flac">
 						</txp:if_yield>
 							<p>Your browser does not support the audio element.</p>
-				</audio>
-			</span>
+					</audio>
+				</span>
 		</txp:if_yield>
 	</txp:if_yield>
 </txp:if_yield>

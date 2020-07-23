@@ -503,7 +503,7 @@ Resulting code after cookie is accepted
 
 ## Licence 
 
-This shortcode is distributed as free software. Read about it on https://github.com/colak/txp-media-shortcode/blob/master/LICENCE.md.
+This shortcode is released as free and unencumbered software. Read about it on https://github.com/colak/txp-media-shortcode/blob/master/LICENCE.md.
 
 ## Support
 

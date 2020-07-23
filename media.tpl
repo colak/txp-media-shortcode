@@ -33,7 +33,6 @@ https://github.com/colak/txp-media-shortcode
 				</span>
 		</txp:if_yield>
 	</txp:if_yield>
-
 	<txp:hide>Local audio</txp:hide>
 	<txp:if_yield name="url" value="a">
 		<txp:if_yield name="media">

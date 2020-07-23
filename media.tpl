@@ -413,7 +413,7 @@ https://github.com/colak/txp-media-shortcode
 	</txp:if_yield>
 </txp:if_yield>
 
-<txp:hide>c</txp:hide>
+<txp:hide>Datawrapper</txp:hide>
 <txp:if_yield name="from" value="dw">
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_datawrapper_cookie' duration="+1 year" values="yes" />

@@ -78,7 +78,7 @@ https://github.com/colak/txp-media-shortcode
 			<txp:else />
 				<div class="gdpr">
 					<txp:if_yield name="img">
-						<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+						<txp:images id='<txp:yield name="img" />'><img itemprop="image" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
 					</txp:if_yield>
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
 					<p>Hosted by the Internet Archive on <a rel="external noopener" href="https://archive.org/details/<txp:yield name="media" />">archive.org/details/<txp:yield name="media" /></a>.</p>
@@ -108,7 +108,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:else />
 							<picture>
  								 <source media="(min-width:650px)" srcset="https://img.youtube.com/vi/<txp:yield name="media" />/maxresdefault.jpg">
- 								 <source media="(min-width:465px)" srcset="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg">
+ 								 <source media="(max-width:649px)" srcset="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg">
 								 <img src="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg" alt="<txp:yield name="title" />" width="480" height="360" />
 							</picture> 
 						</txp:if_yield>
@@ -133,7 +133,7 @@ https://github.com/colak/txp-media-shortcode
 			<txp:else />
 				<div class="gdpr">
 					<txp:if_yield name="img">
-						<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+						<txp:images id='<txp:yield name="img" />'><img itemprop="image" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
 					</txp:if_yield>
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
 					<p>Hosted by Vimeo on <a rel="external noopener" href="https://vimeo.com/<txp:yield name="media" />">vimeo.com/<txp:yield name="media" /></a>.</p>
@@ -157,7 +157,7 @@ https://github.com/colak/txp-media-shortcode
 					<txp:if_yield name="0">
 					<txp:else />
 						<txp:if_yield name="img">
-							<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+							<txp:images id='<txp:yield name="img" />'><img itemprop="image" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
 						<txp:else />
 							<img src="https://s1.dmcdn.net/v/<txp:yield name="media" />/x240" alt="<txp:yield name="title" />" />
 						</txp:if_yield>
@@ -182,7 +182,7 @@ https://github.com/colak/txp-media-shortcode
 			<txp:else />
 				<div class="gdpr">
 					<txp:if_yield name="img">
-						<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+						<txp:images id='<txp:yield name="img" />'><img itemprop="image" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
 					</txp:if_yield>
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
 					<p>Hosted by BitChute on <a rel="external noopener" href="https://www.bitchute.com/video/<txp:yield name="media" />/">bitchute.com/video/<txp:yield name="media" /></a>.</p>
@@ -204,7 +204,7 @@ https://github.com/colak/txp-media-shortcode
 			<txp:else />
 				<div class="gdpr">
 					<txp:if_yield name="img">
-						<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+						<txp:images id='<txp:yield name="img" />'><img itemprop="image" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
 					</txp:if_yield>
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
 					<p>Hosted by Giphy on <a rel="external noopener" href="https://giphy.com/<txp:if_yield name="url">videos<txp:else />gifs</txp:if_yield>/<txp:yield name="media" />">giphy.com/<txp:if_yield name="url">videos<txp:else />gifs</txp:if_yield>/<txp:yield name="media" /></a>.</p>
@@ -228,7 +228,7 @@ https://github.com/colak/txp-media-shortcode
 				<txp:if_yield name="0">
 				<txp:else />
 					<txp:if_yield name="img">
-						<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+						<txp:images id='<txp:yield name="img" />'><img itemprop="image" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
 					<else />
 						<picture>
  							 <source media="(min-width:466px)" srcset="https://peertube.video/static/previews/<txp:yield name="media" />.jpg">
@@ -257,7 +257,7 @@ https://github.com/colak/txp-media-shortcode
 			<txp:else />
 				<div class="gdpr">
 					<txp:if_yield name="img">
-						<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+						<txp:images id='<txp:yield name="img" />'><img itemprop="image" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
 					</txp:if_yield>
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
 					<p>Hosted by MetaCafe on <a rel="external noopener" href="https://www.metacafe.com/watch/<txp:yield name="media" />/">metacafe.com/watch/<txp:yield name="media" />/</a>.</p>
@@ -279,7 +279,7 @@ https://github.com/colak/txp-media-shortcode
 			<txp:else />
 				<div class="gdpr">
 					<txp:if_yield name="img">
-						<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+						<txp:images id='<txp:yield name="img" />'><img itemprop="image" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
 					</txp:if_yield>
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
 					<p>Hosted by Coub on <a rel="external noopener" href="https://coub.com/view/<txp:yield name="media" />/">coub.com/view/<txp:yield name="media" /></a>.</p>
@@ -325,7 +325,7 @@ https://github.com/colak/txp-media-shortcode
 					<txp:if_yield name="0">
 					<txp:else />
 						<txp:if_yield name="img">
-							<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+							<txp:images id='<txp:yield name="img" />'><img itemprop="image" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
 						<txp:else />
 							<picture>
  								 <source media="(min-width:650px)" srcset="https://img.youtube.com/vi/<txp:yield name="media" />/maxresdefault.jpg">
@@ -419,7 +419,7 @@ https://github.com/colak/txp-media-shortcode
 			<txp:else />
 				<div class="gdpr">
 					<txp:if_yield name="img">
-						<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+						<txp:images id='<txp:yield name="img" />'><img itemprop="image" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
 					</txp:if_yield>
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
 					<p><a rel="external noopener" href="https://www.google.com/maps/d/embed?mid=<txp:yield name="media" />">google.com/maps/d/embed?mid=<txp:yield name="media" /></a>.
@@ -441,7 +441,7 @@ https://github.com/colak/txp-media-shortcode
 			<txp:else />
 				<div class="gdpr">
 					<txp:if_yield name="img">
-						<txp:images id='<txp:yield name="img" />'><img src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+						<txp:images id='<txp:yield name="img" />'><img itemprop="image" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
 					</txp:if_yield>
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
 					<p>Hosted by Datawrapper on <a rel="external noopener" href="https://www.datawrapper.de/_/<txp:yield name="media" />">datawrapper.de/_/<txp:yield name="media" /></a>.

@@ -171,7 +171,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 		</tr>
 		<tr>
 			<td> <a href="https://www.bitchute.com">BitChute</a> </td>
-			<td> ted </td>
+			<td> bc </td>
 			<td> NA </td>
 			<td> </td>
 			<td> </td>

@@ -170,6 +170,15 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> </td>
 		</tr>
 		<tr>
+			<td> <a href="https://www.bitchute.com">BitChute</a> </td>
+			<td> ted </td>
+			<td> NA </td>
+			<td> </td>
+			<td> </td>
+			<td> NA </td>
+			<td> </td>
+		</tr>
+		<tr>
 			<td> <a href="https://youtube-nocookie.com/">YouTube-nocookie</a> <sup id="a1"><a href="#fn1">1</a></sup> </td>
 			<td> ytnc </td>
 			<td> NA </td>

@@ -406,6 +406,29 @@ https://github.com/colak/txp-media-shortcode
 	</txp:if_yield>
 </txp:if_yield>
 
+<txp:hide>BandCamp</txp:hide>
+<txp:if_yield name="from" value="bac">
+	<txp:if_yield name="media">
+		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_bandcamp_cookie' duration="+1 year" values="yes" />
+			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_bandcamp_cookie'>
+				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/AudioObject">
+					<iframe style="border: 0; width: 100%; height: 274px;" src="https://bandcamp.com/EmbeddedPlayer/album=<txp:yield name="media" />/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless></iframe>
+				</div>
+			<txp:else />
+				<div class="gdpr">
+					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<txp:if_yield name="url">
+						<p>Hosted by BandCamp on <a rel="external noopener" href="https://<txp:yield name="url" />.bandcamp.com/album?id=<txp:yield name="media" />">audioboom.com/<txp:yield name="media" /></a>.</p>
+					<txp:else />
+						<p>Hosted by <a rel="external noopener" href="https://bandcamp.com">BandCamp</a>.</p>
+					</txp:if_yield>
+					<p><a rel="external noopener" href="https://bandcamp.com/privacy">BandCamp&#8217;s private policy</a>.</p>
+					<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_bandcamp_cookie=yes#m_<txp:yield name="media" />">Listen to it here</a></p>
+				</div>
+			</txp:oui_if_cookie>
+	</txp:if_yield>
+</txp:if_yield>
+
 <txp:hide>Other</txp:hide>
 
 <txp:hide>Google Maps</txp:hide>

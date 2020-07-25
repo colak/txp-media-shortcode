@@ -418,7 +418,7 @@ https://github.com/colak/txp-media-shortcode
 				<div class="gdpr">
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
 					<txp:if_yield name="url">
-							<p>Hosted by BandCamp on <a rel="external noopener" href="https://<txp:yield name="url" />.bandcamp.com/album?id=<txp:yield name="media" />">bandcamp.com/album?id=<txp:yield name="media" /></a>.</p>
+						<p>Hosted by BandCamp on <a rel="external noopener" href="https://<txp:yield name="url" />.bandcamp.com/album?id=<txp:yield name="media" />">bandcamp.com/album?id=<txp:yield name="media" /></a>.</p>
 					<txp:else />
 						<p>Hosted by <a rel="external noopener" href="https://bandcamp.com">BandCamp</a>.</p>
 					</txp:if_yield>

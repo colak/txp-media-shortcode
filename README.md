@@ -29,7 +29,7 @@ Shortcodes are normally slightly lower in execution than raw php, or txp plugins
 
 1. Copy the latest txp snippet from the [GitHub project page](https://github.com/colak/txp-media-shortcode/blob/master/media.tpl), 
 2. Create a new miscellaneous form in your Textpattern administration interface and name it `media`,
-3. Paste the code into the form administration and save.
+3. Paste the code into the form you created, and save.
 4. Copy and paste the provided [css](https://github.com/colak/txp-media-shortcode/blob/master/css.css) in your style sheet and edit it to your liking.
 
 ## Cookies

@@ -236,7 +236,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="#2-embed-from-soundcloud">(2)</a>, <a href="#3-embed-from-soundcloud-using-the-url-attribute">(3)</a> </td>
 		</tr>
 		<tr>
-			<td> <a href="https://bandcamp.com/">BandCamp</a> </td>
+			<td> <a href="https://bandcamp.com/">BandCamp</a> (albums) </td>
 			<td> bac </td>
 			<td> Artist&#8217;s name as it appears in the subdomain</td>
 			<td> </td>

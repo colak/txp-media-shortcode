@@ -54,7 +54,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 
 3. Use the `title` attribute should you wish to have a textile enabled descriptive text in the GDPR container. This text is replaced by the `embed` container once the cookie for the particular provider is accepted.
 
-4. The `url` attribute is only used for services like Soundcloud where the media id does not appear in the url of the page that hosts the media file.
+4. The `url` attribute is only in different ways, explained in the examples.
 
 ## Attributes
 

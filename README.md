@@ -242,7 +242,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> </td>
 			<td> NA </td>
 			<td> NA </td>
-			<td> </td>
+			<td> <a href="#9-embed-from-bandcamp">(9)</a> </td>
 		</tr>
 		<tr>
 			<td colspan="7" style="background-color:#ffc;color:#000;"> <b>Others</b> </td>
@@ -493,7 +493,7 @@ To embed a video from the the Archive simply, use
 
 `<txp::media from="ia" media="PiesAndaluzyjski" title="Luis Bunuel: Un Chien Andalou, 1929" />`
 
-The resultig code befor cookie is accepted
+The resultig code before cookie is accepted
 
 	<div class="gdpr">
 		<p>Luis Bunuel: Un Chien Andalou, 1929</p>
@@ -517,6 +517,37 @@ Resulting code after cookie is accepted
 
 	<div class="embed-container" id="m_PiesAndaluzyjski" itemscope itemtype="http://schema.org/VideoObject">
 		<iframe src="https://archive.org/embed/PiesAndaluzyjski" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+	</div>
+
+
+### 9. Embed from Bandcamp
+
+Bandcamp offers subdomains for their artists and normalised urls do not appear to be supported. The id of the tracks can be found in their embed code but found no way to link to their pages by using those ids. Having this in mind, to embed from Bandcamp use
+
+`<txp::media from="bac" media="600847421" title="Icarus" url="jabbacartel" />`
+
+Resulting code after cookie is accepted:
+
+	<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/AudioObject">
+		<iframe style="border: 0; width: 100%; height: 274px;" src="https://bandcamp.com/EmbeddedPlayer/album=600847421/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless></iframe>
+	</div>
+
+Resultig code before cookie is accepted
+
+	<div class="gdpr">
+		<p>Icarus</p>
+		<p>Hosted by BandCamp on <a rel="external noopener" href="https://jabbacartel.bandcamp.com/album/icarus">jabbacartel.bandcamp.com/album/icarus</a>.</p>
+		<p><a rel="external noopener" href="https://bandcamp.com/privacy">BandCamp&#8217;s private policy</a>.</p>
+		<p class="accept"><a rel="nofollow" href="?My_Site_bandcamp_cookie=yes#m_600847421">Listen to it here</a></p>
+	</div>
+
+If the url attribute is not used, a link to the bandcamp page hosting the album will not be provided and the resultig code will be
+
+	<div class="gdpr">
+		<p>Icarus</p>
+		<p>Hosted by <a rel="external noopener" href="https://bandcamp.com">BandCamp</a>.</p>
+		<p><a rel="external noopener" href="https://bandcamp.com/privacy">BandCamp&#8217;s private policy</a>.</p>
+		<p class="accept"><a rel="nofollow" href="?My_Site_bandcamp_cookie=yes#m_600847421">Listen to it here</a></p>
 	</div>
 
 ## Licence 

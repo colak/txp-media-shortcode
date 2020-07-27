@@ -318,8 +318,13 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 			<txp:else />
 				<div class="gdpr">
-					<txp:if_yield name="img">
-						<txp:images id='<txp:yield name="img" />'><img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+					<txp:if_yield name="0">
+					<txp:else />
+						<txp:if_yield name="img">
+							<txp:images id='<txp:yield name="img" />'><img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+						<txp:else />
+							<img itemscope itemtype="http://schema.org/ImageObject" src="https://play.vidyard.com/<txp:yield="media" />.jpg alt="<txp:yield name="title" />" />
+						</txp:if_yield>
 					</txp:if_yield>
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
 					<p>Hosted by Vidyard on <a rel="external noopener" href="https://video.vidyard.com/watch/<txp:yield name="media" />">video.vidyard.com/watch/<txp:yield name="media" /></a>.</p>

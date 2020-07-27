@@ -105,7 +105,7 @@ https://github.com/colak/txp-media-shortcode
 							<picture itemscope itemtype="http://schema.org/ImageObject">
  								 <source media="(min-width:650px)" srcset="https://img.youtube.com/vi/<txp:yield name="media" />/maxresdefault.jpg">
  								 <source media="(max-width:649px)" srcset="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg">
-								 <img src="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg" alt="<txp:yield name="title" />" width="480" height="360" />
+								 <img src="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg" alt="<txp:if_yield name="title"><txp:yield name="title" /><txp:else />External video still</txp:if_yield>" width="480" height="360" />
 							</picture> 
 						</txp:if_yield>
 					</txp:if_yield>
@@ -155,7 +155,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:if_yield name="img">
 							<txp:images id='<txp:yield name="img" />'><img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
 						<txp:else />
-							<img src="https://s1.dmcdn.net/v/<txp:yield name="media" />/x240" alt="<txp:yield name="title" />" />
+							<img src="https://s1.dmcdn.net/v/<txp:yield name="media" />/x240" alt="<txp:if_yield name="title"><txp:yield name="title" /><txp:else />External video still</txp:if_yield>" />
 						</txp:if_yield>
 					</txp:if_yield>
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
@@ -229,7 +229,7 @@ https://github.com/colak/txp-media-shortcode
 						<picture itemscope itemtype="http://schema.org/ImageObject">
  							 <source media="(min-width:466px)" srcset="https://peertube.video/static/previews/<txp:yield name="media" />.jpg">
  							 <source media="(max-width:465px)" srcset="ttps://peertube.video/static/thumbnails/<txp:yield name="media" />.jpg">
-							 <img src="https://peertube.video/static/previews/<txp:yield name="media" />.jpg" alt="<txp:yield name="title" />" />
+							 <img src="https://peertube.video/static/previews/<txp:yield name="media" />.jpg" alt="<txp:if_yield name="title"><txp:yield name="title" /><txp:else />External video still</txp:if_yield>" />
 						</picture> 
 					</txp:if_yield>
 				</txp:if_yield>
@@ -353,7 +353,7 @@ https://github.com/colak/txp-media-shortcode
 							<picture itemscope itemtype="http://schema.org/ImageObject">
  								 <source media="(min-width:650px)" srcset="https://img.youtube.com/vi/<txp:yield name="media" />/maxresdefault.jpg">
  								 <source media="(min-width:465px)" srcset="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg">
-								 <img src="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg" alt="<txp:yield name="title" />" width="480" height="360" />
+								 <img src="https://img.youtube.com/vi/<txp:yield name="media" />/hqdefault.jpg" alt="<txp:if_yield name="title"><txp:yield name="title" /><txp:else />External video still</txp:if_yield>" width="480" height="360" />
 							</picture> 
 						</txp:if_yield>
 					</txp:if_yield>

@@ -308,6 +308,28 @@ https://github.com/colak/txp-media-shortcode
 	</txp:if_yield>
 </txp:if_yield>
 
+<txp:hide>Vidyard</txp:hide>
+<txp:if_yield name="from" value="vy">
+	<txp:if_yield name="media">
+		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_vidyard_cookie' duration="+1 year" values="yes" />
+			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_vidyard_cookie'>
+				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
+					<iframe src="//play.vidyard.com/<txp:yield name="media" />.html" frameborder="0" allowtransparency="true" allowfullscreen></iframe>
+				</div>
+			<txp:else />
+				<div class="gdpr">
+					<txp:if_yield name="img">
+						<txp:images id='<txp:yield name="img" />'><img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+					</txp:if_yield>
+					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<p>Hosted by Vidyard on <a rel="external noopener" href="https://video.vidyard.com/watch/<txp:yield name="media" />">video.vidyard.com/watch/<txp:yield name="media" /></a>.</p>
+					<p><a rel="external noopener" href="https://www.vidyard.com/privacy/">Vidyard&#8217;s private policy</a>.</p>
+					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_vidyard_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
+				</div>
+			</txp:oui_if_cookie>
+	</txp:if_yield>
+</txp:if_yield>
+
 <txp:hide>YouTube nocookie</txp:hide>
 <txp:if_yield name="from" value="ytnc">
 	<txp:if_yield name="media">

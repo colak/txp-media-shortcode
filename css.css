@@ -12,6 +12,9 @@
   width:100%;
   height:100%;
 }
+.embed-container iframe {
+    border-width: 0px;border:0;border:none;
+}
 .gdpr {
   display:block;
   width:100%;
@@ -59,8 +62,4 @@ video {
   height: 100%   !important;
   clear:both;
   margin: 1em 0;
-}
-
-iframe {
-    border-width: 0px;border:0;border:none;
 }

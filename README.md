@@ -88,7 +88,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td rowspan="2"> local </td>
 			<td> url="v" </td>
 			<td> &check; </td>
-			<td> Loads a posterframe with image id. </td>
+			<td> &check; </td>
 			<td> mp4, ogg, mpeg-4, flac, webm </td>
 			<td> <a href="#6-embed-a-local-video">(6)</a> </td>
 		</tr>

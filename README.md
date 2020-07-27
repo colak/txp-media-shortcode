@@ -188,6 +188,15 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td>  </td>
 		</tr>
 		<tr>
+			<td> <a href="https://www.freespeechtube.org/">Freespeechtube</a> </td>
+			<td> fst </td>
+			<td> NA </td>
+			<td> &check; </td>
+			<td> &check; </td>
+			<td> NA </td>
+			<td> </td>
+		</tr>
+		<tr>
 			<td> <a href="https://www.bitchute.com">BitChute</a> </td>
 			<td> bc </td>
 			<td> NA </td>

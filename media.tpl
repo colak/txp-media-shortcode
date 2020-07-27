@@ -252,8 +252,23 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 			<txp:else />
 				<div class="gdpr">
-					<txp:if_yield name="img">
-						<txp:images id='<txp:yield name="img" />'><img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+					<txp:if_yield name="0">
+					<txp:else />
+						<txp:if_yield name="img">
+							<txp:images id='<txp:yield name="img" />'><img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+						<txp:else />
+							<txp:variable name="id_num"><txp:yield name="media" /></txp:variable>
+							<txp:variable name="remote_file">https://cdn.mcstatic.com/contents/videos_screenshots/<txp:variable name="id_num" trim="/(.*)\d{3}/" replace="${1}000" />/<txp:yield name="media" />/830x467/2.jpg</txp:variable>
+							<txp:php>
+								$remoteFile = parse('<txp:variable name="remote_file" />');
+								$handle = @fopen($remoteFile, 'r');
+								if(!$handle){
+									echo '';
+								}else{
+									echo '<img src="<txp:variable name="remote_file" />" width="830" heigh="467" alt="<txp:if_yield name="title"><txp:yield name="title" /><txp:else />External video still</txp:if_yield>" />';
+								}
+							</txp:php>
+						</txp:if_yield>
 					</txp:if_yield>
 					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
 					<p>Hosted by MetaCafe on <a rel="external noopener" href="https://www.metacafe.com/watch/<txp:yield name="media" />/">metacafe.com/watch/<txp:yield name="media" />/</a>.</p>

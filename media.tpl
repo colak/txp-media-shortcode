@@ -280,6 +280,28 @@ https://github.com/colak/txp-media-shortcode
 	</txp:if_yield>
 </txp:if_yield>
 
+<txp:hide>Freespeechtube</txp:hide>
+<txp:if_yield name="from" value="fat">
+	<txp:if_yield name="media">
+		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_freespeechtube_cookie' duration="+1 year" values="yes" />
+			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_freespeechtube_cookie'>
+				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
+					<iframe src="https://www.freespeechtube.org/embed/<txp:yield name="media" />" style="display:block; margin:0 auto; width:640px; max-width:100%; height:380px; border:1px solid #999;" allowfullscreen></iframe>
+				</div>
+			<txp:else />
+				<div class="gdpr">
+					<txp:if_yield name="img">
+						<txp:images id='<txp:yield name="img" />'><img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+					</txp:if_yield>
+					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<p>Hosted by Freespeechtube on <a rel="external noopener" href="https://freespeechtube.com/<txp:yield name="media" />">freespeechtube.com/<txp:yield name="media" /></a>.</p>
+					<p><a rel="external noopener" href="https://www.freespeechtube.org/privacy/">Freespeechtube&#8217;s private policy</a>.</p>
+					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_freespeechtube_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
+				</div>
+			</txp:oui_if_cookie>
+	</txp:if_yield>
+</txp:if_yield>
+
 <txp:hide>Coub</txp:hide>
 <txp:if_yield name="from" value="cb">
 	<txp:if_yield name="media">

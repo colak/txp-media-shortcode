@@ -60,3 +60,7 @@ video {
   clear:both;
   margin: 1em 0;
 }
+
+iframe {
+    border-width: 0px;border:0;border:none;
+}

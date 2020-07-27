@@ -87,7 +87,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td rowspan="2"> Local</td>
 			<td rowspan="2"> local </td>
 			<td> url="v" </td>
-			<td>  </td>
+			<td> &check; </td>
 			<td> Loads a posterframe with image id. </td>
 			<td> mp4, ogg, mpeg-4, flac, webm </td>
 			<td> <a href="#6-embed-a-local-video">(6)</a> </td>
@@ -103,8 +103,8 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td rowspan="2"> <a href="https://archive.org/">Internet Archive</a> </td>
 			<td rowspan="2"> ia </td>
 			<td> url="v" </td>
-			<td rowspan="2"> </td>
-			<td>  </td>
+			<td rowspan="2"> &check; </td>
+			<td> &check; </td>
 			<td rowspan="2"> NA </td>
 			<td rowspan="2"> <a href="#8-embed-from-the-internet-archive">(8)</a> </td>
 		</tr>
@@ -119,8 +119,8 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="https://www.youtube.com/">YouTube</a> </td>
 			<td> yt </td>
 			<td> NA </td>
-			<td> </td>
-			<td>  </td>
+			<td> &check; </td>
+			<td> &check; </td>
 			<td> 0 </td>
 			<td> <a href="#7-embed-from-youtube">(7)</a> </td>
 		</tr>
@@ -128,8 +128,8 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="https://www.vimeo.com/">Vimeo</a> </td>
 			<td> v </td>
 			<td> NA </td>
-			<td> </td>
-			<td> </td>
+			<td> &check; </td>
+			<td> &check; </td>
 			<td> NA </td>
 			<td> <a href="#1-embed-from-vimeo">(1)</a> </td>
 		</tr>
@@ -137,8 +137,8 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="https://www.dailymotion.com/">DailyMotion</a> </td>
 			<td> dm </td>
 			<td> NA </td>
-			<td> </td>
-			<td> </td>
+			<td> &check; </td>
+			<td> &check; </td>
 			<td> 0 </td>
 			<td> </td>
 		</tr>
@@ -146,8 +146,8 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="https://giphy.com/">Giphy</a> </td>
 			<td> gp </td>
 			<td> Simply handles different types of url paths served by the host. </td>
-			<td> </td>
-			<td> </td>
+			<td> &check; </td>
+			<td> &check; </td>
 			<td> NA </td>
 			<td> <a href="#5-embed-from-giphy">(5)</a> </td>
 		</tr>
@@ -155,8 +155,8 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="https://peertube.video">PeerTube</a> </td>
 			<td> pt </td>
 			<td> NA </td>
-			<td> </td>
-			<td> </td>
+			<td> &check; </td>
+			<td> &check; </td>
 			<td> 0 </td>
 			<td> </td>
 		</tr>
@@ -164,8 +164,8 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="https://ted.com">TED</a> </td>
 			<td> ted </td>
 			<td> NA </td>
-			<td> </td>
-			<td> </td>
+			<td> &check; </td>
+			<td> &check; </td>
 			<td> NA </td>
 			<td> </td>
 		</tr>
@@ -173,8 +173,8 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="https://www.bitchute.com">BitChute</a> </td>
 			<td> bc </td>
 			<td> NA </td>
-			<td> </td>
-			<td> </td>
+			<td> &check; </td>
+			<td> &check; </td>
 			<td> NA </td>
 			<td> </td>
 		</tr>
@@ -182,8 +182,8 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="https://youtube-nocookie.com/">YouTube-nocookie</a> <sup id="a1"><a href="#fn1">1</a></sup> </td>
 			<td> ytnc </td>
 			<td> NA </td>
-			<td> </td>
-			<td> </td>
+			<td> &check; </td>
+			<td> &check; </td>
 			<td> 0 </td>
 			<td> </td>
 		</tr>
@@ -191,8 +191,8 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="https://metacafe.com/">MetaCafe</a> </td>
 			<td> mc </td>
 			<td> NA </td>
-			<td> </td>
-			<td> </td>
+			<td> &check; </td>
+			<td> &check; </td>
 			<td> NA </td>
 			<td> </td>
 		</tr>
@@ -200,8 +200,8 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="https://coub.com/">Coub</a> </td>
 			<td> cb </td>
 			<td> NA </td>
-			<td> </td>
-			<td> </td>
+			<td> &check; </td>
+			<td> &check; </td>
 			<td> NA </td>
 			<td> </td>
 		</tr>
@@ -212,7 +212,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="https://audioboom.com/">AudioBoom</a> </td>
 			<td> ab </td>
 			<td> NA </td>
-			<td> </td>
+			<td> &check; </td>
 			<td> NA </td>
 			<td> NA </td>
 			<td> </td>
@@ -221,7 +221,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="https://www.indiesound.com/">IndieSound</a> </td>
 			<td> is </td>
 			<td> NA </td>
-			<td> </td>
+			<td> &check; </td>
 			<td> NA </td>
 			<td> NA </td>
 			<td> </td>
@@ -230,7 +230,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="https://soundcloud.com/">SoundCloud</a> </td>
 			<td> sc </td>
 			<td> url in SoundCloud </td>
-			<td> </td>
+			<td> &check; </td>
 			<td> NA </td>
 			<td> NA </td>
 			<td> <a href="#2-embed-from-soundcloud">(2)</a>, <a href="#3-embed-from-soundcloud-using-the-url-attribute">(3)</a> </td>
@@ -239,7 +239,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="https://bandcamp.com/">BandCamp</a> (albums) </td>
 			<td> bac </td>
 			<td> Artist&#8217;s name as it appears in the subdomain</td>
-			<td> </td>
+			<td> &check; </td>
 			<td> NA </td>
 			<td> NA </td>
 			<td> <a href="#9-embed-from-bandcamp">(9)</a> </td>
@@ -251,8 +251,8 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="https://www.google.com/mymaps">Google Maps</a> <sup id="a2"><a href="#fn2">2</a></sup> </td>
 			<td> gm </td>
 			<td> NA </td>
-			<td> </td>
-			<td> </td>
+			<td> &check; </td>
+			<td> &check; </td>
 			<td> NA </td>
 			<td> </td>
 		</tr>
@@ -260,8 +260,8 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="https://www.datawrapper.de">Datawrapper</a>  </td>
 			<td> dw </td>
 			<td> NA </td>
-			<td> </td>
-			<td> </td>
+			<td> &check; </td>
+			<td> &check; </td>
 			<td> NA </td>
 			<td> </td>
 		</tr>

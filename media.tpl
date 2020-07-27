@@ -96,7 +96,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_youtube_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_youtube_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
+				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
 					<iframe src="https://www.youtube.com/embed/<txp:yield name="media" />" frameborder="0" allowfullscreen></iframe>
 				</div>
 			<txp:else />
@@ -127,7 +127,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_vimeo_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_vimeo_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
+				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
 					<iframe src="https://player.vimeo.com/video/<txp:yield name="media" />?title=0&amp;byline=0&amp;portrait=0" allowfullscreen></iframe>
 				</div>
 			<txp:else />
@@ -149,7 +149,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_dailymotion_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_dailymotion_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
+				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
 					<iframe frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/<txp:yield name="media" />" allowfullscreen></iframe>
 				</div>
 			<txp:else />
@@ -176,7 +176,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_bitchute_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_bitchute_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
+				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
 					<iframe scrolling="no" frameborder="0" style="border: none;" src="https://www.bitchute.com/embed/<txp:yield name="media" />/" allowfullscreen></iframe>
 				</div>
 			<txp:else />
@@ -198,7 +198,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_giphy_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_giphy_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/<txp:if_yield name="url">VideoObject<txp:else />ImageObject</txp:if_yield>">"
+				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/<txp:if_yield name="url">VideoObject<txp:else />ImageObject</txp:if_yield>">"
 					<iframe allowfullscreen="" frameBorder="0" height="100%" src="https://giphy.com/embed/<txp:yield name="media" />" style="left:0;position:absolute;top:0" width="100%"></iframe>
 				</div>
 			<txp:else />
@@ -220,7 +220,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_peertube_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_peertube_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
+				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
 					<iframe width="560" height="315" sandbox="allow-same-origin allow-scripts" src="https://peertube.video/videos/embed/<txp:yield name="media" />" frameborder="0" allowfullscreen></iframe>
 				</div>
 			<txp:else />
@@ -251,7 +251,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_metacafe_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_metacafe_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
+				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
 					<iframe src="https://www.metacafe.com/embed/<txp:yield name="media" />/" frameborder="0" allowfullscreen></iframe>
 				</div>
 			<txp:else />
@@ -273,7 +273,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_Coub_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_Coub_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
+				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
 					<iframe src="//coub.com/embed/<txp:yield name="media" />?muted=false&amp;autostart=false&amp;originalSize=false&amp;startWithHD=false" allowfullscreen frameborder="0" allow="autoplay"></iframe>
 				</div>
 			<txp:else />
@@ -295,7 +295,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_ted_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_ted_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
+				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
 					<iframe src="https://embed.ted.com/talks/<txp:yield name="media" />" frameborder="0" scrolling="no" allowfullscreen></iframe>
 				</div>
 			<txp:else />
@@ -317,7 +317,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_youtubenocookie_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_youtube_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />"  itemscope itemtype="http://schema.org/VideoObject">
+				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
 					<iframe src="https://www.youtube-nocookie.com/embed/<txp:yield name="media" />?rel=0" frameborder="0" allowfullscreen></iframe>
 				</div>
 			<txp:else />
@@ -397,7 +397,7 @@ https://github.com/colak/txp-media-shortcode
 					<txp:if_yield name="url">
 						<p>Hosted by SoundCloud on <a rel="external noopener" href="<txp:yield name="url" />"><txp:yield name="url" /></a>.</p>
 					<txp:else />
-						<p>Hosted by  <a rel="external noopener" href="https://soundcloud.com/">SoundCloud</a>.</p>
+						<p>Hosted by <a rel="external noopener" href="https://soundcloud.com/">SoundCloud</a>.</p>
 					</txp:if_yield>
 					<p><a rel="external noopener" href="https://soundcloud.com/pages/privacy">SoundCloud&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_soundcloud_cookie=yes#m_<txp:yield name="media" />">Listen to it here</a></p>

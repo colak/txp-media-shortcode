@@ -351,6 +351,28 @@ https://github.com/colak/txp-media-shortcode
 	</txp:if_yield>
 </txp:if_yield>
 
+<txp:hide>Vlare</txp:hide>
+<txp:if_yield name="from" value="vl">
+	<txp:if_yield name="media">
+		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_vlare_cookie' duration="+1 year" values="yes" />
+			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_vlare_cookie'>
+				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
+					<div class="embed_container"><iframe width="640" height="360" src="https://vlare.tv/embed/<txp:yield name="media" />/false/true/0" allowfullscreen scrolling="no"></iframe></div>
+				</div>
+			<txp:else />
+				<div class="gdpr">
+					<txp:if_yield name="img">
+						<txp:images id='<txp:yield name="img" />'><img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" />" /></txp:images>
+					</txp:if_yield>
+					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<p>Hosted by Vlare on <a rel="external noopener" href="https://vlare.tv/v/<txp:yield name="media" />">vlare.tv/v/<txp:yield name="media" /></a>.</p>
+					<p><a rel="external noopener" href="https://vlare.tv/privacy">Vlare&#8217;s private policy</a>.</p>
+					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_vlare_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
+				</div>
+			</txp:oui_if_cookie>
+	</txp:if_yield>
+</txp:if_yield>
+
 <txp:hide>YouTube nocookie</txp:hide>
 <txp:if_yield name="from" value="ytnc">
 	<txp:if_yield name="media">

@@ -170,6 +170,15 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> </td>
 		</tr>
 		<tr>
+			<td> <a href="https://www.vidyard.com/">Vidyard</a> </td>
+			<td> vy </td>
+			<td> NA </td>
+			<td> &check; </td>
+			<td> &check; </td>
+			<td> 0 </td>
+			<td>  </td>
+		</tr>
+		<tr>
 			<td> <a href="https://www.bitchute.com">BitChute</a> </td>
 			<td> bc </td>
 			<td> NA </td>

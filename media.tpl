@@ -237,7 +237,7 @@ https://github.com/colak/txp-media-shortcode
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_giphy_cookie'>
 				<txp:if_yield name="url" value="">
 					<txp:if_logged_in>
-						<div class="embed-container">
+						<div class="gdpr">
 							<p class="error"><b>url</b> is a required attribute. Use url="g" for gif embeds and url="v" for video embeds</p>
 						</div>
 					</txp:if_logged_in>

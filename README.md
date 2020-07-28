@@ -281,6 +281,15 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> <a href="#9-embed-from-bandcamp">(9)</a> </td>
 		</tr>
 		<tr>
+			<td> <a href="https://www.mixcloud.com/">MixCloud</a> </td>
+			<td> mix </td>
+			<td> Artist&#8217;s name as it appears in the direcory</td>
+			<td> &check; </td>
+			<td> NA </td>
+			<td> NA </td>
+			<td> </td>
+		</tr>
+		<tr>
 			<td colspan="7" style="background-color:#ffc;color:#000;"> <b>Others</b> </td>
 		</tr>
 		<tr>

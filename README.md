@@ -58,7 +58,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 
 ## Errors
 
-You may see some errors and warnings after posting your shortcode. These can appear before or after the cookies are accepted and they are only visible to logged-in users. They were added as prompts to promote the proper usage of the attributes. 
+You may see some errors and warnings after posting your shortcodes. These can appear before or after the cookies are accepted and they are only visible to logged-in users. They were added as prompts to promote the proper usage of the attributes. 
 
 ## Attributes
 

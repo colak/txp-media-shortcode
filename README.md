@@ -143,13 +143,16 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> </td>
 		</tr>
 		<tr>
-			<td> <a href="https://giphy.com/">Giphy</a> </td>
-			<td> gp </td>
-			<td> Simply handles different types of url paths served by the host. </td>
-			<td> &check; </td>
-			<td> &check; </td>
-			<td> NA </td>
-			<td> <a href="#5-embed-from-giphy">(5)</a> </td>
+			<td rowspan="2"> <a href="https://giphy.com/">Giphy</a> </td>
+			<td rowspan="2"> gp </td>
+			<td> url="g" </td>
+			<td rowspan="2"> &check; </td>
+			<td rowspan="2"> &check; </td>
+			<td rowspan="2"> NA </td>
+			<td rowspan="2"> <a href="#5-embed-from-giphy">(5)</a> </td>
+		</tr>
+		<tr>
+			<td> url="v" </td>
 		</tr>
 		<tr>
 			<td> <a href="https://peertube.video">PeerTube</a> </td>
@@ -409,7 +412,7 @@ Giphy offers two types of urls based on the media type, gif and video.
 
 To embed a gif from Giphy use
 
-`<txp::media from="gp" media="QZyYmcnN7uYgx6uGyL" title="We want justice" />`
+`<txp::media from="gp" media="QZyYmcnN7uYgx6uGyL" title="We want justice" url="g" />`
 
 Resulting code before cookie is accepted
 
@@ -428,7 +431,7 @@ Resulting code after cookie is accepted
 
 To embed a video from Giphy use
 
-`<txp::media from="gp" media="YOMRpF8MSxjMqlPO6h" title="Tear Gas" url />`
+`<txp::media from="gp" media="YOMRpF8MSxjMqlPO6h" title="Tear Gas" url="v" />`
 
 Resulting code before cookie is accepted
 

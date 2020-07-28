@@ -238,7 +238,7 @@ https://github.com/colak/txp-media-shortcode
 				<txp:if_yield name="url" value="">
 					<txp:if_logged_in>
 						<div class="gdpr">
-							<p class="error"><b>url</b> is a required attribute. Use url="g" for gif embeds and url="v" for video embeds</p>
+							<p class="error">Error: <b>url</b> is a required attribute. Use url="g" for gif embeds and url="v" for video embeds</p>
 						</div>
 					</txp:if_logged_in>
 				</txp:if_yield>

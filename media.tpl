@@ -320,7 +320,7 @@ https://github.com/colak/txp-media-shortcode
 </txp:if_yield>
 
 <txp:hide>Freespeechtube</txp:hide>
-<txp:if_yield name="from" value="fat">
+<txp:if_yield name="from" value="fst">
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_freespeechtube_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_freespeechtube_cookie'>

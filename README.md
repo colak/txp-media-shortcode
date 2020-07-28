@@ -54,7 +54,11 @@ The above is but only one of the steps needed for full adherence to the EU law w
 
 3. Use the `title` attribute should you wish to have a textile enabled descriptive text in the GDPR container. This text is replaced by the `embed` container once the cookie for the particular provider is accepted.
 
-4. The `url` attribute is only in different ways, explained in the examples.
+4. The `url` attribute is used in different ways, explained in the examples.
+
+## Errors
+
+You may see some errors and warnings after posting your shortcode. These can appear before or after the cookies are accepted and they are only visible to logged-in users. They were added as prompts to promote for proper usage of the attributes. 
 
 ## Attributes
 
@@ -626,12 +630,12 @@ Resultig code before cookie is accepted
 
 	<div class="gdpr">
 		<p>Midnight silhouettes</p>
-		<p class="error">Error: <b>url</b> is a required attribute.</p>
+		<p class="error">Error: <b>url</b> is a required attribute.</p> <!-- only visible to logged-in users -->
 	</div>
 
 Resultig code after cookie is accepted
 
-	<div class="embed_container">
+	<div class="embed_container"> <!-- only visible to logged-in users -->
 		<p class="error">Error: <b>url</b> is a required attribute.</p>
 	</div>
 

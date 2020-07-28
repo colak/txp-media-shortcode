@@ -287,7 +287,7 @@ The above is but only one of the steps needed for full adherence to the EU law w
 			<td> &check; </td>
 			<td> NA </td>
 			<td> NA </td>
-			<td> </td>
+			<td> <a href="#10-embed-from-mixcloud">(10)</a> </td>
 		</tr>
 		<tr>
 			<td colspan="7" style="background-color:#ffc;color:#000;"> <b>Others</b> </td>
@@ -593,6 +593,51 @@ If the url attribute is not used, a link to the bandcamp page hosting the album 
 		<p>Hosted by <a rel="external noopener" href="https://bandcamp.com">BandCamp</a>.</p>
 		<p><a rel="external noopener" href="https://bandcamp.com/privacy">BandCamp&#8217;s private policy</a>.</p>
 		<p class="accept"><a rel="nofollow" href="?My_Site_bandcamp_cookie=yes#m_600847421">Listen to it here</a></p>
+	</div>
+
+### 10. Embed from Mixcloud
+
+Mixcloud offers subdirectories for their artists and normalised urls do not appear to be supported. The id of the tracks can be found in their embed code but found no way to link to their pages by using those ids. Also the artist's name is a required field and should be used under the `url` attribute. Having this in mind, to embed from Mixcloud use
+
+`<txp::media from="mix" media="midnight-silhouettes-7-5-20" title="Midnight silhouettes" url="eyeam4real" />`
+
+Resulting code after cookie is accepted:
+
+	<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/AudioObject">
+		<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Feyeam4real%2Fmidnight-silhouettes-7-5-20%2F" frameborder="0" ></iframe>
+	</div>
+
+Resultig code before cookie is accepted
+
+	<div class="gdpr">
+		<p>Midnight silhouettes</p>
+		<p>Hosted by Mixcloud on <a rel="external noopener" href="https://www.mixcloud.com/eyeam4real/midnight-silhouettes-7-5-20/">mixcloud.com/eyeam4real/midnight-silhouettes-7-5-20/</a>.</p>
+		<p><a rel="external noopener" href="https://bandcamp.com/privacy">BandCamp&#8217;s private policy</a>.</p>
+		<p class="accept"><a rel="nofollow" href="?My_Site_bandcamp_cookie=yes#m_600847421">Listen to it here</a></p>
+	</div>
+
+The url attribute is required
+
+	<div class="gdpr">
+		<p>Icarus</p>
+		<p>Hosted by <a rel="external noopener" href="https://www.mixcloud.com/">Mixcloud</a>.</p>
+		<p><a rel="external noopener" href="https://www.mixcloud.com/privacy/">Mixcloud&#8217;s private policy</a>.</p>
+		<p class="accept"><a rel="nofollow" href="?My_Site_mixcloud_cookie=yes#m_midnight-silhouettes-7-5-20">Listen to it here</a></p>
+	</div>
+
+If the url attribute is not used, an error will be presented
+
+Resultig code before cookie is accepted
+
+	<div class="gdpr">
+		<p>Midnight silhouettes</p>
+		<p class="error">Error: <b>url</b> is a required attribute.</p>
+	</div>
+
+Resultig code after cookie is accepted
+
+	<div class="embed_container">
+		<p class="error">Error: <b>url</b> is a required attribute.</p>
 	</div>
 
 ## Licence 

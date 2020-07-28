@@ -235,9 +235,23 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_giphy_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_giphy_cookie'>
-				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/<txp:if_yield name="url">VideoObject<txp:else />ImageObject</txp:if_yield>">"
-					<iframe allowfullscreen="" height="100%" src="https://giphy.com/embed/<txp:yield name="media" />" style="left:0;position:absolute;top:0" width="100%"></iframe>
-				</div>
+				<txp:if_yield name="url" value="">
+					<txp:if_logged_in>
+						<div class="embed-container">
+							<p class="error"><b>url</b> is a required attribute. Use url="g" for gif embeds and url="v" for video embeds</p>
+						</div>
+					</txp:if_logged_in>
+				</txp:if_yield>
+				<txp:if_yield name="url" value="g">
+					<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/ImageObject">
+						<iframe allowfullscreen="" height="100%" src="https://giphy.com/embed/<txp:yield name="media" />" style="left:0;position:absolute;top:0" width="100%"></iframe>
+					</div>
+				</txp:if_yield>
+				<txp:if_yield name="url" value="v">
+					<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
+						<iframe allowfullscreen="" height="100%" src="https://giphy.com/embed/<txp:yield name="media" />" style="left:0;position:absolute;top:0" width="100%"></iframe>
+					</div>
+				</txp:if_yield>
 			<txp:else />
 				<div class="gdpr">
 					<txp:if_yield name="img">
@@ -253,7 +267,13 @@ https://github.com/colak/txp-media-shortcode
 							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
-					<p>Hosted by Giphy on <a rel="external noopener" href="https://giphy.com/<txp:if_yield name="url">videos<txp:else />gifs</txp:if_yield>/<txp:yield name="media" />">giphy.com/<txp:if_yield name="url">videos<txp:else />gifs</txp:if_yield>/<txp:yield name="media" /></a>.</p>
+					<txp:if_yield name="url" value="v">
+						<p>Hosted by Giphy on <a rel="external noopener" href="https://giphy.com/videos/<txp:yield name="media" />">giphy.com/videos/<txp:yield name="media" /></a>.</p>
+					</txp:if_yield>
+					<txp:if_yield name="url" value="g">
+						<p>Hosted by Giphy on <a rel="external noopener" href="https://giphy.com/gifs/<txp:yield name="media" />">giphy.com/gifs/<txp:yield name="media" /></a>.</p>
+					</txp:if_yield>
+					<txp:if_yield name="url" value=""><txp:if_logged_in><p class="error">Error: <b>url</b> is a recommended attribute.use url="g"for gif embeds and url="v" for video embeds</p></txp:if_logged_in>
 					<p><a rel="external noopener" href="https://support.giphy.com/hc/en-us/articles/360032872931-GIPHY-Privacy-Policy">Giphy&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_giphy_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>

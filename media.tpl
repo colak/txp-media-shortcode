@@ -581,7 +581,7 @@ https://github.com/colak/txp-media-shortcode
 					<div class="gdpr">
 						<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
 						<txp:if_yield name="url">
-							<p>Hosted by Mixcloud on <a rel="external noopener" href="https://www.mixcloud.com/<txp:yield name="url" />/txp:yield name="media" />/</a>.</p>
+							<p>Hosted by Mixcloud on <a rel="external noopener" href="https://www.mixcloud.com/<txp:yield name="url" />/txp:yield name="media" />mixcloud.com/<txp:yield name="url" />/txp:yield name="media" />/</a>.</p>
 						<txp:else />
 							<p class="error">Error: <b>url</b> is a required attribute.</p>
 						</txp:if_yield>

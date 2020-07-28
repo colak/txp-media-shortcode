@@ -15,6 +15,11 @@
 .embed-container iframe {
     border-width: 0px;border:0;border:none;
 }
+.embed-container p.error {
+  background-color:#ffc;
+  color: #ba0000;
+  padding:.5em;
+}
 .gdpr {
   display:block;
   width:100%;
@@ -49,6 +54,11 @@
   -moz-border-radius:8px;
   -webkit-border-radius:8px;
   border-radius:8px;
+}
+.gdpr p.error {
+  background-color:#fff;
+  color: #ba0000;
+  padding:.5em;
 }
 audio {
   filter: sepia(50%) saturate(100%) grayscale(1) contrast(80%) invert(80%);

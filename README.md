@@ -612,20 +612,12 @@ Resultig code before cookie is accepted
 	<div class="gdpr">
 		<p>Midnight silhouettes</p>
 		<p>Hosted by Mixcloud on <a rel="external noopener" href="https://www.mixcloud.com/eyeam4real/midnight-silhouettes-7-5-20/">mixcloud.com/eyeam4real/midnight-silhouettes-7-5-20/</a>.</p>
-		<p><a rel="external noopener" href="https://bandcamp.com/privacy">BandCamp&#8217;s private policy</a>.</p>
-		<p class="accept"><a rel="nofollow" href="?My_Site_bandcamp_cookie=yes#m_600847421">Listen to it here</a></p>
+		<p><a rel="external noopener" href="https://mixcloud.com/privacy">Mixcloud&#8217;s private policy</a>.</p>
+		<p class="accept"><a rel="nofollow" href="?My_Site_mixcloud_cookie=yes#m_idnight-silhouettes-7-5-20">Listen to it here</a></p>
 	</div>
 
-The url attribute is required
 
-	<div class="gdpr">
-		<p>Icarus</p>
-		<p>Hosted by <a rel="external noopener" href="https://www.mixcloud.com/">Mixcloud</a>.</p>
-		<p><a rel="external noopener" href="https://www.mixcloud.com/privacy/">Mixcloud&#8217;s private policy</a>.</p>
-		<p class="accept"><a rel="nofollow" href="?My_Site_mixcloud_cookie=yes#m_midnight-silhouettes-7-5-20">Listen to it here</a></p>
-	</div>
-
-If the url attribute is not used, an error will be presented
+If the required `url` attribute is not used, an error will be presented
 
 Resultig code before cookie is accepted
 

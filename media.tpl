@@ -79,7 +79,13 @@ https://github.com/colak/txp-media-shortcode
 							<img itemprop="image" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
 						</txp:images>
 					</txp:if_yield>
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<txp:if_yield name="title">
+						<txp:yield name="title" escape="textile" />
+					<txp:else />
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
 					<p>Hosted by the Internet Archive on <a rel="external noopener" href="https://archive.org/details/<txp:yield name="media" />">archive.org/details/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://archive.org/about/terms.php">Internet Archive&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_iarchive_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
@@ -111,7 +117,13 @@ https://github.com/colak/txp-media-shortcode
 							<img src="https://i3.ytimg.com/vi/<txp:yield name="media" />/hqdefault.jpg" srcset="https://i3.ytimg.com/vi/<txp:yield name="media" />/hqdefault.jpg 480w, https://i3.ytimg.com/vi/<txp:yield name="media" />/maxresdefault.jpg 1280w" alt="<txp:if_yield name="title"><txp:yield name="title" /><txp:else />External video still</txp:if_yield>" itemscope itemtype="http://schema.org/ImageObject" />
 						</txp:if_yield>
 					</txp:if_yield>
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<txp:if_yield name="title">
+						<txp:yield name="title" escape="textile" />
+					<txp:else />
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
 					<p>Hosted by YouTube on <a rel="external noopener" href="https://youtu.be/<txp:yield name="media" />">youtu.be/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://youtube.com/privacy">YouTube&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_youtube_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
@@ -136,7 +148,13 @@ https://github.com/colak/txp-media-shortcode
 							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
 						</txp:images>
 					</txp:if_yield>
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<txp:if_yield name="title">
+						<txp:yield name="title" escape="textile" />
+					<txp:else />
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
 					<p>Hosted by Vimeo on <a rel="external noopener" href="https://vimeo.com/<txp:yield name="media" />">vimeo.com/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://vimeo.com/privacy">Vimeo&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_vimeo_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
@@ -166,7 +184,13 @@ https://github.com/colak/txp-media-shortcode
 							<img src="https://s1.dmcdn.net/v/<txp:yield name="media" />/x240" alt="<txp:if_yield name="title"><txp:yield name="title" /><txp:else />External video still</txp:if_yield>" />
 						</txp:if_yield>
 					</txp:if_yield>
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<txp:if_yield name="title">
+						<txp:yield name="title" escape="textile" />
+					<txp:else />
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
 					<p>Hosted by DailyMotion on <a rel="external noopener" href="https://dailymotion.com/video/<txp:yield name="media" />">dailymotion.com/video/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://www.dailymotion.com/legal/privacy">DailyMotion&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_dailymotion_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
@@ -191,7 +215,13 @@ https://github.com/colak/txp-media-shortcode
 							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
 						</txp:images>
 					</txp:if_yield>
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<txp:if_yield name="title">
+						<txp:yield name="title" escape="textile" />
+					<txp:else />
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
 					<p>Hosted by BitChute on <a rel="external noopener" href="https://www.bitchute.com/video/<txp:yield name="media" />/">bitchute.com/video/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://support.bitchute.com/policy/privacy/">BitChute&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_bitchute_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
@@ -216,7 +246,13 @@ https://github.com/colak/txp-media-shortcode
 							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
 						</txp:images>
 					</txp:if_yield>
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<txp:if_yield name="title">
+						<txp:yield name="title" escape="textile" />
+					<txp:else />
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
 					<p>Hosted by Giphy on <a rel="external noopener" href="https://giphy.com/<txp:if_yield name="url">videos<txp:else />gifs</txp:if_yield>/<txp:yield name="media" />">giphy.com/<txp:if_yield name="url">videos<txp:else />gifs</txp:if_yield>/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://support.giphy.com/hc/en-us/articles/360032872931-GIPHY-Privacy-Policy">Giphy&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_giphy_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
@@ -246,7 +282,13 @@ https://github.com/colak/txp-media-shortcode
 						<img src="https://peertube.video/static/thumbnails/<txp:yield name="media" />.jpg" srcset="https://peertube.video/static/thumbnails/<txp:yield name="media" />.jpg 223w, https://peertube.video/static/previews/<txp:yield name="media" />.jpg 850w" alt="<txp:if_yield name="title"><txp:yield name="title" /><txp:else />External video still</txp:if_yield>" itemscope itemtype="http://schema.org/ImageObject" />
 					</txp:if_yield>
 				</txp:if_yield>
-				<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+				<txp:if_yield name="title">
+					<txp:yield name="title" escape="textile" />
+				<txp:else />
+					<txp:if_logged_in>
+						<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+					</txp:if_logged_in>
+				</txp:if_yield>
 				<p>Hosted by PeerTube on <a rel="external noopener" href="https://peertube.video/videos/watch/<txp:yield name="media" />">peertube.video/videos/watch/<txp:yield name="media" /></a>.</p>
 				<p><a rel="external noopener" href="https://peertube.video/about/instance">PeerTube&#8217;s private policy</a>.</p>
 				<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_peertube_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
@@ -287,7 +329,13 @@ https://github.com/colak/txp-media-shortcode
 							</txp:php>
 						</txp:if_yield>
 					</txp:if_yield>
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<txp:if_yield name="title">
+						<txp:yield name="title" escape="textile" />
+					<txp:else />
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
 					<p>Hosted by MetaCafe on <a rel="external noopener" href="https://www.metacafe.com/watch/<txp:yield name="media" />/">metacafe.com/watch/<txp:yield name="media" />/</a>.</p>
 					<p><a rel="external noopener" href="https://www.metacafe.com/privacy/policy/">MetaCafe&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_metacafe_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
@@ -310,7 +358,13 @@ https://github.com/colak/txp-media-shortcode
 					<txp:variable name="alt" value='<txp:image_info type="alt" />' />
 						<txp:images id='<txp:yield name="img" />'><img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" /></txp:images>
 					</txp:if_yield>
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<txp:if_yield name="title">
+						<txp:yield name="title" escape="textile" />
+					<txp:else />
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
 					<p>Hosted by Playtube on <a rel="external noopener" href="https://playtube.com/<txp:yield name="media" />">playtube.com/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://playtube.pk/privacy">Playtube&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_playtube_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
@@ -335,7 +389,13 @@ https://github.com/colak/txp-media-shortcode
 							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
 						</txp:images>
 					</txp:if_yield>
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<txp:if_yield name="title">
+						<txp:yield name="title" escape="textile" />
+					<txp:else />
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
 					<p>Hosted by Freespeechtube on <a rel="external noopener" href="https://freespeechtube.com/<txp:yield name="media" />">freespeechtube.com/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://www.freespeechtube.org/privacy/">Freespeechtube&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_freespeechtube_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
@@ -360,7 +420,13 @@ https://github.com/colak/txp-media-shortcode
 							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
 						</txp:images>
 					</txp:if_yield>
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<txp:if_yield name="title">
+						<txp:yield name="title" escape="textile" />
+					<txp:else />
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
 					<p>Hosted by Coub on <a rel="external noopener" href="https://coub.com/view/<txp:yield name="media" />/">coub.com/view/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://coub.com/privacy">Coub&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_Coub_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
@@ -385,7 +451,13 @@ https://github.com/colak/txp-media-shortcode
 							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
 						</txp:images>
 					</txp:if_yield>
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<txp:if_yield name="title">
+						<txp:yield name="title" escape="textile" />
+					<txp:else />
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
 					<p>Hosted by TED on <a rel="external noopener" href="https://www.ted.com/talks/<txp:yield name="media" />">ted.com/talks/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://www.ted.com/about/our-organization/our-policies-terms/privacy-policy">TED&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_ted_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
@@ -412,10 +484,16 @@ https://github.com/colak/txp-media-shortcode
 								<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
 							</txp:images>
 						<txp:else />
-							<img itemscope itemtype="http://schema.org/ImageObject" src="https://play.vidyard.com/<txp:yield="media" />.jpg alt="<txp:if_yield name="title" /><txp:yield name="title" /><txp:else />Video still</txp:if_yield>" />
+							<img itemscope itemtype="http://schema.org/ImageObject" src="https://play.vidyard.com/<txp:yield="media" />.jpg alt="<txp:if_yield name="title"><txp:yield name="title" /><txp:else />Video still</txp:if_yield>" />
 						</txp:if_yield>
 					</txp:if_yield>
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<txp:if_yield name="title">
+						<txp:yield name="title" escape="textile" />
+					<txp:else />
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
 					<p>Hosted by Vidyard on <a rel="external noopener" href="https://video.vidyard.com/watch/<txp:yield name="media" />">video.vidyard.com/watch/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://www.vidyard.com/privacy/">Vidyard&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_vidyard_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
@@ -440,7 +518,13 @@ https://github.com/colak/txp-media-shortcode
 							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
 						</txp:images>
 					</txp:if_yield>
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<txp:if_yield name="title">
+						<txp:yield name="title" escape="textile" />
+					<txp:else />
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
 					<p>Hosted by Vlare on <a rel="external noopener" href="https://vlare.tv/v/<txp:yield name="media" />">vlare.tv/v/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://vlare.tv/privacy">Vlare&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_vlare_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
@@ -470,7 +554,13 @@ https://github.com/colak/txp-media-shortcode
 							<img src="https://i3.ytimg.com/vi/<txp:yield name="media" />/hqdefault.jpg" srcset="https://i3.ytimg.com/vi/<txp:yield name="media" />/hqdefault.jpg 480w, https://i3.ytimg.com/vi/<txp:yield name="media" />/maxresdefault.jpg 1280w" alt="<txp:if_yield name="title"><txp:yield name="title" /><txp:else />External video still</txp:if_yield>" itemscope itemtype="http://schema.org/ImageObject" />
 						</txp:if_yield>
 					</txp:if_yield>
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<txp:if_yield name="title">
+						<txp:yield name="title" escape="textile" />
+					<txp:else />
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
 					<p>Served by YouTube-nocookie but originally resides on <a rel="external noopener" href="https://youtube.com/watch?v=<txp:yield name="media" />">youtube.com/watch?v=<txp:yield name="media" /></a>.</p>
 					<p>We could not find YouTube-nocookie&#8217;s private policy.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_youtubenocookie_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
@@ -491,7 +581,13 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 			<txp:else />
 				<div class="gdpr">
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<txp:if_yield name="title">
+						<txp:yield name="title" escape="textile" />
+					<txp:else />
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
 					<p>Hosted by AudioBoom on <a rel="external noopener" href="https://audioboom.com/posts/<txp:yield name="media" />">audioboom.com/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://audioboom.com/about/privacy">AudioBoom&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_audioboom_cookie=yes#m_<txp:yield name="media" />">Listen to it here</a></p>
@@ -510,7 +606,13 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 			<txp:else />
 				<div class="gdpr">
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<txp:if_yield name="title">
+						<txp:yield name="title" escape="textile" />
+					<txp:else />
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
 					<p>Hosted by IndieSound on <a rel="external noopener" href="https://www.indiesound.com/track/<txp:yield name="media" />">indiesound.com/track/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://www.indiesound.com/blog/terms-conditions">IndieSound&#8217;s terms &amp; conditions</a>.</p>
 					<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_indiesound_cookie=yes#m_<txp:yield name="media" />">Listen to it here</a></p>
@@ -529,7 +631,13 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 			<txp:else />
 				<div class="gdpr">
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<txp:if_yield name="title">
+						<txp:yield name="title" escape="textile" />
+					<txp:else />
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
 					<txp:if_yield name="url">
 						<p>Hosted by SoundCloud on <a rel="external noopener" href="<txp:yield name="url" />"><txp:yield name="url" /></a>.</p>
 					<txp:else />
@@ -552,7 +660,13 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 			<txp:else />
 				<div class="gdpr">
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<txp:if_yield name="title">
+						<txp:yield name="title" escape="textile" />
+					<txp:else />
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
 					<txp:if_yield name="url">
 						<p>Hosted by BandCamp on <a rel="external noopener" href="https://<txp:yield name="url" />.bandcamp.com/album?id=<txp:yield name="media" />">bandcamp.com/album?id=<txp:yield name="media" /></a>.</p>
 					<txp:else />
@@ -571,22 +685,27 @@ https://github.com/colak/txp-media-shortcode
 				<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_mixcloud_cookie'>
 					<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/AudioObject">
 						<txp:if_yield name="url">
-							<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2F<txp:yield name="url" />%2F<txp:yield name="media" />%2F" frameborder="0" ></iframe>
+							<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;light=1&amp;feed=%2F<txp:yield name="url" />%2F<txp:yield name="media" />%2F" frameborder="0" ></iframe>
 						<txp:else />
-							<p class="error">Error: <b>url</b> is a required attribute.</p>
+							<txp:if_logged_in><p class="error">Error: <b>url</b> is a required attribute.</p></txp:if_logged_in>
 						</txp:if_yield>
 					</div>
 				<txp:else />
 					<div class="gdpr">
-						<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+						<txp:if_yield name="title">
+						<txp:yield name="title" escape="textile" />
+					<txp:else />
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
 						<txp:if_yield name="url">
-							<p>Hosted by Mixcloud on <a rel="external noopener" href="https://www.mixcloud.com/<txp:yield name="url" />/<txp:yield name="media" />">mixcloud.com/<txp:yield name="url" />/<txp:yield name="media" />/</a>.</p>
+							<p>Hosted by Mixcloud on <a rel="external noopener" href="https://www.mixcloud.com/<txp:yield name="url" />/<txp:yield name="media" />/">mixcloud.com/<txp:yield name="url" />/<txp:yield name="media" />/</a>.</p>
 							<p><a rel="external noopener" href="https://www.mixcloud.com/privacy/">Mixcloud&#8217;s private policy</a>.</p>
 							<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_mixcloud_cookie=yes#m_<txp:yield name="media" />">Listen to it here</a></p>
 						<txp:else />
-							<p class="error">Error: <b>url</b> is a required attribute.</p>
-						</txp:if_yield>
-						
+							<txp:if_logged_in><p class="error">Error: <b>url</b> is a required attribute.</p></txp:if_logged_in>
+						</txp:if_yield>						
 					</div>
 				</txp:oui_if_cookie>
 	</txp:if_yield>
@@ -610,7 +729,13 @@ https://github.com/colak/txp-media-shortcode
 							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt" value="">Map<txp:else /><txp:variable name="alt" /></txp:if_variable>" />
 						</txp:images>
 					</txp:if_yield>
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<txp:if_yield name="title">
+						<txp:yield name="title" escape="textile" />
+					<txp:else />
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
 					<p><a rel="external noopener" href="https://www.google.com/maps/d/embed?mid=<txp:yield name="media" />">google.com/maps/d/embed?mid=<txp:yield name="media" /></a>.
 					<p><a rel="external noopener" href="https://policies.google.com/">Google&#8217;s privacy policy</a>.</p>
 					<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_google_maps_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
@@ -635,7 +760,13 @@ https://github.com/colak/txp-media-shortcode
 							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt" value="">Chart<txp:else /><txp:variable name="alt" /></txp:if_variable>" />
 						</txp:images>
 					</txp:if_yield>
-					<txp:if_yield name="title"><txp:yield name="title" escape="textile" /></txp:if_yield>
+					<txp:if_yield name="title">
+						<txp:yield name="title" escape="textile" />
+					<txp:else />
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+						</txp:if_logged_in>
+					</txp:if_yield>	
 					<p>Hosted by Datawrapper on <a rel="external noopener" href="https://www.datawrapper.de/_/<txp:yield name="media" />">datawrapper.de/_/<txp:yield name="media" /></a>.
 					<p><a rel="external noopener" href="https://www.datawrapper.de/privacy/">Datawrapper&#8217;s privacy policy</a>.</p>
 					<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_datawrapper_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>

@@ -566,7 +566,7 @@ https://github.com/colak/txp-media-shortcode
 </txp:if_yield>
 
 <txp:hide>MixCloud</txp:hide>
-<txp:if_yield name="from" value="bac">
+<txp:if_yield name="from" value="mix">
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_mixcloud_cookie' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_mixcloud_cookie'>

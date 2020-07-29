@@ -147,18 +147,6 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 			<td> </td>
 		</tr>
 		<tr>
-			<td rowspan="2"> <a href="https://giphy.com/">Giphy</a> </td>
-			<td rowspan="2"> gp </td>
-			<td> url="g" </td>
-			<td rowspan="2"> &check; </td>
-			<td rowspan="2"> &check; </td>
-			<td rowspan="2"> NA </td>
-			<td rowspan="2"> <a href="#5-embed-from-giphy">(5)</a> </td>
-		</tr>
-		<tr>
-			<td> url="v" </td>
-		</tr>
-		<tr>
 			<td> <a href="https://peertube.video">PeerTube</a> </td>
 			<td> pt </td>
 			<td> NA </td>
@@ -247,6 +235,21 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 			<td> &check; </td>
 			<td> NA </td>
 			<td> </td>
+		</tr>
+		<tr>
+			<td colspan="7"> <b>Video and GIF</b> </td>
+		</tr>
+		<tr>
+			<td rowspan="2"> <a href="https://giphy.com/">Giphy</a> </td>
+			<td rowspan="2"> gp </td>
+			<td> url="g" </td>
+			<td rowspan="2"> &check; </td>
+			<td rowspan="2"> &check; </td>
+			<td rowspan="2"> NA </td>
+			<td rowspan="2"> <a href="#5-embed-from-giphy">(5)</a> </td>
+		</tr>
+		<tr>
+			<td> url="v" </td>
 		</tr>
 		<tr>
 			<td colspan="7"> <b>Audio</b> </td>

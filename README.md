@@ -17,7 +17,7 @@ This textpattern shortcode draws inspiration from [Nicolas Morand's](https://git
 
 Shortcodes are easy to edit by those without any knowledge of php but with sufficient knowledge of html and txp tags. 
 
-If you often embed media in your website, it is much easier to update the shortcode when providers change their embed scripts rather than find all instances of the embedded content in your articles.
+If you often embed media in your website, it is much easier to update the shortcode when providers change their embed scripts rather than find and change all instances of the embedded content in your articles.
 
 The shortcode's GDPR warnings are parsed automatically, which save on typing, remembering cookie names, and privacy policy links. 
 

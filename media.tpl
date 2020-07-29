@@ -242,6 +242,13 @@ https://github.com/colak/txp-media-shortcode
 						</div>
 					</txp:if_logged_in>
 				</txp:if_yield>
+				<txp:if_yield name="url" value="1">
+					<txp:if_logged_in>
+						<div class="gdpr">
+							<p class="error">Error: <b>url</b> is a required attribute. Use url="g" for gif embeds and url="v" for video embeds</p>
+						</div>
+					</txp:if_logged_in>
+				</txp:if_yield>
 				<txp:if_yield name="url" value="g">
 					<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/ImageObject">
 						<iframe allowfullscreen="" height="100%" src="https://giphy.com/embed/<txp:yield name="media" />" style="left:0;position:absolute;top:0" width="100%"></iframe>

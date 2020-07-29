@@ -548,14 +548,14 @@ https://github.com/colak/txp-media-shortcode
 				<txp:if_yield name="url" value="">
 					<txp:if_logged_in>
 						<div class="gdpr">
-							<p class="error">Error: <b>url</b> is a required attribute. Use url="g" for gif embeds and url="v" for video embeds</p>
+							<p class="error">Error: <b>url</b> is a required attribute. Use url="g" for gif embeds and url="v" for video embeds.</p>
 						</div>
 					</txp:if_logged_in>
 				</txp:if_yield>
 				<txp:if_yield name="url" value="1">
 					<txp:if_logged_in>
 						<div class="gdpr">
-							<p class="error">Error: <b>url</b> is a required attribute. Use url="g" for gif embeds and url="v" for video embeds</p>
+							<p class="error">Error: <b>url</b> is a required attribute. Use url="g" for gif embeds and url="v" for video embeds.</p>
 						</div>
 					</txp:if_logged_in>
 				</txp:if_yield>
@@ -590,7 +590,16 @@ https://github.com/colak/txp-media-shortcode
 					<txp:if_yield name="url" value="g">
 						<p>Hosted by Giphy on <a rel="external noopener" href="https://giphy.com/gifs/<txp:yield name="media" />">giphy.com/gifs/<txp:yield name="media" /></a>.</p>
 					</txp:if_yield>
-					<txp:if_yield name="url" value=""><txp:if_logged_in><p class="error">Error: <b>url</b> is a recommended attribute.use url="g"for gif embeds and url="v" for video embeds</p></txp:if_logged_in>
+					<txp:if_yield name="url" value="">
+						<txp:if_logged_in>
+							<p class="error">Error: <b>url</b> is a required attribute.use url="g" for gif embeds and url="v" for video embeds.</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
+					<txp:if_yield name="url" value="1">
+						<txp:if_logged_in>
+							<p class="error">Error: <b>url</b> is a required attribute.use url="g" for gif embeds and url="v" for video embeds.</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
 					<p><a rel="external noopener" href="https://support.giphy.com/hc/en-us/articles/360032872931-GIPHY-Privacy-Policy">Giphy&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_giphy_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>

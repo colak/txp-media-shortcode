@@ -83,7 +83,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:yield name="title" escape="textile" />
 					<txp:else />
 						<txp:if_logged_in>
-							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+							<p class="error">Warning: <b>title</b> is a recommended attribute</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by the Internet Archive on <a rel="external noopener" href="https://archive.org/details/<txp:yield name="media" />">archive.org/details/<txp:yield name="media" /></a>.</p>
@@ -121,7 +121,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:yield name="title" escape="textile" />
 					<txp:else />
 						<txp:if_logged_in>
-							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+							<p class="error">Warning: <b>title</b> is a recommended attribute</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by YouTube on <a rel="external noopener" href="https://youtu.be/<txp:yield name="media" />">youtu.be/<txp:yield name="media" /></a>.</p>
@@ -152,7 +152,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:yield name="title" escape="textile" />
 					<txp:else />
 						<txp:if_logged_in>
-							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+							<p class="error">Warning: <b>title</b> is a recommended attribute</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by Vimeo on <a rel="external noopener" href="https://vimeo.com/<txp:yield name="media" />">vimeo.com/<txp:yield name="media" /></a>.</p>
@@ -188,7 +188,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:yield name="title" escape="textile" />
 					<txp:else />
 						<txp:if_logged_in>
-							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+							<p class="error">Warning: <b>title</b> is a recommended attribute</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by DailyMotion on <a rel="external noopener" href="https://dailymotion.com/video/<txp:yield name="media" />">dailymotion.com/video/<txp:yield name="media" /></a>.</p>
@@ -219,7 +219,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:yield name="title" escape="textile" />
 					<txp:else />
 						<txp:if_logged_in>
-							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+							<p class="error">Warning: <b>title</b> is a recommended attribute</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by BitChute on <a rel="external noopener" href="https://www.bitchute.com/video/<txp:yield name="media" />/">bitchute.com/video/<txp:yield name="media" /></a>.</p>
@@ -255,7 +255,7 @@ https://github.com/colak/txp-media-shortcode
 					<txp:yield name="title" escape="textile" />
 				<txp:else />
 					<txp:if_logged_in>
-						<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+						<p class="error">Warning: <b>title</b> is a recommended attribute</p>
 					</txp:if_logged_in>
 				</txp:if_yield>
 				<p>Hosted by PeerTube on <a rel="external noopener" href="https://peertube.video/videos/watch/<txp:yield name="media" />">peertube.video/videos/watch/<txp:yield name="media" /></a>.</p>
@@ -302,7 +302,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:yield name="title" escape="textile" />
 					<txp:else />
 						<txp:if_logged_in>
-							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+							<p class="error">Warning: <b>title</b> is a recommended attribute</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by MetaCafe on <a rel="external noopener" href="https://www.metacafe.com/watch/<txp:yield name="media" />/">metacafe.com/watch/<txp:yield name="media" />/</a>.</p>
@@ -331,7 +331,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:yield name="title" escape="textile" />
 					<txp:else />
 						<txp:if_logged_in>
-							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+							<p class="error">Warning: <b>title</b> is a recommended attribute</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by Playtube on <a rel="external noopener" href="https://playtube.com/<txp:yield name="media" />">playtube.com/<txp:yield name="media" /></a>.</p>
@@ -362,7 +362,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:yield name="title" escape="textile" />
 					<txp:else />
 						<txp:if_logged_in>
-							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+							<p class="error">Warning: <b>title</b> is a recommended attribute</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by Freespeechtube on <a rel="external noopener" href="https://freespeechtube.com/<txp:yield name="media" />">freespeechtube.com/<txp:yield name="media" /></a>.</p>
@@ -393,7 +393,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:yield name="title" escape="textile" />
 					<txp:else />
 						<txp:if_logged_in>
-							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+							<p class="error">Warning: <b>title</b> is a recommended attribute</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by Coub on <a rel="external noopener" href="https://coub.com/view/<txp:yield name="media" />/">coub.com/view/<txp:yield name="media" /></a>.</p>
@@ -424,7 +424,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:yield name="title" escape="textile" />
 					<txp:else />
 						<txp:if_logged_in>
-							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+							<p class="error">Warning: <b>title</b> is a recommended attribute</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by TED on <a rel="external noopener" href="https://www.ted.com/talks/<txp:yield name="media" />">ted.com/talks/<txp:yield name="media" /></a>.</p>
@@ -460,7 +460,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:yield name="title" escape="textile" />
 					<txp:else />
 						<txp:if_logged_in>
-							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+							<p class="error">Warning: <b>title</b> is a recommended attribute</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by Vidyard on <a rel="external noopener" href="https://video.vidyard.com/watch/<txp:yield name="media" />">video.vidyard.com/watch/<txp:yield name="media" /></a>.</p>
@@ -491,7 +491,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:yield name="title" escape="textile" />
 					<txp:else />
 						<txp:if_logged_in>
-							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+							<p class="error">Warning: <b>title</b> is a recommended attribute</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by Vlare on <a rel="external noopener" href="https://vlare.tv/v/<txp:yield name="media" />">vlare.tv/v/<txp:yield name="media" /></a>.</p>
@@ -527,7 +527,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:yield name="title" escape="textile" />
 					<txp:else />
 						<txp:if_logged_in>
-							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+							<p class="error">Warning: <b>title</b> is a recommended attribute</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Served by YouTube-nocookie but originally resides on <a rel="external noopener" href="https://youtube.com/watch?v=<txp:yield name="media" />">youtube.com/watch?v=<txp:yield name="media" /></a>.</p>
@@ -537,6 +537,7 @@ https://github.com/colak/txp-media-shortcode
 			</txp:oui_if_cookie>
 	</txp:if_yield>
 </txp:if_yield>
+
 
 <txp:hide>Video and GIF</txp:hide>
 
@@ -581,14 +582,18 @@ https://github.com/colak/txp-media-shortcode
 						<txp:yield name="title" escape="textile" />
 					<txp:else />
 						<txp:if_logged_in>
-							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+							<p class="error">Warning: <b>title</b> is a recommended attribute</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<txp:if_yield name="url" value="v">
 						<p>Hosted by Giphy on <a rel="external noopener" href="https://giphy.com/videos/<txp:yield name="media" />">giphy.com/videos/<txp:yield name="media" /></a>.</p>
+						<p><a rel="external noopener" href="https://support.giphy.com/hc/en-us/articles/360032872931-GIPHY-Privacy-Policy">Giphy&#8217;s private policy</a>.</p>
+						<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_giphy_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
 					</txp:if_yield>
 					<txp:if_yield name="url" value="g">
 						<p>Hosted by Giphy on <a rel="external noopener" href="https://giphy.com/gifs/<txp:yield name="media" />">giphy.com/gifs/<txp:yield name="media" /></a>.</p>
+						<p><a rel="external noopener" href="https://support.giphy.com/hc/en-us/articles/360032872931-GIPHY-Privacy-Policy">Giphy&#8217;s private policy</a>.</p>
+						<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_giphy_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
 					</txp:if_yield>
 					<txp:if_yield name="url" value="">
 						<txp:if_logged_in>
@@ -600,8 +605,6 @@ https://github.com/colak/txp-media-shortcode
 							<p class="error">Error: <b>url</b> is a required attribute.use url="g" for gif embeds and url="v" for video embeds.</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
-					<p><a rel="external noopener" href="https://support.giphy.com/hc/en-us/articles/360032872931-GIPHY-Privacy-Policy">Giphy&#8217;s private policy</a>.</p>
-					<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_giphy_cookie=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>
 			</txp:oui_if_cookie>
 	</txp:if_yield>
@@ -623,7 +626,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:yield name="title" escape="textile" />
 					<txp:else />
 						<txp:if_logged_in>
-							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+							<p class="error">Warning: <b>title</b> is a recommended attribute</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by AudioBoom on <a rel="external noopener" href="https://audioboom.com/posts/<txp:yield name="media" />">audioboom.com/<txp:yield name="media" /></a>.</p>
@@ -648,7 +651,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:yield name="title" escape="textile" />
 					<txp:else />
 						<txp:if_logged_in>
-							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+							<p class="error">Warning: <b>title</b> is a recommended attribute</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by IndieSound on <a rel="external noopener" href="https://www.indiesound.com/track/<txp:yield name="media" />">indiesound.com/track/<txp:yield name="media" /></a>.</p>
@@ -673,7 +676,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:yield name="title" escape="textile" />
 					<txp:else />
 						<txp:if_logged_in>
-							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+							<p class="error">Warning: <b>title</b> is a recommended attribute</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<txp:if_yield name="url">
@@ -702,7 +705,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:yield name="title" escape="textile" />
 					<txp:else />
 						<txp:if_logged_in>
-							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+							<p class="error">Warning: <b>title</b> is a recommended attribute</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<txp:if_yield name="url">
@@ -725,7 +728,10 @@ https://github.com/colak/txp-media-shortcode
 						<txp:if_yield name="url">
 							<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;light=1&amp;feed=%2F<txp:yield name="url" />%2F<txp:yield name="media" />%2F" frameborder="0" ></iframe>
 						<txp:else />
-							<txp:if_logged_in><p class="error">Error: <b>url</b> is a required attribute.</p></txp:if_logged_in>
+							<txp:if_logged_in>
+								<div class=""gdpr>
+									<p class="error">Error: <b>url</b> is a required attribute. Use url="artistname" and replace <i>artistname</i> with the handle of the artist as it appears in the url of the soundfile you wish to embed.</p>
+								</div></txp:if_logged_in>
 						</txp:if_yield>
 					</div>
 				<txp:else />
@@ -734,7 +740,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:yield name="title" escape="textile" />
 					<txp:else />
 						<txp:if_logged_in>
-							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+							<p class="error">Warning: <b>title</b> is a recommended attribute</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
 						<txp:if_yield name="url">
@@ -742,7 +748,7 @@ https://github.com/colak/txp-media-shortcode
 							<p><a rel="external noopener" href="https://www.mixcloud.com/privacy/">Mixcloud&#8217;s private policy</a>.</p>
 							<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_mixcloud_cookie=yes#m_<txp:yield name="media" />">Listen to it here</a></p>
 						<txp:else />
-							<txp:if_logged_in><p class="error">Error: <b>url</b> is a required attribute.</p></txp:if_logged_in>
+							<txp:if_logged_in><p class="error">Error: <b>url</b> is a required attribute. Use url="artistname" and replace <i>artistname</i> with the handle of the artist as it appears in the url of the soundfile you wish to embed.</p></txp:if_logged_in>
 						</txp:if_yield>						
 					</div>
 				</txp:oui_if_cookie>
@@ -771,7 +777,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:yield name="title" escape="textile" />
 					<txp:else />
 						<txp:if_logged_in>
-							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+							<p class="error">Warning: <b>title</b> is a recommended attribute</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p><a rel="external noopener" href="https://www.google.com/maps/d/embed?mid=<txp:yield name="media" />">google.com/maps/d/embed?mid=<txp:yield name="media" /></a>.
@@ -802,7 +808,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:yield name="title" escape="textile" />
 					<txp:else />
 						<txp:if_logged_in>
-							<p class="error">Warning: <b>title</b>is a recommended attribute</p>
+							<p class="error">Warning: <b>title</b> is a recommended attribute</p>
 						</txp:if_logged_in>
 					</txp:if_yield>	
 					<p>Hosted by Datawrapper on <a rel="external noopener" href="https://www.datawrapper.de/_/<txp:yield name="media" />">datawrapper.de/_/<txp:yield name="media" /></a>.

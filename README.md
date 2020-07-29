@@ -23,7 +23,7 @@ The shortcode's GDPR warnings are parsed automatically, which save on typing, re
 
 When visitors accept a particular host's cookies, they do so for all embeds from that host site-wide. 
 
-Shortcodes are normally slightly lower in execution than raw php, or txp plugins.
+Shortcodes are normally slightly slower in execution than raw php, or txp plugins.
 
 ## Installing
 

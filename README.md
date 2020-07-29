@@ -554,7 +554,6 @@ The resultig code before cookie is accepted
 		<p>Luis Bunuel: Un Chien Andalou, 1929</p>
 		<p>Hosted by Vimeo on <a rel="external noopener" href="https://archive.org/details/PiesAndaluzyjski">archive.org/details/PiesAndaluzyjski</a>.</p>
 		<p><a rel="external noopener" href="https://archive.org/about/terms.php">Internet Archive&#8217;s private policy</a>.</p>
-		<p class="accept"><a rel="nofollow" href="?My_Site_youtube_cookie=yes#m_PiesAndaluzyjski">View it here</a></p>
 		<p class="accept"><a rel="nofollow noindex" href="?My_Site_iarchive_cookie=yes#m_PiesAndaluzyjski">View it here</a></p>
 	</div>
 
@@ -596,12 +595,13 @@ Resultig code before cookie is accepted
 		<p class="accept"><a rel="nofollow" href="?My_Site_bandcamp_cookie=yes#m_600847421">Listen to it here</a></p>
 	</div>
 
-If the url attribute is not used, a link to the bandcamp page hosting the album will not be provided and the resultig code will be
+If the url attribute is not used, a warning, only visible to logged in users will be provided
 
 	<div class="gdpr">
 		<p>Icarus</p>
 		<p>Hosted by <a rel="external noopener" href="https://bandcamp.com">BandCamp</a>.</p>
 		<p><a rel="external noopener" href="https://bandcamp.com/privacy">BandCamp&#8217;s private policy</a>.</p>
+		<p class="error">Warning: <b>url</b> is a recommended attribute. Use url="artistname" and replace <i>artistname</i> with the name appearing in the subdomain.</p>
 		<p class="accept"><a rel="nofollow" href="?My_Site_bandcamp_cookie=yes#m_600847421">Listen to it here</a></p>
 	</div>
 

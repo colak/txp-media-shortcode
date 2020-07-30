@@ -70,7 +70,7 @@ https://github.com/colak/txp-media-shortcode
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_iarchive'>
 				<div class="embed-container" id="m_<txp:yield name="media" />"<txp:if_yield name="url" value="v"> itemscope itemtype="http://schema.org/VideoObject"</txp:if_yield><txp:if_yield name="url" value="a"> itemscope itemtype="http://schema.org/AudioObject"</txp:if_yield>>
 					<iframe src="https://archive.org/embed/<txp:yield name="media" />" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
-				</div>/
+				</div>
 			<txp:else />
 				<div class="gdpr">
 					<txp:if_yield name="img">

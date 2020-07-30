@@ -733,7 +733,11 @@ https://github.com/colak/txp-media-shortcode
 							<txp:if_logged_in>
 								<div class=""gdpr>
 									<p class="error">Error: <b>url</b> is a required attribute. Use url="artistname" and replace <i>artistname</i> with the handle of the artist as it appears in the url of the soundfile you wish to embed.</p>
-								</div></txp:if_logged_in>
+									<txp:if_yield name="title" not>
+										<p class="error">Warning: <b>title</b> is a recommended attribute</p>
+									</txp:if_yield>
+								</div>
+							</txp:if_logged_in>
 						</txp:if_yield>
 					</div>
 				<txp:else />

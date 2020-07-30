@@ -720,8 +720,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:if_logged_in>
 							<p class="error">Warning: <b>url</b> is a recommended attribute. Use url="artistname" and replace <i>artistname</i> with the name appearing in the subdomain.</p>
 						</txp:if_logged_in>
-					</txp:if_yield>
-					
+					</txp:if_yield>	
 				</div>
 			</txp:oui_if_cookie>
 	</txp:if_yield>

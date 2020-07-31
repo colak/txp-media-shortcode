@@ -106,8 +106,7 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 			<txp:else />
 				<div class="gdpr">
-					<txp:if_yield name="0">
-					<txp:else />
+					<txp:if_yield name="0" not>
 						<txp:if_yield name="img">
 							<txp:images id='<txp:yield name="img" />'>
 							<txp:variable name="alt" value='<txp:image_info type="alt" />' />
@@ -173,8 +172,7 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 			<txp:else />
 				<div class="gdpr">
-					<txp:if_yield name="0">
-					<txp:else />
+					<txp:if_yield name="0" not>
 						<txp:if_yield name="img">
 							<txp:images id='<txp:yield name="img" />'>
 							<txp:variable name="alt" value='<txp:image_info type="alt" />' />
@@ -240,8 +238,7 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 			<txp:else />
 			<div class="gdpr">
-				<txp:if_yield name="0">
-				<txp:else />
+				<txp:if_yield name="0" not>
 					<txp:if_yield name="img">
 						<txp:images id='<txp:yield name="img" />'>
 						<txp:variable name="alt" value='<txp:image_info type="alt" />' />
@@ -276,8 +273,7 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 			<txp:else />
 				<div class="gdpr">
-					<txp:if_yield name="0">
-					<txp:else />
+					<txp:if_yield name="0" not>
 						<txp:if_yield name="img">
 							<txp:images id='<txp:yield name="img" />'>
 							<txp:variable name="alt" value='<txp:image_info type="alt" />' />
@@ -440,8 +436,7 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 			<txp:else />
 				<div class="gdpr">
-					<txp:if_yield name="0">
-					<txp:else />
+					<txp:if_yield name="0" not>
 						<txp:if_yield name="img">
 							<txp:images id='<txp:yield name="img" />'>
 							<txp:variable name="alt" value='<txp:image_info type="alt" />' />
@@ -507,8 +502,7 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 			<txp:else />
 				<div class="gdpr">
-					<txp:if_yield name="0">
-					<txp:else />
+					<txp:if_yield name="0" not>
 						<txp:if_yield name="img">
 							<txp:images id='<txp:yield name="img" />'>
 							<txp:variable name="alt" value='<txp:image_info type="alt" />' />

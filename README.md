@@ -207,7 +207,7 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 			<td> &check; </td>
 			<td> &check; </td>
 			<td> NA </td>
-			<td> </td>
+			<td> 0 </td>
 		</tr>
 		<tr>
 			<td> <a href="https://youtube-nocookie.com/">YouTube-nocookie</a> <sup id="a1"><a href="#fn1">1</a></sup> </td>

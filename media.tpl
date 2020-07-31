@@ -527,7 +527,6 @@ https://github.com/colak/txp-media-shortcode
 	</txp:if_yield>
 </txp:if_yield>
 
-
 <txp:hide>Video and GIF</txp:hide>
 
 <txp:hide>Giphy</txp:hide>
@@ -540,7 +539,7 @@ https://github.com/colak/txp-media-shortcode
 						<div class="gdpr">
 							<txp:if_yield name="title" not>
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-							<txp:if_yield>
+							</txp:if_yield>
 							<p class="error">Error: <b>url</b> is a required attribute. Use url="g" for gif embeds and url="v" for video embeds.</p>
 						</div>
 					</txp:if_logged_in>
@@ -550,7 +549,7 @@ https://github.com/colak/txp-media-shortcode
 						<div class="gdpr">
 							<txp:if_yield name="title" not>
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-							<txp:if_yield>
+							</txp:if_yield>
 							<p class="error">Error: <b>url</b> is a required attribute. Use url="g" for gif embeds and url="v" for video embeds.</p>
 						</div>
 					</txp:if_logged_in>

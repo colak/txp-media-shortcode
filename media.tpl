@@ -284,18 +284,9 @@ https://github.com/colak/txp-media-shortcode
 								<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
 							</txp:images>
 						<txp:else />
-							<txp:hide>The following only works if 1) PHP in pages is enabled in txp's publish preferences, and 2) allow_url_fopen is enabled by the host</txp:hide>
 							<txp:variable name="id_num"><txp:yield name="media" /></txp:variable>
-							<txp:variable name="remote_file">https://cdn.mcstatic.com/contents/videos_screenshots/<txp:variable name="id_num" trim="/(.*)\d{3}/" replace="${1}000" />/<txp:yield name="media" />/830x467/2.jpg</txp:variable>
-							<txp:php>
-								$remoteFile = parse('<txp:variable name="remote_file" />');
-								$handle = @fopen($remoteFile, 'r');
-								if(!$handle){
-									echo '';
-								}else{
-									echo '<img src="<txp:variable name="remote_file" />" width="830" heigh="467" alt="<txp:if_yield name="title"><txp:yield name="title" escape="textile, tags" /><txp:else />External video still</txp:if_yield>" />';
-								}
-							</txp:php>
+							<txp:variable name="remote_file">https://cdn.mcstatic.com/contents/videos_screenshots/<txp:variable name="id_num" trim="/(.*)\d{3}/" replace="${1}000" />/<txp:yield name="media" />/preview.jpg</txp:variable>
+							<img src="https://cdn.mcstatic.com/contents/videos_screenshots/<txp:variable name="remote_file" />/<txp:variable name="id_num" />/preview.jpg" width="856" heigh="458" alt="<txp:if_yield name="title"><txp:yield name="title" escape="textile, tags" /><txp:else />External video still</txp:if_yield>" />
 						</txp:if_yield>
 					</txp:if_yield>
 					<txp:if_yield name="title">

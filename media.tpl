@@ -724,7 +724,7 @@ https://github.com/colak/txp-media-shortcode
 							<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;light=1&amp;feed=%2F<txp:yield name="url" />%2F<txp:yield name="media" />%2F" frameborder="0" ></iframe>
 						<txp:else />
 							<txp:if_logged_in>
-								<div class=""gdpr>
+								<div class="gdpr">
 									<p class="error">Error: <b>url</b> is a required attribute. Use url="artistname" and replace <i>artistname</i> with the handle of the artist as it appears in the url of the soundfile you wish to embed.</p>
 									<txp:if_yield name="title" not>
 										<p class="error">Warning: <b>title</b> is a recommended attribute.</p>

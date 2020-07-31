@@ -59,7 +59,9 @@
 .gdpr p.error {
   background-color:#fff;
   color: #ba0000;
-  padding:.5em;
+  margin:1em;
+  padding:.5em 1em;
+  border: 2px solid #ba0000;
 }
 audio {
   filter: sepia(50%) saturate(100%) grayscale(1) contrast(80%) invert(80%);

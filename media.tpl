@@ -467,7 +467,7 @@ https://github.com/colak/txp-media-shortcode
 		<txp:oui_cookie name='<txp:site_name trim="/\s+/" replace="_" />_vlare' duration="+1 year" values="yes" />
 			<txp:oui_if_cookie name='<txp:site_name trim="/\s+/" replace="_" />_vlare'>
 				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
-					<div class="embed_container"><iframe width="640" height="360" src="https://vlare.tv/embed/<txp:yield name="media" />/false/true/0" allowfullscreen scrolling="no"></iframe></div>
+					<iframe width="640" height="360" src="https://vlare.tv/embed/<txp:yield name="media" />/false/true/0" allowfullscreen scrolling="no"></iframe>
 				</div>
 			<txp:else />
 				<div class="gdpr">

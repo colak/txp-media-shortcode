@@ -237,29 +237,29 @@ https://github.com/colak/txp-media-shortcode
 					<iframe width="560" height="315" sandbox="allow-same-origin allow-scripts" src="https://peertube.video/videos/embed/<txp:yield name="media" />" allowfullscreen></iframe>
 				</div>
 			<txp:else />
-			<div class="gdpr">
-				<txp:if_yield name="0" not>
-					<txp:if_yield name="img">
-						<txp:images id='<txp:yield name="img" />'>
-						<txp:variable name="alt" value='<txp:image_info type="alt" />' />
-							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
-						</txp:images>
-					<else />
-						<img src="https://peertube.video/static/thumbnails/<txp:yield name="media" />.jpg" srcset="https://peertube.video/static/thumbnails/<txp:yield name="media" />.jpg 223w, https://peertube.video/static/previews/<txp:yield name="media" />.jpg 850w" alt="<txp:if_yield name="title"><txp:yield name="title" escape="textile, tags" /><txp:else />External video still</txp:if_yield>" itemscope itemtype="http://schema.org/ImageObject" />
+				<div class="gdpr">
+					<txp:if_yield name="0" not>
+						<txp:if_yield name="img">
+							<txp:images id='<txp:yield name="img" />'>
+							<txp:variable name="alt" value='<txp:image_info type="alt" />' />
+								<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
+							</txp:images>
+						<else />
+							<img src="https://peertube.video/static/thumbnails/<txp:yield name="media" />.jpg" srcset="https://peertube.video/static/thumbnails/<txp:yield name="media" />.jpg 223w, https://peertube.video/static/previews/<txp:yield name="media" />.jpg 850w" alt="<txp:if_yield name="title"><txp:yield name="title" escape="textile, tags" /><txp:else />External video still</txp:if_yield>" itemscope itemtype="http://schema.org/ImageObject" />
+						</txp:if_yield>
 					</txp:if_yield>
-				</txp:if_yield>
-				<txp:if_yield name="title">
-					<txp:yield name="title" escape="textile" />
-				<txp:else />
-					<txp:if_logged_in>
-						<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-					</txp:if_logged_in>
-				</txp:if_yield>
-				<p>Hosted by PeerTube on <a rel="external noopener" href="https://peertube.video/videos/watch/<txp:yield name="media" />">peertube.video/videos/watch/<txp:yield name="media" /></a>.</p>
-				<p><a rel="external noopener" href="https://peertube.video/about/instance">PeerTube&#8217;s private policy</a>.</p>
-				<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_peertube=yes#m_<txp:yield name="media" />">View it here</a></p>
-			</div>
-		</txp:oui_if_cookie>
+					<txp:if_yield name="title">
+						<txp:yield name="title" escape="textile" />
+					<txp:else />
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
+						</txp:if_logged_in>
+					</txp:if_yield>
+					<p>Hosted by PeerTube on <a rel="external noopener" href="https://peertube.video/videos/watch/<txp:yield name="media" />">peertube.video/videos/watch/<txp:yield name="media" /></a>.</p>
+					<p><a rel="external noopener" href="https://peertube.video/about/instance">PeerTube&#8217;s private policy</a>.</p>
+					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_peertube=yes#m_<txp:yield name="media" />">View it here</a></p>
+				</div>
+			</txp:oui_if_cookie>
 	</txp:if_yield>
 </txp:if_yield>
 

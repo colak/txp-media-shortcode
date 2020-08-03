@@ -1,4 +1,5 @@
 /* Start of txp-media shortcode styles */
+/* Make iframe embeds responsive */
 .embed-container{
   position:relative;
   padding-bottom:56.25%;
@@ -16,11 +17,7 @@
 .embed-container iframe {
     border-width: 0px;border:0;border:none;
 }
-.embed-container p.error {
-  background-color:#ffc;
-  color: #ba0000;
-  padding:.5em;
-}
+/* Pre cookie acceptance container */
 .gdpr {
   display:block;
   width:100%;
@@ -63,6 +60,7 @@
   padding:.5em 1em;
   border: 2px solid #ba0000;
 }
+/* basic responsive styles for html5 video and audio tags */
 audio {
   filter: sepia(50%) saturate(100%) grayscale(1) contrast(80%) invert(80%);
   width: 100%;

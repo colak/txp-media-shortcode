@@ -650,6 +650,10 @@ This shortcode is released as free and unencumbered software. Read about it on h
 
 Please post any questions requests, or bugs on https://forum.textpattern.com/viewtopic.php?id=50879
 
+## Not what you are looking for?
+
+If you are not using textpattern or if you are looking for a general *embed from anywhere* script, I would recommend @oscarotero's [Embed](https://github.com/oscarotero/Embed) php script.
+
 ## Notes
 
 <p class="footnote" id="fn1"><sup>1</sup> I have detected that embedded videos from youtube-nocookies do serve 3 cookies, 2 of which are from youtube. I have nevertheless included it in the list as, unlike Youtube, the embedded videos do not show related content when a video is paused or finished.</p> 

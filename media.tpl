@@ -346,8 +346,7 @@ https://github.com/colak/txp-media-shortcode
 					<txp:if_yield name="img">
 						<txp:images id='<txp:yield name="img" />'>
 						<txp:variable name="alt" value='<txp:image_info type="alt" />' />
-							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" 
-							<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />External video still</txp:if_variable>" />
+							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />External video still</txp:if_variable>" />
 						</txp:images>
 					</txp:if_yield>
 					<txp:if_yield name="title">

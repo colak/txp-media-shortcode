@@ -581,7 +581,7 @@ https://github.com/colak/txp-media-shortcode
 					</txp:if_yield>
 					<txp:if_yield name="url" value="v">
 						<p>Hosted by Giphy on <a rel="external noopener" href="https://giphy.com/videos/<txp:yield name="media" />">giphy.com/videos/<txp:yield name="media" /></a>.</p>
-						<p><a rel="external noopener" href="https://support.giphy.com/hc/en-us/articles/360032872931-GIPHY-Privacy-Policy">Giphy&#8217;s privacy policy</a>.</p>
+						<p class="licence"><a rel="external noopener licence" href="https://support.giphy.com/hc/en-us/articles/360032872931-GIPHY-Privacy-Policy">Giphy&#8217;s privacy policy</a>.</p>
 						<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_giphy=yes#m_<txp:yield name="media" />">View it here</a></p>
 					</txp:if_yield>
 					<txp:if_yield name="url" value="g">

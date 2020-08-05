@@ -83,8 +83,9 @@ video {
  .embed-container, .gdpr p.error {
     display:none;
   }
-  .gdpr .licence a[href]:after{
-    content:" <URL: "attr(href)">";background:inherit;
+  .gdpr .licence a[href]:after {
+    content:" <URL: "attr(href)">"; 
+    background:inherit;
   }
 }
 /* End of txp-media shortcode styles */

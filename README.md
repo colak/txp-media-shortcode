@@ -652,7 +652,7 @@ Please post any questions requests, or bugs on https://forum.textpattern.com/vie
 
 ## Not what you are looking for?
 
-If you are not using textpattern or if you are looking for a general php which can *embed from anywhere*, I would recommend @oscarotero's [Embed](https://github.com/oscarotero/Embed).
+If you are not using textpattern or if you are looking for a general php which can *embed from anywhere*, you may want to have a look at Oscar Otero's [Embed](https://github.com/oscarotero/Embed).
 
 ## Notes
 

@@ -1,6 +1,6 @@
 /* Start of txp-media shortcode styles */
 /* Make embeded content responsive */
-.embed-container{
+.embed-container {
   position:relative;
   padding-bottom:56.25%;
   height:0;
@@ -73,5 +73,18 @@ video {
   height: 100%   !important;
   clear:both;
   margin: 1em 0;
+}
+
+@media print {
+  body {
+    color: #000;
+    background: #fff;
+  }
+ .embed-container, .gdpr p.error {
+    display:none;
+  }
+  .gdpr .licence a[href]:after{
+    content:" <URL: "attr(href)">";background:inherit;
+  }
 }
 /* End of txp-media shortcode styles */

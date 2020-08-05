@@ -76,7 +76,7 @@ https://github.com/colak/txp-media-shortcode
 					<txp:if_yield name="img">
 						<txp:images id='<txp:yield name="img" />'>
 						<txp:variable name="alt" value='<txp:image_info type="alt" />' />
-							<img itemprop="image" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
+							<img itemprop="image" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />External video still</txp:if_variable>" />
 						</txp:images>
 					</txp:if_yield>
 					<txp:if_yield name="title">
@@ -113,7 +113,7 @@ https://github.com/colak/txp-media-shortcode
 								<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
 							</txp:images>
 						<txp:else />
-							<img src="https://i3.ytimg.com/vi/<txp:yield name="media" />/hqdefault.jpg" srcset="https://i3.ytimg.com/vi/<txp:yield name="media" />/hqdefault.jpg 480w, https://i3.ytimg.com/vi/<txp:yield name="media" />/maxresdefault.jpg 1280w" alt="<txp:if_yield name="title"><txp:yield name="title" escape="textile, tags" /><txp:else />External video still</txp:if_yield>" itemscope itemtype="http://schema.org/ImageObject" />
+							<img src="https://i3.ytimg.com/vi/<txp:yield name="media" />/hqdefault.jpg" srcset="https://i3.ytimg.com/vi/<txp:yield name="media" />/hqdefault.jpg 480w, https://i3.ytimg.com/vi/<txp:yield name="media" />/maxresdefault.jpg 1280w" alt="<txp:yield name="title" escape="textile, tags" default="External video still" />" itemscope itemtype="http://schema.org/ImageObject" />
 						</txp:if_yield>
 					</txp:if_yield>
 					<txp:if_yield name="title">
@@ -144,7 +144,7 @@ https://github.com/colak/txp-media-shortcode
 					<txp:if_yield name="img">
 						<txp:images id='<txp:yield name="img" />'>
 						<txp:variable name="alt" value='<txp:image_info type="alt" />' />
-							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
+							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />External video still</txp:if_variable>" />
 						</txp:images>
 					</txp:if_yield>
 					<txp:if_yield name="title">
@@ -176,10 +176,10 @@ https://github.com/colak/txp-media-shortcode
 						<txp:if_yield name="img">
 							<txp:images id='<txp:yield name="img" />'>
 							<txp:variable name="alt" value='<txp:image_info type="alt" />' />
-								<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
+								<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />External video still</txp:if_variable>" />
 							</txp:images>
 						<txp:else />
-							<img src="https://s1.dmcdn.net/v/<txp:yield name="media" />/x240" alt="<txp:if_yield name="title"><txp:yield name="title" escape="textile, tags" /><txp:else />External video still</txp:if_yield>" />
+							<img src="https://s1.dmcdn.net/v/<txp:yield name="media" />/x240" alt="<txp:yield name="title" escape="textile, tags" default="External video still" />" />
 						</txp:if_yield>
 					</txp:if_yield>
 					<txp:if_yield name="title">
@@ -210,7 +210,7 @@ https://github.com/colak/txp-media-shortcode
 					<txp:if_yield name="img">
 						<txp:images id='<txp:yield name="img" />'>
 						<txp:variable name="alt" value='<txp:image_info type="alt" />' />
-							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
+							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />External video still</txp:if_variable>" />
 						</txp:images>
 					</txp:if_yield>
 					<txp:if_yield name="title">
@@ -242,10 +242,10 @@ https://github.com/colak/txp-media-shortcode
 						<txp:if_yield name="img">
 							<txp:images id='<txp:yield name="img" />'>
 							<txp:variable name="alt" value='<txp:image_info type="alt" />' />
-								<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
+								<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />External video still</txp:if_variable>" />
 							</txp:images>
 						<else />
-							<img src="https://peertube.video/static/thumbnails/<txp:yield name="media" />.jpg" srcset="https://peertube.video/static/thumbnails/<txp:yield name="media" />.jpg 223w, https://peertube.video/static/previews/<txp:yield name="media" />.jpg 850w" alt="<txp:if_yield name="title"><txp:yield name="title" escape="textile, tags" /><txp:else />External video still</txp:if_yield>" itemscope itemtype="http://schema.org/ImageObject" />
+							<img src="https://peertube.video/static/thumbnails/<txp:yield name="media" />.jpg" srcset="https://peertube.video/static/thumbnails/<txp:yield name="media" />.jpg 223w, https://peertube.video/static/previews/<txp:yield name="media" />.jpg 850w" alt="<txp:yield name="title" escape="textile, tags" default="External video still" />" itemscope itemtype="http://schema.org/ImageObject" />
 						</txp:if_yield>
 					</txp:if_yield>
 					<txp:if_yield name="title">
@@ -277,12 +277,12 @@ https://github.com/colak/txp-media-shortcode
 						<txp:if_yield name="img">
 							<txp:images id='<txp:yield name="img" />'>
 							<txp:variable name="alt" value='<txp:image_info type="alt" />' />
-								<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
+								<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />External video still</txp:if_variable>" />
 							</txp:images>
 						<txp:else />
 							<txp:variable name="id_num"><txp:yield name="media" /></txp:variable>
 							<txp:variable name="remote_file">https://cdn.mcstatic.com/contents/videos_screenshots/<txp:variable name="id_num" trim="/(.*)\d{3}/" replace="${1}000" />/<txp:yield name="media" />/preview.jpg</txp:variable>
-							<img src="https://cdn.mcstatic.com/contents/videos_screenshots/<txp:variable name="remote_file" />/<txp:variable name="id_num" />/preview.jpg" width="856" heigh="458" alt="<txp:if_yield name="title"><txp:yield name="title" escape="textile, tags" /><txp:else />External video still</txp:if_yield>" />
+							<img src="https://cdn.mcstatic.com/contents/videos_screenshots/<txp:variable name="remote_file" />/<txp:variable name="id_num" />/preview.jpg" width="856" heigh="458" alt="<txp:yield name="title" escape="textile, tags" default="External video still" />" />
 						</txp:if_yield>
 					</txp:if_yield>
 					<txp:if_yield name="title">
@@ -313,9 +313,9 @@ https://github.com/colak/txp-media-shortcode
 					<txp:if_yield name="0" not>
 						<txp:if_yield name="img">
 							<txp:variable name="alt" value='<txp:image_info type="alt" />' />
-							<txp:images id='<txp:yield name="img" />'><img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" /></txp:images>
+							<txp:images id='<txp:yield name="img" />'><img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />External video still</txp:if_variable>" /></txp:images>
 						<txp:else />
-							<img src="https://i3.ytimg.com/vi/<txp:yield name="media" />/hqdefault.jpg" srcset="https://i3.ytimg.com/vi/<txp:yield name="media" />/hqdefault.jpg 480w, https://i3.ytimg.com/vi/<txp:yield name="media" />/maxresdefault.jpg 1280w" alt="<txp:if_yield name="title"><txp:yield name="title" escape="textile, tags" /><txp:else />External video still</txp:if_yield>" itemscope itemtype="http://schema.org/ImageObject" />
+							<img src="https://i3.ytimg.com/vi/<txp:yield name="media" />/hqdefault.jpg" srcset="https://i3.ytimg.com/vi/<txp:yield name="media" />/hqdefault.jpg 480w, https://i3.ytimg.com/vi/<txp:yield name="media" />/maxresdefault.jpg 1280w" alt="<txp:yield name="title" escape="textile, tags" default="External video still" />" itemscope itemtype="http://schema.org/ImageObject" />
 						</txp:if_yield>
 					</txp:if_yield>
 					<txp:if_yield name="title">
@@ -346,7 +346,8 @@ https://github.com/colak/txp-media-shortcode
 					<txp:if_yield name="img">
 						<txp:images id='<txp:yield name="img" />'>
 						<txp:variable name="alt" value='<txp:image_info type="alt" />' />
-							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
+							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" 
+							<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />External video still</txp:if_variable>" />
 						</txp:images>
 					</txp:if_yield>
 					<txp:if_yield name="title">
@@ -377,7 +378,7 @@ https://github.com/colak/txp-media-shortcode
 					<txp:if_yield name="img">
 						<txp:images id='<txp:yield name="img" />'>
 						<txp:variable name="alt" value='<txp:image_info type="alt" />' />
-							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
+							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />External video still</txp:if_variable>" />
 						</txp:images>
 					</txp:if_yield>
 					<txp:if_yield name="title">
@@ -408,7 +409,7 @@ https://github.com/colak/txp-media-shortcode
 					<txp:if_yield name="img">
 						<txp:images id='<txp:yield name="img" />'>
 						<txp:variable name="alt" value='<txp:image_info type="alt" />' />
-							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
+							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />External video still</txp:if_variable>" />
 						</txp:images>
 					</txp:if_yield>
 					<txp:if_yield name="title">
@@ -440,10 +441,10 @@ https://github.com/colak/txp-media-shortcode
 						<txp:if_yield name="img">
 							<txp:images id='<txp:yield name="img" />'>
 							<txp:variable name="alt" value='<txp:image_info type="alt" />' />
-								<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
+								<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />External video still</txp:if_variable>" />
 							</txp:images>
 						<txp:else />
-							<img itemscope itemtype="http://schema.org/ImageObject" src="https://play.vidyard.com/<txp:yield="media" />.jpg alt="<txp:if_yield name="title"><txp:yield name="title" escape="textile, tags" /><txp:else />Video still</txp:if_yield>" />
+							<img itemscope itemtype="http://schema.org/ImageObject" src="https://play.vidyard.com/<txp:yield="media" />.jpg alt="<txp:yield name="title" escape="textile, tags" default="External video still" /> />
 						</txp:if_yield>
 					</txp:if_yield>
 					<txp:if_yield name="title">
@@ -474,7 +475,7 @@ https://github.com/colak/txp-media-shortcode
 					<txp:if_yield name="img">
 						<txp:images id='<txp:yield name="img" />'>
 						<txp:variable name="alt" value='<txp:image_info type="alt" />' />
-							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
+							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />External video still</txp:if_variable>" />
 						</txp:images>
 					</txp:if_yield>
 					<txp:if_yield name="title">
@@ -506,7 +507,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:if_yield name="img">
 							<txp:images id='<txp:yield name="img" />'>
 							<txp:variable name="alt" value='<txp:image_info type="alt" />' />
-								<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
+								<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />External video still</txp:if_variable>" />
 							</txp:images>
 						<txp:else />
 							<img src="https://i3.ytimg.com/vi/<txp:yield name="media" />/hqdefault.jpg" srcset="https://i3.ytimg.com/vi/<txp:yield name="media" />/hqdefault.jpg 480w, https://i3.ytimg.com/vi/<txp:yield name="media" />/maxresdefault.jpg 1280w" alt="<txp:if_yield name="title"><txp:yield name="title" escape="textile, tags"/><txp:else />External video still</txp:if_yield>" itemscope itemtype="http://schema.org/ImageObject" />
@@ -569,7 +570,7 @@ https://github.com/colak/txp-media-shortcode
 					<txp:if_yield name="img">
 						<txp:images id='<txp:yield name="img" />'>
 						<txp:variable name="alt" value='<txp:image_info type="alt" />' />
-							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />Video still</txp:if_variable>" />
+							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:if_variable name="alt"><txp:variable name="alt" /><txp:else />External video still</txp:if_variable>" />
 						</txp:images>
 					</txp:if_yield>
 					<txp:if_yield name="title">

@@ -76,7 +76,7 @@ video {
 }
 
 @media print {
-  body {
+  body, .gdpr {
     color: #000;
     background: #fff;
   }

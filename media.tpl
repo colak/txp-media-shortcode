@@ -123,7 +123,7 @@ https://github.com/colak/txp-media-shortcode
 							<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
-					<p>Hosted by YouTube on <a rel="external noopener" href="https://youtu.be/<txp:yield name="media" />">youtu.be/<txp:yield name="media" /></a>.</p>
+					<p class="licence">Hosted by YouTube on <a rel="external noopener licence" href="https://youtu.be/<txp:yield name="media" />">youtu.be/<txp:yield name="media" /></a>.</p>
 					<p><a rel="external noopener" href="https://youtube.com/privacy">YouTube&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_youtube=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>
@@ -155,7 +155,7 @@ https://github.com/colak/txp-media-shortcode
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by Vimeo on <a rel="external noopener" href="https://vimeo.com/<txp:yield name="media" />">vimeo.com/<txp:yield name="media" /></a>.</p>
-					<p><a rel="external noopener" href="https://vimeo.com/privacy">Vimeo&#8217;s private policy</a>.</p>
+					<p class="licence"><a rel="external noopener licence" href="https://vimeo.com/privacy">Vimeo&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_vimeo=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>
 			</txp:oui_if_cookie>
@@ -221,7 +221,7 @@ https://github.com/colak/txp-media-shortcode
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by BitChute on <a rel="external noopener" href="https://www.bitchute.com/video/<txp:yield name="media" />/">bitchute.com/video/<txp:yield name="media" /></a>.</p>
-					<p><a rel="external noopener" href="https://support.bitchute.com/policy/privacy/">BitChute&#8217;s private policy</a>.</p>
+					<p class="licence"><a rel="external noopener licence" href="https://support.bitchute.com/policy/privacy/">BitChute&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_bitchute=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>
 			</txp:oui_if_cookie>
@@ -293,7 +293,7 @@ https://github.com/colak/txp-media-shortcode
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by MetaCafe on <a rel="external noopener" href="https://www.metacafe.com/watch/<txp:yield name="media" />/">metacafe.com/watch/<txp:yield name="media" />/</a>.</p>
-					<p><a rel="external noopener" href="https://www.metacafe.com/privacy/policy/">MetaCafe&#8217;s private policy</a>.</p>
+					<p class="licence"><a rel="external noopener licence" href="https://www.metacafe.com/privacy/policy/">MetaCafe&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_metacafe=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>
 			</txp:oui_if_cookie>
@@ -326,7 +326,7 @@ https://github.com/colak/txp-media-shortcode
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by Playtube on <a rel="external noopener" href="https://playtube.com/<txp:yield name="media" />">playtube.com/<txp:yield name="media" /></a>.</p>
-					<p><a rel="external noopener" href="https://playtube.pk/privacy">Playtube&#8217;s private policy</a>.</p>
+					<p class="licence"><a rel="external noopener licence" href="https://playtube.pk/privacy">Playtube&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_playtube=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>
 			</txp:oui_if_cookie>
@@ -357,7 +357,7 @@ https://github.com/colak/txp-media-shortcode
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by Freespeechtube on <a rel="external noopener" href="https://freespeechtube.com/<txp:yield name="media" />">freespeechtube.com/<txp:yield name="media" /></a>.</p>
-					<p><a rel="external noopener" href="https://www.freespeechtube.org/privacy/">Freespeechtube&#8217;s private policy</a>.</p>
+					<p class="licence"><a rel="external noopener licence" href="https://www.freespeechtube.org/privacy/">Freespeechtube&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_freespeechtube=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>
 			</txp:oui_if_cookie>
@@ -388,7 +388,7 @@ https://github.com/colak/txp-media-shortcode
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by Coub on <a rel="external noopener" href="https://coub.com/view/<txp:yield name="media" />/">coub.com/view/<txp:yield name="media" /></a>.</p>
-					<p><a rel="external noopener" href="https://coub.com/privacy">Coub&#8217;s private policy</a>.</p>
+					<p class="licence"><a rel="external noopener licence" href="https://coub.com/privacy">Coub&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_Coub=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>
 			</txp:oui_if_cookie>
@@ -419,7 +419,7 @@ https://github.com/colak/txp-media-shortcode
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by TED on <a rel="external noopener" href="https://www.ted.com/talks/<txp:yield name="media" />">ted.com/talks/<txp:yield name="media" /></a>.</p>
-					<p><a rel="external noopener" href="https://www.ted.com/about/our-organization/our-policies-terms/privacy-policy">TED&#8217;s private policy</a>.</p>
+					<p class="licence"><a rel="external noopener licence" href="https://www.ted.com/about/our-organization/our-policies-terms/privacy-policy">TED&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_ted=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>
 			</txp:oui_if_cookie>
@@ -454,7 +454,7 @@ https://github.com/colak/txp-media-shortcode
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by Vidyard on <a rel="external noopener" href="https://video.vidyard.com/watch/<txp:yield name="media" />">video.vidyard.com/watch/<txp:yield name="media" /></a>.</p>
-					<p><a rel="external noopener" href="https://www.vidyard.com/privacy/">Vidyard&#8217;s private policy</a>.</p>
+					<p class="licence"><a rel="external noopener licence" href="https://www.vidyard.com/privacy/">Vidyard&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_vidyard=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>
 			</txp:oui_if_cookie>
@@ -485,7 +485,7 @@ https://github.com/colak/txp-media-shortcode
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by Vlare on <a rel="external noopener" href="https://vlare.tv/v/<txp:yield name="media" />">vlare.tv/v/<txp:yield name="media" /></a>.</p>
-					<p><a rel="external noopener" href="https://vlare.tv/privacy">Vlare&#8217;s private policy</a>.</p>
+					<p class="licence"><a rel="external noopener licence" href="https://vlare.tv/privacy">Vlare&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_vlare=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>
 			</txp:oui_if_cookie>
@@ -586,7 +586,7 @@ https://github.com/colak/txp-media-shortcode
 					</txp:if_yield>
 					<txp:if_yield name="url" value="g">
 						<p>Hosted by Giphy on <a rel="external noopener" href="https://giphy.com/gifs/<txp:yield name="media" />">giphy.com/gifs/<txp:yield name="media" /></a>.</p>
-						<p><a rel="external noopener" href="https://support.giphy.com/hc/en-us/articles/360032872931-GIPHY-Privacy-Policy">Giphy&#8217;s private policy</a>.</p>
+						<p class="licence"><a rel="external noopener licence" href="https://support.giphy.com/hc/en-us/articles/360032872931-GIPHY-Privacy-Policy">Giphy&#8217;s private policy</a>.</p>
 						<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_giphy=yes#m_<txp:yield name="media" />">View it here</a></p>
 					</txp:if_yield>
 					<txp:if_yield name="url" value="">
@@ -624,7 +624,7 @@ https://github.com/colak/txp-media-shortcode
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by AudioBoom on <a rel="external noopener" href="https://audioboom.com/posts/<txp:yield name="media" />">audioboom.com/<txp:yield name="media" /></a>.</p>
-					<p><a rel="external noopener" href="https://audioboom.com/about/privacy">AudioBoom&#8217;s private policy</a>.</p>
+					<p class="licence"><a rel="external noopener licence" href="https://audioboom.com/about/privacy">AudioBoom&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_audioboom=yes#m_<txp:yield name="media" />">Listen to it here</a></p>
 				</div>
 			</txp:oui_if_cookie>
@@ -649,7 +649,7 @@ https://github.com/colak/txp-media-shortcode
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p>Hosted by IndieSound on <a rel="external noopener" href="https://www.indiesound.com/track/<txp:yield name="media" />">indiesound.com/track/<txp:yield name="media" /></a>.</p>
-					<p><a rel="external noopener" href="https://www.indiesound.com/blog/terms-conditions">IndieSound&#8217;s terms &amp; conditions</a>.</p>
+					<p class="licence"><a rel="external noopener licence" href="https://www.indiesound.com/blog/terms-conditions">IndieSound&#8217;s terms &amp; conditions</a>.</p>
 					<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_indiesound=yes#m_<txp:yield name="media" />">Listen to it here</a></p>
 				</div>
 			</txp:oui_if_cookie>
@@ -678,7 +678,7 @@ https://github.com/colak/txp-media-shortcode
 					<txp:else />
 						<p>Hosted by <a rel="external noopener" href="https://soundcloud.com/">SoundCloud</a>.</p>
 					</txp:if_yield>
-					<p><a rel="external noopener" href="https://soundcloud.com/pages/privacy">SoundCloud&#8217;s private policy</a>.</p>
+					<p class="licence"><a rel="external noopener licence" href="https://soundcloud.com/pages/privacy">SoundCloud&#8217;s private policy</a>.</p>
 					<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_soundcloud=yes#m_<txp:yield name="media" />">Listen to it here</a></p>
 				</div>
 			</txp:oui_if_cookie>
@@ -708,6 +708,7 @@ https://github.com/colak/txp-media-shortcode
 						<txp:if_logged_in>
 							<p class="error">Warning: <b>url</b> is a recommended attribute. Use url="artistname" and replace <i>artistname</i> with the name appearing in the subdomain.</p>
 						</txp:if_logged_in>
+						<p class="licence"><a rel="external noopener licence" href="https://bandcamp.com/privacy">Bandcamp&#8217;s private policy</a>.</p>
 					</txp:if_yield>	
 				</div>
 			</txp:oui_if_cookie>
@@ -744,7 +745,7 @@ https://github.com/colak/txp-media-shortcode
 					</txp:if_yield>
 					<txp:if_yield name="url">
 						<p>Hosted by Mixcloud on <a rel="external noopener" href="https://www.mixcloud.com/<txp:yield name="url" />/<txp:yield name="media" />/">mixcloud.com/<txp:yield name="url" />/<txp:yield name="media" />/</a>.</p>
-						<p><a rel="external noopener" href="https://www.mixcloud.com/privacy/">Mixcloud&#8217;s private policy</a>.</p>
+						<p class="licence"><a rel="external noopener licence" href="https://www.mixcloud.com/privacy/">Mixcloud&#8217;s private policy</a>.</p>
 						<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_mixcloud=yes#m_<txp:yield name="media" />">Listen to it here</a></p>
 					<txp:else />
 						<txp:if_logged_in>
@@ -782,7 +783,7 @@ https://github.com/colak/txp-media-shortcode
 						</txp:if_logged_in>
 					</txp:if_yield>
 					<p><a rel="external noopener" href="https://www.google.com/maps/d/embed?mid=<txp:yield name="media" />">google.com/maps/d/embed?mid=<txp:yield name="media" /></a>.
-					<p><a rel="external noopener" href="https://policies.google.com/">Google&#8217;s privacy policy</a>.</p>
+					<p class="licence"><a rel="external noopener licence" href="https://policies.google.com/">Google&#8217;s privacy policy</a>.</p>
 					<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_google_maps=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>
 			</txp:oui_if_cookie>
@@ -813,7 +814,7 @@ https://github.com/colak/txp-media-shortcode
 						</txp:if_logged_in>
 					</txp:if_yield>	
 					<p>Hosted by Datawrapper on <a rel="external noopener" href="https://www.datawrapper.de/_/<txp:yield name="media" />">datawrapper.de/_/<txp:yield name="media" /></a>.
-					<p><a rel="external noopener" href="https://www.datawrapper.de/privacy/">Datawrapper&#8217;s privacy policy</a>.</p>
+					<p class="licence"><a rel="external noopener licence" href="https://www.datawrapper.de/privacy/">Datawrapper&#8217;s privacy policy</a>.</p>
 					<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:site_name trim="/\s+/" replace="_" />_datawrapper=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>
 			</txp:oui_if_cookie>

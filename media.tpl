@@ -5,13 +5,13 @@ https://github.com/colak/txp-media-shortcode
 
 <txp:hide>Global variables</txp:hide>
 
-<txp:hide>Change the duration below to the one you prefer between warnings. A duration under +1 hour is recommended</txp:hide>
-<txp:variable name="hide"><txp:site_name trim="/\s+/" replace="_" />_hide</txp:variable>
-<txp:oui_cookie name='<txp:variable name="hide" />' duration="+30 minutes values="yes" />
 <txp:variable name="sitename"><txp:site_name trim="/\s+/" replace="_" /></txp:variable>
-<txp:hide>Change the duration below to the one you prefer between warnings to a duration of up to +1 year. +3 months is recommended</txp:hide>
+<txp:hide>Change the duration below to the one you prefer between warnings to a duration up to one year. 3 months is recommended</txp:hide>
 <txp:variable name="cookielife">duration="+3 months" values="yes"</txp:variable>
 
+<txp:hide>Set admin cookie for errors and warnings</txp:/hide>
+<txp:hide>Change the duration below to the one you prefer between warnings. A duration under one hour is recommended</txp:hide>
+<txp:oui_cookie name='<txp:variable name="sitename">_hide' duration="+30 minutes values="yes" />
 
 <txp:hide>Video or Audio</txp:hide>
 
@@ -83,11 +83,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
-						<txp:oui_if_cookie name='<txp:variable name="hide" />'>
+						<txp:oui_if_cookie name='<txp:variable name="sitename">_hide'>
 						<txp:else />
 							<div class="gdpr">
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="hide" />=yes" />">Hide warnings for 30 minutes</a></p>
+								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename">_hide=yes" />">Hide warnings for 30 minutes</a></p>
 							</div>
 						</txp:oui_if_cookie>
 					</txp:if_yield>
@@ -127,11 +127,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
-						<txp:oui_if_cookie name='<txp:variable name="hide" />'>
+						<txp:oui_if_cookie name='<txp:variable name="sitename">_hide'>
 						<txp:else />
 							<div class="gdpr">
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="hide" />=yes" />">Hide warnings for 30 minutes</a></p>
+								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename">_hide=yes" />">Hide warnings for 30 minutes</a></p>
 							</div>
 						</txp:oui_if_cookie>
 					</txp:if_yield>
@@ -173,11 +173,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
-						<txp:oui_if_cookie name='<txp:variable name="hide" />'>
+						<txp:oui_if_cookie name='<txp:variable name="sitename">_hide'>
 						<txp:else />
 							<div class="gdpr">
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="hide" />=yes" />">Hide warnings for 30 minutes</a></p>
+								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename">_hide=yes" />">Hide warnings for 30 minutes</a></p>
 							</div>
 						</txp:oui_if_cookie>
 					</txp:if_yield>
@@ -215,11 +215,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
-						<txp:oui_if_cookie name='<txp:variable name="hide" />'>
+						<txp:oui_if_cookie name='<txp:variable name="sitename">_hide'>
 						<txp:else />
 							<div class="gdpr">
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="hide" />=yes" />">Hide warnings for 30 minutes</a></p>
+								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename">_hide=yes" />">Hide warnings for 30 minutes</a></p>
 							</div>
 						</txp:oui_if_cookie>
 					</txp:if_yield>
@@ -261,11 +261,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
-						<txp:oui_if_cookie name='<txp:variable name="hide" />'>
+						<txp:oui_if_cookie name='<txp:variable name="sitename">_hide'>
 						<txp:else />
 							<div class="gdpr">
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="hide" />=yes" />">Hide warnings for 30 minutes</a></p>
+								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename">_hide=yes" />">Hide warnings for 30 minutes</a></p>
 							</div>
 						</txp:oui_if_cookie>
 					</txp:if_yield>
@@ -303,11 +303,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
-						<txp:oui_if_cookie name='<txp:variable name="hide" />'>
+						<txp:oui_if_cookie name='<txp:variable name="sitename">_hide'>
 						<txp:else />
 							<div class="gdpr">
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="hide" />=yes" />">Hide warnings for 30 minutes</a></p>
+								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename">_hide=yes" />">Hide warnings for 30 minutes</a></p>
 							</div>
 						</txp:oui_if_cookie>
 					</txp:if_yield>
@@ -349,11 +349,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
-						<txp:oui_if_cookie name='<txp:variable name="hide" />'>
+						<txp:oui_if_cookie name='<txp:variable name="sitename">_hide'>
 						<txp:else />
 							<div class="gdpr">
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="hide" />=yes" />">Hide warnings for 30 minutes</a></p>
+								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename">_hide=yes" />">Hide warnings for 30 minutes</a></p>
 							</div>
 						</txp:oui_if_cookie>
 					</txp:if_yield>
@@ -397,11 +397,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
-						<txp:oui_if_cookie name='<txp:variable name="hide" />'>
+						<txp:oui_if_cookie name='<txp:variable name="sitename">_hide'>
 						<txp:else />
 							<div class="gdpr">
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="hide" />=yes" />">Hide warnings for 30 minutes</a></p>
+								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename">_hide=yes" />">Hide warnings for 30 minutes</a></p>
 							</div>
 						</txp:oui_if_cookie>
 					</txp:if_yield>
@@ -441,11 +441,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
-						<txp:oui_if_cookie name='<txp:variable name="hide" />'>
+						<txp:oui_if_cookie name='<txp:variable name="sitename">_hide'>
 						<txp:else />
 							<div class="gdpr">
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="hide" />=yes" />">Hide warnings for 30 minutes</a></p>
+								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename">_hide=yes" />">Hide warnings for 30 minutes</a></p>
 							</div>
 						</txp:oui_if_cookie>
 					</txp:if_yield>
@@ -483,11 +483,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
-						<txp:oui_if_cookie name='<txp:variable name="hide" />'>
+						<txp:oui_if_cookie name='<txp:variable name="sitename">_hide'>
 						<txp:else />
 							<div class="gdpr">
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="hide" />=yes" />">Hide warnings for 30 minutes</a></p>
+								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename">_hide=yes" />">Hide warnings for 30 minutes</a></p>
 							</div>
 						</txp:oui_if_cookie>
 					</txp:if_yield>
@@ -525,11 +525,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
-						<txp:oui_if_cookie name='<txp:variable name="hide" />'>
+						<txp:oui_if_cookie name='<txp:variable name="sitename">_hide'>
 						<txp:else />
 							<div class="gdpr">
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="hide" />=yes" />">Hide warnings for 30 minutes</a></p>
+								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename">_hide=yes" />">Hide warnings for 30 minutes</a></p>
 							</div>
 						</txp:oui_if_cookie>
 					</txp:if_yield>
@@ -567,11 +567,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
-						<txp:oui_if_cookie name='<txp:variable name="hide" />'>
+						<txp:oui_if_cookie name='<txp:variable name="sitename">_hide'>
 						<txp:else />
 							<div class="gdpr">
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="hide" />=yes" />">Hide warnings for 30 minutes</a></p>
+								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename">_hide=yes" />">Hide warnings for 30 minutes</a></p>
 							</div>
 						</txp:oui_if_cookie>
 					</txp:if_yield>
@@ -613,11 +613,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
-						<txp:oui_if_cookie name='<txp:variable name="hide" />'>
+						<txp:oui_if_cookie name='<txp:variable name="sitename">_hide'>
 						<txp:else />
 							<div class="gdpr">
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="hide" />=yes" />">Hide warnings for 30 minutes</a></p>
+								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename">_hide=yes" />">Hide warnings for 30 minutes</a></p>
 							</div>
 						</txp:oui_if_cookie>
 					</txp:if_yield>
@@ -655,11 +655,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
-						<txp:oui_if_cookie name='<txp:variable name="hide" />'>
+						<txp:oui_if_cookie name='<txp:variable name="sitename">_hide'>
 						<txp:else />
 							<div class="gdpr">
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="hide" />=yes" />">Hide warnings for 30 minutes</a></p>
+								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename">_hide=yes" />">Hide warnings for 30 minutes</a></p>
 							</div>
 						</txp:oui_if_cookie>
 					</txp:if_yield>
@@ -780,11 +780,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
-						<txp:oui_if_cookie name='<txp:variable name="hide" />'>
+						<txp:oui_if_cookie name='<txp:variable name="sitename">_hide'>
 						<txp:else />
 							<div class="gdpr">
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="hide" />=yes" />">Hide warnings for 30 minutes</a></p>
+								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename">_hide=yes" />">Hide warnings for 30 minutes</a></p>
 							</div>
 						</txp:oui_if_cookie>
 					</txp:if_yield>
@@ -816,11 +816,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
-						<txp:oui_if_cookie name='<txp:variable name="hide" />'>
+						<txp:oui_if_cookie name='<txp:variable name="sitename">_hide'>
 						<txp:else />
 							<div class="gdpr">
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="hide" />=yes" />">Hide warnings for 30 minutes</a></p>
+								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename">_hide=yes" />">Hide warnings for 30 minutes</a></p>
 							</div>
 						</txp:oui_if_cookie>
 					</txp:if_yield>
@@ -852,11 +852,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
-						<txp:oui_if_cookie name='<txp:variable name="hide" />'>
+						<txp:oui_if_cookie name='<txp:variable name="sitename">_hide'>
 						<txp:else />
 							<div class="gdpr">
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="hide" />=yes" />">Hide warnings for 30 minutes</a></p>
+								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename">_hide=yes" />">Hide warnings for 30 minutes</a></p>
 							</div>
 						</txp:oui_if_cookie>
 					</txp:if_yield>
@@ -892,11 +892,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
-						<txp:oui_if_cookie name='<txp:variable name="hide" />'>
+						<txp:oui_if_cookie name='<txp:variable name="sitename">_hide'>
 						<txp:else />
 							<div class="gdpr">
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="hide" />=yes" />">Hide warnings for 30 minutes</a></p>
+								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename">_hide=yes" />">Hide warnings for 30 minutes</a></p>
 							</div>
 						</txp:oui_if_cookie>
 					</txp:if_yield>
@@ -933,11 +933,11 @@ https://github.com/colak/txp-media-shortcode
 						<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;light=1&amp;feed=%2F<txp:yield name="url" />%2F<txp:yield name="media" />%2F" frameborder="0" ></iframe>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
-						<txp:oui_if_cookie name='<txp:variable name="hide" />'>
+						<txp:oui_if_cookie name='<txp:variable name="sitename">_hide'>
 						<txp:else />
 							<div class="gdpr">
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="hide" />=yes" />">Hide warnings for 30 minutes</a></p>
+								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename">_hide=yes" />">Hide warnings for 30 minutes</a></p>
 							</div>
 						</txp:oui_if_cookie>
 					</txp:if_yield>
@@ -988,11 +988,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
-						<txp:oui_if_cookie name='<txp:variable name="hide" />'>
+						<txp:oui_if_cookie name='<txp:variable name="sitename">_hide'>
 						<txp:else />
 							<div class="gdpr">
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="hide" />=yes" />">Hide warnings for 30 minutes</a></p>
+								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename">_hide=yes" />">Hide warnings for 30 minutes</a></p>
 							</div>
 						</txp:oui_if_cookie>
 					</txp:if_yield>
@@ -1030,11 +1030,11 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
-						<txp:oui_if_cookie name='<txp:variable name="hide" />'>
+						<txp:oui_if_cookie name='<txp:variable name="sitename">_hide'>
 						<txp:else />
 							<div class="gdpr">
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
-								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="hide" />=yes" />">Hide warnings for 30 minutes</a></p>
+								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename">_hide=yes" />">Hide warnings for 30 minutes</a></p>
 							</div>
 						</txp:oui_if_cookie>
 					</txp:if_yield>

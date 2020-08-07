@@ -9,7 +9,7 @@ https://github.com/colak/txp-media-shortcode
 <txp:variable name="sitename"><txp:site_name trim="/\s+/" replace="_" /></txp:variable>
 
 <txp:hide>Change the duration below to the one you prefer between warnings. A duration under +1 hour is recommended</txp:hide>
-<txp:oui_cookie name='<txp:variable name="sitename" />_hide' duration="+30 minutes values="yes" />
+<txp:oui_cookie name='<txp:variable name="sitename" />_hide' duration="+30 minutes" values="yes" />
 
 <txp:hide>Change the duration below to the one you prefer between warnings to a duration of up to +1 year. +3 months is recommended</txp:hide>
 <txp:variable name="cookielife">+3 months</txp:variable>

@@ -699,7 +699,7 @@ https://github.com/colak/txp-media-shortcode
 							<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
 						</txp:if_logged_in>
 					</txp:if_yield>
-					<p>Served by YouTube-nocookie but originally resides on <a rel="external noopener" href="https://youtube.com/watch?v=<txp:yield name="media" />">youtube.com/watch?v=<txp:yield name="media" /></a>.</p>
+					<p>Served by YouTube-nocookie but originally resides on <a rel="external noopener" href="https://youtu.be/<txp:yield name="media" />">youtu.be/<txp:yield name="media" /></a>.</p>
 					<p>We could not find YouTube-nocookie&#8217;s privacy policy.</p>
 					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename" />_youtubenocookie=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>

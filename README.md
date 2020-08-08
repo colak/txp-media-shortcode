@@ -120,13 +120,19 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 			<td colspan="7"> <b>Video</b> </td>
 		</tr>
 		<tr>
-			<td> <a href="https://www.youtube.com/">YouTube</a> </td>
-			<td> yt </td>
-			<td> NA </td>
-			<td> &check; </td>
-			<td> &check; </td>
-			<td> 0 </td>
-			<td> <a href="#7-embed-from-youtube">(7)</a> </td>
+			<td rowspan="3"> <a href="https://www.youtube.com/">YouTube</a> </td>
+			<td rowspan="3"> yt </td>
+			<td> &nbsp; </td>
+			<td rowspan="3"> &check; </td>
+			<td rowspan="3"> &check; </td>
+			<td rowspan="3"> 0 </td>
+			<td rowspan="3"> <a href="#7-embed-from-youtube">(7)</a> </td>
+		</tr>
+		<tr>
+			<td> url="pl" </td>
+		</tr>
+		<tr>
+			<td> url="user" </td>
 		</tr>
 		<tr>
 			<td rowspan="2"> <a href="https://www.vimeo.com/">Vimeo</a> </td>

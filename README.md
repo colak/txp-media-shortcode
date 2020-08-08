@@ -336,6 +336,10 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 
 ### 1. Embed from Vimeo
 
+The shortcode allows for individual video embeds and Vimeo albums. 
+
+To embed an individual video use
+
 `<txp::media from="v" media="336049258" title="My awesome video" img="33" />`
 
 Resulting code before cookie is accepted
@@ -367,6 +371,17 @@ Resulting code before cookie is accepted
 		<p><a rel="external noopener" href="https://vimeo.com/privacy">Vimeo&#8217;s private policy</a>.</p>
 		<p class="accept"><a rel="nofollow" href="?My_Site_vimeo_cookie=yes#m_336049258">View it here</a></p>
 	</div>
+
+For Vimeo albums use the `url="a"` attribute
+
+`<txp::media from="v" media="2217152" url="a" title="Through the Roadblocks" img="33" />`
+
+Resulting code after cookie is accepted
+
+	<div style='padding:75% 0 0 0;position:relative;'>
+		<iframe src='https://vimeo.com/showcase/2217152/embed' allowfullscreen frameborder='0' style='position:absolute;top:0;left:0;width:100%;height:100%;'></iframe>		</div>
+
+`<txp::media from="v" media="336049258" title="My awesome video" img="33" />`
 
 ### 2. Embed from SoundCloud
 
@@ -500,6 +515,10 @@ The resulting code will be
 
 YouTube's url structures allow for the presentation of the video thumbnail before their cookies are served. As such the code below also embeds the thumbnail before the cookie is accepted. 
 
+The shorcode allows for embeding individual videos, YouTube playlists, or a feed from a YouTube user. 
+
+Embed an individual video
+
 `<txp::media from="yt" media="zlZTghhCuxg" title="Delivery for Mr. Assange" />`
 
 Resulting code before cookie is accepted
@@ -547,6 +566,26 @@ Resulting code before cookie is accepted
 		<p>Hosted by YouTube on <a rel="external noopener" href=https://youtu.be/zlZTghhCuxg">youtu.be/zlZTghhCuxg</a>.</p>
 		<p><a rel="external noopener" href="https://youtube.com/privacy">YouTube&#8217;s private policy</a>.</p>
 		<p class="accept"><a rel="nofollow" href="?My_Site_youtube_cookie=yes#m_zlZTghhCuxg">View it here</a></p>
+	</div>
+
+Embed a user
+
+`<txp::media from="yt" url="user" media="thejuicemedia" title="The Juice Media" />`
+
+Resulting code after cookie is accepted
+
+	<div class="embed-container">
+		<iframe src="https://www.youtube.com/embed?listType=user_uploads&amp;list=thejuicemedia" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+
+Embed a playlist (Note that YouTube playlist IDs always start with `PL`.
+
+`<txp::media from="yt" url="pl" media="PLAC463A2B6B2CEC7F" title="Ted talks" />`
+
+Resulting code after cookie is accepted
+
+	<div class="embed-container">
+		<iframe src="https://www.youtube.com/embed/videoseries?list=PLAC463A2B6B2CEC7F" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 
 ### 8. Embed from the Internet archive

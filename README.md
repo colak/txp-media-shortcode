@@ -129,13 +129,16 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 			<td> <a href="#7-embed-from-youtube">(7)</a> </td>
 		</tr>
 		<tr>
-			<td> <a href="https://www.vimeo.com/">Vimeo</a> </td>
-			<td> v </td>
-			<td> NA </td>
-			<td> &check; </td>
-			<td> &check; </td>
-			<td> NA </td>
-			<td> <a href="#1-embed-from-vimeo">(1)</a> </td>
+			<td rowspan="2"> <a href="https://www.vimeo.com/">Vimeo</a> </td>
+			<td rowspan="2"> v </td>
+			<td> </td>
+			<td rowspan="2"> &check; </td>
+			<td rowspan="2"> &check; </td>
+			<td rowspan="2"> NA </td>
+			<td rowspan="2"> <a href="#1-embed-from-vimeo">(1)</a> </td>
+		</tr>
+		<tr>
+			<td> url="a" </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.dailymotion.com/">DailyMotion</a> </td>

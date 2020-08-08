@@ -131,7 +131,7 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 		<tr>
 			<td rowspan="2"> <a href="https://www.vimeo.com/">Vimeo</a> </td>
 			<td rowspan="2"> v </td>
-			<td> </td>
+			<td> &nbsp; </td>
 			<td rowspan="2"> &check; </td>
 			<td rowspan="2"> &check; </td>
 			<td rowspan="2"> NA </td>

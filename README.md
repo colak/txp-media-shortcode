@@ -568,7 +568,7 @@ Resulting code before cookie is accepted
 		<p class="accept"><a rel="nofollow" href="?My_Site_youtube_cookie=yes#m_zlZTghhCuxg">View it here</a></p>
 	</div>
 
-Embed a user
+To embed a YouTube user's feed use the `media` attribute for the user handle and the `url` attribute to prompt the shortcode that it will will be embedding the feed. 
 
 `<txp::media from="yt" url="user" media="thejuicemedia" title="The Juice Media" />`
 
@@ -578,9 +578,9 @@ Resulting code after cookie is accepted
 		<iframe src="https://www.youtube.com/embed?listType=user_uploads&amp;list=thejuicemedia" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 
-Embed a playlist (Note that YouTube playlist IDs always start with `PL`.
+To embed a playlist from YouTube use the `url` attribute to prompt the shortcode that it will be loading a playlist and the `media` attribute for the playlist ID. Note that YouTube playlist IDs always start with `PL`. 
 
-`<txp::media from="yt" url="pl" media="PLAC463A2B6B2CEC7F" title="Ted talks" />`
+`<txp::media from="yt" url="pl" media="PLAC463A2B6B2CEC7F" title="TED talks" />`
 
 Resulting code after cookie is accepted
 

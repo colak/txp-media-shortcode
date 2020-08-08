@@ -125,7 +125,15 @@ https://github.com/colak/txp-media-shortcode
 		<txp:oui_cookie name='<txp:variable name="sitename" />_youtube' duration='<txp:variable name="cookielife" />' values="yes" />
 			<txp:oui_if_cookie name='<txp:variable name="sitename" />_youtube'>
 				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
-					<iframe src="https://www.youtube.com/embed/<txp:yield name="media" />" allowfullscreen></iframe>
+					<txp:if_yield name="url" value="pl">
+						<iframe src="https://www.youtube.com/embed/videoseries?list=<txp:yield name="media" />" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</txp:if_yield>
+					<txp:if_yield name="url" value="user">
+						<iframe src="https://www.youtube.com/embed?listType=user_uploads&amp;list=<txp: yield name="media" />" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</txp:if_yield>
+					<txp:if_yield name="url" value="">
+						<iframe src="https://www.youtube.com/embed/<txp:yield name="media" />" allowfullscreen></iframe>
+					</txp:if_yield>
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>

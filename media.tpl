@@ -129,7 +129,7 @@ https://github.com/colak/txp-media-shortcode
 						<iframe src="https://www.youtube.com/embed/videoseries?list=<txp:yield name="media" />" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</txp:if_yield>
 					<txp:if_yield name="url" value="user">
-						<iframe src="https://www.youtube.com/embed?listType=user_uploads&amp;list=<txp: yield name="media" />" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe src="https://www.youtube.com/embed?listType=user_uploads&amp;list=<txp:yield name="media" />" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</txp:if_yield>
 					<txp:if_yield name="url" value="">
 						<iframe src="https://www.youtube.com/embed/<txp:yield name="media" />" allowfullscreen></iframe>

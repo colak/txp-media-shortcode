@@ -171,7 +171,11 @@ https://github.com/colak/txp-media-shortcode
 		<txp:oui_cookie name='<txp:variable name="sitename" />_vimeo' duration='<txp:variable name="cookielife" />' values="yes" />
 			<txp:oui_if_cookie name='<txp:variable name="sitename" />_vimeo'>
 				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
-					<iframe src="https://player.vimeo.com/video/<txp:yield name="media" />?title=0&amp;byline=0&amp;portrait=0" allowfullscreen></iframe>
+					<txp:if_yield name="url" value="a">
+						<iframe src='https://vimeo.com/showcase/<txp:yield name="media" />/embed' allowfullscreen frameborder='0' style='position:absolute;top:0;left:0;width:100%;height:100%;'></iframe>
+					<txp:else />
+						<iframe src="https://player.vimeo.com/video/<txp:yield name="media" />?title=0&amp;byline=0&amp;portrait=0" allowfullscreen></iframe>
+					</txp:if_yield>
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>

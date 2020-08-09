@@ -94,14 +94,14 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 			<td> &check; </td>
 			<td> &check; </td>
 			<td> mp4, ogg, mpeg-4, flac, webm </td>
-			<td> <a href="#6-embed-a-local-video">(6)</a> </td>
+			<td> <a href="#5-embed-a-local-video">(5)</a> </td>
 		</tr>
 		<tr>
 			<td> url="a" </td>
 			<td> NA </td>
 			<td> NA </td>
 			<td> m4a, mp3, ogg, mp4, sac, webm, flac </td>
-			<td> <a href="#4-embed-local-audio">(4)</a> </td>
+			<td> <a href="#3-embed-local-audio">(3)</a> </td>
 		</tr>
 		<tr>
 			<td rowspan="2"> <a href="https://archive.org/">Internet Archive</a> </td>
@@ -110,7 +110,7 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 			<td rowspan="2"> &check; </td>
 			<td> &check; </td>
 			<td rowspan="2"> NA </td>
-			<td rowspan="2"> <a href="#8-embed-from-the-internet-archive">(8)</a> </td>
+			<td rowspan="2"> <a href="#7-embed-from-the-internet-archive">(7)</a> </td>
 		</tr>
 		<tr>
 			<td> url="a" </td>
@@ -126,7 +126,7 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 			<td rowspan="3"> &check; </td>
 			<td rowspan="3"> &check; </td>
 			<td rowspan="3"> 0 </td>
-			<td rowspan="3"> <a href="#7-embed-from-youtube">(7)</a> </td>
+			<td rowspan="3"> <a href="#6-embed-from-youtube">(6)</a> </td>
 		</tr>
 		<tr>
 			<td> url="pl" </td>
@@ -255,7 +255,7 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 			<td rowspan="2"> &check; </td>
 			<td rowspan="2"> &check; </td>
 			<td rowspan="2"> NA </td>
-			<td rowspan="2"> <a href="#5-embed-from-giphy">(5)</a> </td>
+			<td rowspan="2"> <a href="#4-embed-from-giphy">(4)</a> </td>
 		</tr>
 		<tr>
 			<td> url="v" </td>
@@ -288,7 +288,7 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 			<td> &check; </td>
 			<td> NA </td>
 			<td> NA </td>
-			<td> <a href="#2-embed-from-soundcloud">(2)</a>, <a href="#3-embed-from-soundcloud-using-the-url-attribute">(3)</a> </td>
+			<td> <a href="#2-embed-from-soundcloud">(2)</a> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://bandcamp.com/">BandCamp</a> (albums) </td>
@@ -306,7 +306,7 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 			<td> &check; </td>
 			<td> NA </td>
 			<td> NA </td>
-			<td> <a href="#10-embed-from-mixcloud">(10)</a> </td>
+			<td> <a href="#9-embed-from-mixcloud">(9)</a> </td>
 		</tr>
 		<tr>
 			<td colspan="7" style="background-color:#ffc;color:#000;"> <b>Others</b> </td>
@@ -402,7 +402,7 @@ Resulting code after cookie is accepted
 		<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/336049258&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
 	</div>
 
-### 3. Embed from SoundCloud using the url attribute
+Embed from SoundCloud using the url attribute
 
 `<txp::media from="sc" media="336049258" title="News from Nowhere" url="https://soundcloud.com/furtherfield/news-from-where-we-are-1" />`
 
@@ -417,7 +417,7 @@ Resulting code before cookie is accepted
 
 The resulting code after the cookie is accepted is the same as the one in the second example.
 
-### 4. Embed local audio
+### 3. Embed local audio
 
 The html5 audio tag, allows for the embedding of multiple formats to enhance compatibility with the various browsers and computer setups. To embed music residing in your installation's files directory, first upload the audio files using the same name followed by the extension. In your articles call the file name and state the extensions you have encoded those files to. (Currently the tag supports m4a, mp3, mp4, aac, webm, flac and ogg). You may want to check the [formats supported by different web browsers](https://en.wikipedia.org/wiki/HTML5_audio#Supported_audio_coding_formats).
 
@@ -434,7 +434,7 @@ The resulting code will be
 		</audio>
 	</span>
 
-### 5. Embed from Giphy
+### 4. Embed from Giphy
 
 Giphy offers two types of urls based on the media type, gif and video.
 
@@ -479,7 +479,7 @@ Resulting code after cookie is accepted
 		<iframe src="https://giphy.com/embed/YOMRpF8MSxjMqlPO6h" frameBorder="0" allowFullScreen></iframe>
 	</div>
 
-### 6. Embed a local video
+### 5. Embed a local video
 
 The html5 video tag, allows for the embedding of multiple formats to enhance compatibility with the various browsers and computer setups. To embed your videos residing in your installation's files directory, first upload the video files using the same name followed by the extension. In your articles call the file name and state the extensions you have encoded those files to. (Currently the tag supports  mp4, ogg, mpeg-4, flac, webm). You may want to check the [status of video format support in each web browser](https://en.wikipedia.org/wiki/HTML5_video#Browser_support).
 
@@ -511,7 +511,7 @@ The resulting code will be
 		</video>
 	</span>
 
-### 7. Embed from YouTube
+### 6. Embed from YouTube
 
 YouTube's url structures allow for the presentation of the video thumbnail before their cookies are served. As such the code below also embeds the thumbnail before the cookie is accepted. 
 
@@ -588,7 +588,7 @@ Resulting code after cookie is accepted
 		<iframe src="https://www.youtube.com/embed/videoseries?list=PLAC463A2B6B2CEC7F" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 
-### 8. Embed from the Internet archive
+### 7. Embed from the Internet archive
 
 The Internet archive allows the embedding of both video and audio files.
 
@@ -622,7 +622,7 @@ Resulting code after cookie is accepted
 	</div>
 
 
-### 9. Embed from Bandcamp
+### 8. Embed from Bandcamp
 
 Bandcamp offers subdomains for their artists and normalised urls do not appear to be supported. The id of the tracks can be found in their embed code but found no way to link to their pages by using those ids. Having this in mind, to embed from Bandcamp use
 
@@ -653,7 +653,7 @@ If the url attribute is not used, a warning, only visible to logged in users wil
 		<p class="accept"><a rel="nofollow" href="?My_Site_bandcamp_cookie=yes#m_600847421">Listen to it here</a></p>
 	</div>
 
-### 10. Embed from Mixcloud
+### 9. Embed from Mixcloud
 
 Mixcloud offers subdirectories for their artists and normalised urls do not appear to be supported. The id of the tracks can be found in their embed code but found no way to link to their pages by using those ids. Also the artist's name is a required field and should be used under the `url` attribute. Having this in mind, to embed from Mixcloud use
 

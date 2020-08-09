@@ -65,9 +65,9 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 1. from (required)
 2. media (required)
 3. title (recommended)
-4. url (Only available for some hosts)
+4. url (Required or recommended by some hosts)
 5. img (optional id of an image from the database)
-6. <i>others</i>. (Only available for locally served media. See examples.)
+6. <i>others</i>. (See examples.)
 
 ### Details
 

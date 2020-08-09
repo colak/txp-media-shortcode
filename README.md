@@ -297,7 +297,7 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 			<td> &check; </td>
 			<td> NA </td>
 			<td> NA </td>
-			<td> <a href="#9-embed-from-bandcamp">(9)</a> </td>
+			<td> <a href="#8-embed-from-bandcamp">(8)</a> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://www.mixcloud.com/">MixCloud</a> </td>

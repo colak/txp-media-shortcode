@@ -402,7 +402,7 @@ Resulting code after cookie is accepted
 		<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/336049258&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
 	</div>
 
-Embed from SoundCloud using the url attribute
+Embed from SoundCloud **using the url** attribute
 
 `<txp::media from="sc" media="336049258" title="News from Nowhere" url="https://soundcloud.com/furtherfield/news-from-where-we-are-1" />`
 
@@ -441,7 +441,7 @@ Giphy offers two types of urls based on the media type, gif and video.
 * giphy.com/gifs/name
 * giphy.com/videos/name
 
-To embed a gif from Giphy use
+To embed a **gif from Giphy** use
 
 `<txp::media from="gp" media="QZyYmcnN7uYgx6uGyL" title="We want justice" url="g" />`
 
@@ -460,7 +460,7 @@ Resulting code after cookie is accepted
 		<iframe src="https://giphy.com/embed/QZyYmcnN7uYgx6uGyL" frameBorder="0" allowFullScreen></iframe>
 	</div>
 
-To embed a video from Giphy use
+To embed a **video from Giphy** use
 
 `<txp::media from="gp" media="YOMRpF8MSxjMqlPO6h" title="Tear Gas" url="v" />`
 
@@ -517,7 +517,7 @@ YouTube's url structures allow for the presentation of the video thumbnail befor
 
 The shorcode allows for embeding individual videos, YouTube playlists, or a feed from a YouTube user. 
 
-Embed an individual video
+Embed an **individual video**
 
 `<txp::media from="yt" media="zlZTghhCuxg" title="Delivery for Mr. Assange" />`
 
@@ -568,7 +568,7 @@ Resulting code before cookie is accepted
 		<p class="accept"><a rel="nofollow" href="?My_Site_youtube_cookie=yes#m_zlZTghhCuxg">View it here</a></p>
 	</div>
 
-To embed a YouTube user's feed use the `media` attribute for the user handle and the `url` attribute to prompt the shortcode that it will will be embedding the feed. 
+To embed a **YouTube user's feed** use the `media` attribute for the user handle and the `url` attribute to prompt the shortcode that it will will be embedding the feed. 
 
 `<txp::media from="yt" url="user" media="thejuicemedia" title="The Juice Media" />`
 
@@ -578,7 +578,7 @@ Resulting code after cookie is accepted
 		<iframe src="https://www.youtube.com/embed?listType=user_uploads&amp;list=thejuicemedia" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 
-To embed a playlist from YouTube use the `url` attribute to prompt the shortcode that it will be loading a playlist and the `media` attribute for the playlist ID. Note that YouTube playlist IDs always start with `PL`. 
+To embed a **playlist from YouTube** use the `url` attribute to prompt the shortcode that it will be loading a playlist and the `media` attribute for the playlist ID. Note that YouTube playlist IDs always start with `PL`. 
 
 `<txp::media from="yt" url="pl" media="PLAC463A2B6B2CEC7F" title="TED talks" />`
 
@@ -592,7 +592,7 @@ Resulting code after cookie is accepted
 
 The Internet archive allows the embedding of both video and audio files.
 
-To embed a video from the the Archive simply, use
+To embed a **video** from the the Archive simply, use
 
 `<txp::media from="ia" media="PiesAndaluzyjski" title="Luis Bunuel: Un Chien Andalou, 1929" />`
 

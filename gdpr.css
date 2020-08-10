@@ -80,7 +80,8 @@ video {
 }
 
 @media print {
-  body, .gdpr {
+  body,
+  .gdpr {
     color: #000;
     background-color: #fff;
   }

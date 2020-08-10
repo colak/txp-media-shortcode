@@ -15,7 +15,7 @@
   height:100%;
 }
 .embed-container iframe {
-    border-width: 0px;border:0;border:none;
+  border-width: 0px;border:0;border:none;
 }
 /* Pre cookie acceptance container */
 .gdpr {
@@ -57,8 +57,6 @@
 .gdpr p.error {
   background-color:#fff;
   color: #ba0000;
-  margin:1em;
-  padding:.5em 1em;
   border: 2px solid #ba0000;
   -moz-border-radius:8px;
   -webkit-border-radius:8px;
@@ -82,9 +80,9 @@ video {
 @media print {
   body, .gdpr {
     color: #000;
-    background: #fff;
+    background-color: #fff;
   }
- .embed-container, .gdpr p.error {
+ .embed-container, .gdpr p.error, .gdpr p.accept a {
     display:none;
   }
   .gdpr .licence a[href]:after {

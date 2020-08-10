@@ -7,7 +7,9 @@
   overflow:hidden;
   max-width:100%;
 }
-.embed-container embed,.embed-container iframe,.embed-container object {
+.embed-container embed,
+.embed-container iframe,
+.embed-container object {
   position:absolute;
   top:0;
   left:0;
@@ -82,7 +84,9 @@ video {
     color: #000;
     background-color: #fff;
   }
- .embed-container, .gdpr p.error, .gdpr p.accept a {
+ .embed-container,
+ .gdpr p.error,
+ .gdpr p.accept a {
     display:none;
   }
   .gdpr .licence a[href]:after {

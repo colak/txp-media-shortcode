@@ -302,7 +302,7 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 		<tr>
 			<td> <a href="https://www.mixcloud.com/">MixCloud</a> </td>
 			<td> mix </td>
-			<td> Artist&#8217;s name as it appears in the direcory</td>
+			<td> Artist&#8217;s name as it appears in the url</td>
 			<td> &check; </td>
 			<td> NA </td>
 			<td> NA </td>

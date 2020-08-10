@@ -336,7 +336,7 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 
 ### 1. Embed from Vimeo
 
-The shortcode allows for individual video embeds and Vimeo albums. 
+The shortcode allows for **individual video** embeds and Vimeo albums. 
 
 To embed an individual video use
 
@@ -372,7 +372,7 @@ Resulting code before cookie is accepted
 		<p class="accept"><a rel="nofollow" href="?My_Site_vimeo_cookie=yes#m_336049258">View it here</a></p>
 	</div>
 
-For Vimeo albums use the `url="a"` attribute
+For Vimeo **albums** use the `url="a"` attribute
 
 `<txp::media from="v" media="2217152" url="a" title="Through the Roadblocks" img="33" />`
 

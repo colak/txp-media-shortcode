@@ -871,7 +871,11 @@ https://github.com/colak/txp-media-shortcode
 					<txp:if_yield name="url">
 						<p>Hosted by SoundCloud on <a rel="external noopener" href="<txp:yield name="url" />"><txp:yield name="url" /></a>.</p>
 					<txp:else />
-						<p>Hosted by <a rel="external noopener" href="https://soundcloud.com/">SoundCloud</a>.</p>
+						<txp:if_logged_in>
+							<p class="error">Warning: <b>url</b> is a recommended attribute.</p>
+						<txp:else />
+							<p>Hosted by <a rel="external noopener" href="https://soundcloud.com/">SoundCloud</a>.</p>
+						<txp:if_logged_in>
 					</txp:if_yield>
 					<p class="licence"><a rel="external noopener licence" href="https://soundcloud.com/pages/privacy">SoundCloud&#8217;s privacy policy</a>.</p>
 					<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename" />_soundcloud=yes#m_<txp:yield name="media" />">Listen to it here</a></p>

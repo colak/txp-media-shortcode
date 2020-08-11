@@ -699,7 +699,7 @@ https://github.com/colak/txp-media-shortcode
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:variable name="sitename" />_giphy' duration='<txp:variable name="cookielife" />' values="yes" />
 			<txp:oui_if_cookie name='<txp:variable name="sitename" />_giphy'>
-				<txp:if_yield name="url" value="">
+				<txp:if_yield name="url" not>
 					<txp:if_logged_in>
 						<div class="gdpr">
 							<txp:if_yield name="title" not>
@@ -754,7 +754,7 @@ https://github.com/colak/txp-media-shortcode
 						<p class="licence"><a rel="external noopener licence" href="https://support.giphy.com/hc/en-us/articles/360032872931-GIPHY-Privacy-Policy">Giphy&#8217;s privacy policy</a>.</p>
 						<p class="accept"><a rel= "nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename" />_giphy=yes#m_<txp:yield name="media" />">View it here</a></p>
 					</txp:if_yield>
-					<txp:if_yield name="url" value="">
+					<txp:if_yield name="url" not>
 						<txp:if_logged_in>
 							<p class="error">Error: <b>url</b> is a required attribute.use url="g" for gif embeds and url="v" for video embeds.</p>
 						</txp:if_logged_in>

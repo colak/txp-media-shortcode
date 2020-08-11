@@ -187,7 +187,8 @@ https://github.com/colak/txp-media-shortcode
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
-						<txp:oui_if_cookie name='<txp:variable name="sitename" />_hide' not>							<div class="gdpr">
+						<txp:oui_if_cookie name='<txp:variable name="sitename" />_hide' not>
+							<div class="gdpr">
 								<p class="error">Warning: <b>title</b> is a recommended attribute.</p>
 								<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename" />_hide=yes">Hide warnings for 30 minutes</a></p>
 							</div>

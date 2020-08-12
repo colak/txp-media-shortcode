@@ -382,7 +382,7 @@ For Vimeo **albums** use the `url="a"` attribute
 
 Resulting code after cookie is accepted
 
-	<div style='padding:75% 0 0 0;position:relative;'>
+	<div class="embed-container" id="m_2217152" itemscope itemtype="http://schema.org/VideoObject">
 		<iframe src='https://vimeo.com/showcase/2217152/embed' allowfullscreen frameborder='0' style='position:absolute;top:0;left:0;width:100%;height:100%;'></iframe>		</div>
 
 `<txp::media from="v" media="336049258" title="My awesome video" img="33" />`

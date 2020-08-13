@@ -45,8 +45,8 @@ https://github.com/colak/txp-media-shortcode
 					<txp:if_yield name="flac">
 						<source src="<txp:site_url />files/<txp:variable name="video_file" />.ogg" type="video/flac">
 					</txp:if_yield>
-					<txp:if_yield name="srt">
-						<track enabled="true" kind="subtitles" label="<txp:yield name="srt" />" srclang="<txp:yield name="srt" />" type="text/x-srt" src="<txp:site_url />files/<txp:yield name="media" />_<txp:yield name="srt" />.srt" /></track>
+					<txp:if_yield name="title">
+						<track enabled="true" kind="subtitles" label="<txp:yield name="title" />" srclang="<txp:yield name="title" />" type="text/x-srt" src="<txp:site_url />files/<txp:yield name="media" />_<txp:yield name="title" />.srt" /></track>
 					</txp:if_yield>
 						<p>Your browser does not support the video element.</p>
 				</video>

@@ -97,7 +97,7 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 			<td> url="v" </td>
 			<td> &check; </td>
 			<td> &check; </td>
-			<td> mp4, ogg, mpeg-4, flac, webm </td>
+			<td> mp4, ogg, mpeg-4, flac, webm | srt </td>
 			<td> <a href="#5-embed-a-local-video">(5)</a> </td>
 		</tr>
 		<tr>
@@ -520,6 +520,23 @@ The resulting code will be
 		<video width="100%" height="100%" controls poster="http(s)://site.tld/images/32.jpg">
 			<source src="http(s)://site.tld/files/my_video.mp4" type="video/mp4">
 			<source src="http(s)://site.tld/files/my_video.webm" type="video/webm">
+			<p>Your browser does not support the video element.</p>
+		</video>
+	</span>
+
+HTML5 allows the addition of subitiles in the videos and suport for one **srt** subtitle track is provided. The track should have the same name as the video file with the addition of `_language`, so for an english subtitled track the name of the file could be `my_video_en.srt`. The language string should use the [ISO 639-1 standard](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
+
+So for:
+
+`<txp::media from="local" url="v" media="my_title" mp4 webm srt="en" img="32" />`
+
+The resulting code will be
+
+	<span itemscope itemtype="http://schema.org/VideoObject">
+		<video width="100%" height="100%" controls poster="http(s)://site.tld/images/32.jpg">
+			<source src="http(s)://site.tld/files/my_video.mp4" type="video/mp4">
+			<source src="http(s)://site.tld/files/my_video.webm" type="video/webm">
+			<track enabled="true" kind="subtitles" label="en" srclang="en" type="text/x-srt" src="http(s)://site.tld/files/my_video_en.srt" /></track>
 			<p>Your browser does not support the video element.</p>
 		</video>
 	</span>

@@ -524,11 +524,11 @@ The resulting code will be
 		</video>
 	</span>
 
-HTML5 allows the addition of subitiles in the videos and suport for one **srt** subtitle track is provided. The track should have the same name as the video file with the addition of `_language`, so for an english subtitled track the name of the file could be `my_video_en.srt`. The language string should use the [ISO 639-1 standard](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
+HTML5 allows the addition of subitiles in the videos and suport for one **srt** subtitle track is provided. The track should have the same name as the video file with the addition of `_language`, so for an english subtitled track the name of the file could be `my_video_en.srt`. The language string should use the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) standard.
 
 So for:
 
-`<txp::media from="local" url="v" media="my_title" mp4 webm srt="en" img="32" />`
+`<txp::media from="local" url="v" media="my_title" mp4 webm img="32" srt="en" />`
 
 The resulting code will be
 

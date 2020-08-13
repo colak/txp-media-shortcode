@@ -95,9 +95,9 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 			<td rowspan="2"> Local</td>
 			<td rowspan="2"> local </td>
 			<td> url="v" </td>
-			<td> NA </td>
+			<td> ISO_639-1 </td>
 			<td> &check; </td>
-			<td> mp4, ogg, mpeg-4, flac, webm, m4v, mpg &bull; srt </td>
+			<td> mp4, ogg, mpeg-4, flac, webm, m4v, mpg </td>
 			<td> <a href="#5-embed-a-local-video">(5)</a> </td>
 		</tr>
 		<tr>
@@ -528,7 +528,7 @@ HTML5 allows the addition of subitiles in the videos and suport for one **srt** 
 
 So for:
 
-`<txp::media from="local" url="v" media="my_title" mp4 webm img="32" srt="en" />`
+`<txp::media from="local" url="v" media="my_title" mp4 webm img="32" title="en" />`
 
 The resulting code will be
 

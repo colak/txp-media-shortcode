@@ -295,6 +295,15 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 			<td> <a href="#2-embed-from-soundcloud">(2)</a> </td>
 		</tr>
 		<tr>
+			<td> <a href="https://spotify.com/">Spotify</a> </td>
+			<td> sf </td>
+			<td> </td>
+			<td> NA </td>
+			<td> &check; </td>
+			<td> NA </td>
+			<td> </td>
+		</tr>
+		<tr>
 			<td> <a href="https://bandcamp.com/">BandCamp</a> (albums) </td>
 			<td> bac </td>
 			<td> Artist&#8217;s name as it appears in the subdomain</td>

@@ -95,7 +95,7 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 			<td rowspan="2"> Local</td>
 			<td rowspan="2"> local </td>
 			<td> url="v" </td>
-			<td> &check; </td>
+			<td> NA </td>
 			<td> &check; </td>
 			<td> mp4, ogg, mpeg-4, flac, webm, m4v, mpg &bull; srt </td>
 			<td> <a href="#5-embed-a-local-video">(5)</a> </td>

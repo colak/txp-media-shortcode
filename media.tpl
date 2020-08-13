@@ -28,7 +28,7 @@ https://github.com/colak/txp-media-shortcode
 						<source src="<txp:site_url />files/<txp:variable name="video_file" />.mp4" type="video/mp4">
 					</txp:if_yield>
 					<txp:if_yield name="ogg">
-						<source src="<txp:site_url />files/<txp:variable name="video_file" />.ogg" type="video/ogg">
+						<source src="<txp:site_url />files/<txp:variable name="video_file" />.ogv" type="video/ogg">
 					</txp:if_yield>
 					<txp:if_yield name="mpeg-4">
 						<source src="<txp:site_url />files/<txp:variable name="video_file" />.mpeg-4" type="video/mpeg-4">
@@ -38,6 +38,9 @@ https://github.com/colak/txp-media-shortcode
 					</txp:if_yield>
 					<txp:if_yield name="flac">
 						<source src="<txp:site_url />files/<txp:variable name="video_file" />.ogg" type="video/flac">
+					</txp:if_yield>
+					<txp:if_yield name="srt">
+						<track enabled="true" kind="subtitles" label="<txp:yield name="srt" />" srclang="<txp:yield name="srt" />" type="text/x-srt" src="<txp:site_url />files/<txp:yield name="media" />_<txp:yield name="srt" />.srt" /></track>
 					</txp:if_yield>
 						<p>Your browser does not support the video element.</p>
 				</video>
@@ -55,7 +58,7 @@ https://github.com/colak/txp-media-shortcode
 						<source src="<txp:site_url />files/<txp:variable name="audio_file" />.mp3" type="audio/mpeg">
 					</txp:if_yield>
 					<txp:if_yield name="ogg">
-						<source src="<txp:site_url />files/<txp:variable name="audio_file" />.ogg" type="audio/ogg">					
+						<source src="<txp:site_url />files/<txp:variable name="audio_file" />.oga" type="audio/ogg">					
 					</txp:if_yield>
 					<txp:if_yield name="mp4">
 						<source src="<txp:site_url />files/<txp:variable name="audio_file" />.mp4" type="audio/mp4">

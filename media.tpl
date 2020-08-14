@@ -48,7 +48,7 @@ https://github.com/colak/txp-media-shortcode
 					<txp:if_yield name="title">
 						<track enabled="true" kind="subtitles" label="<txp:yield name="title" />" srclang="<txp:yield name="title" />" type="text/x-srt" src="<txp:site_url />files/<txp:yield name="media" />_<txp:yield name="title" />.srt" /></track>
 					</txp:if_yield>
-						<p>Your browser does not support the video element.</p>
+					<p>Your browser does not support the video element.</p>
 				</video>
 		</txp:if_yield>
 	</txp:if_yield>
@@ -78,7 +78,7 @@ https://github.com/colak/txp-media-shortcode
 					<txp:if_yield name="flac">
 						<source src="<txp:site_url />files/<txp:variable name="audio_file" />.ogg" type="audio/flac">
 					</txp:if_yield>
-						<p>Your browser does not support the audio element.</p>
+					<p>Your browser does not support the audio element.</p>
 				</audio>
 		</txp:if_yield>
 	</txp:if_yield>

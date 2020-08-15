@@ -554,11 +554,7 @@ Embed an **individual video**
 Resulting code before cookie is accepted
 
 	<div class="gdpr">
-		<picture>
-			 <source media="(min-width:650px)" srcset="https://img.youtube.com/vi/zlZTghhCuxg/maxresdefault.jpg">
- 			 <source media="(min-width:465px)" srcset="https://img.youtube.com/vi/<zlZTghhCuxg/hqdefault.jpg">
-			 <img src="https://img.youtube.com/vi/zlZTghhCuxg/hqdefault.jpg" alt="Delivery for Mr. Assange" width="480" height="360" />
-		</picture> 
+		<img src="https://i3.ytimg.com/vi/<txp:yield name="media" />/hqdefault.jpg" srcset="https://i3.ytimg.com/vi/zlZTghhCuxg/hqdefault.jpg 480w, https://i3.ytimg.com/vi/zlZTghhCuxg/maxresdefault.jpg 1280w" alt="Delivery for Mr. Assange" itemscope itemtype="http://schema.org/ImageObject" /><picture>
 		<p>Delivery for Mr. Assange</p>
 		<p>Hosted by YouTube on <a rel="external noopener" href=https://youtu.be/zlZTghhCuxg">youtu.be/zlZTghhCuxg</a>.</p>
 		<p><a rel="external noopener" href="https://youtube.com/privacy">YouTube&#8217;s private policy</a>.</p>

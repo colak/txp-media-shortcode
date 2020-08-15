@@ -358,7 +358,7 @@ To embed an individual video use
 Resulting code before cookie is accepted
 
 	<div class="gdpr">
-		<txp:img src="http(s)://site.tld/images/33.jpg" width="720" height="576" alt="still from my ausome video" />
+		<img src="http(s)://site.tld/images/33.jpg" width="720" height="576" alt="still from my ausome video" />
 		<p>My awesome video</p>
 		<p>Hosted by Vimeo on <a rel="external noopener" href="https://vimeo.com/336049258">vimeo.com/336049258</a>.</p>
 		<p><a rel="external noopener" href="https://vimeo.com/privacy">Vimeo&#8217;s private policy</a>.</p>

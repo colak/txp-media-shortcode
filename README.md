@@ -624,7 +624,7 @@ The Internet archive allows the embedding of both video and audio files.
 
 To embed a **video** from the the Archive simply, use
 
-`<txp::media from="ia" media="PiesAndaluzyjski" title="Luis Bunuel: Un Chien Andalou, 1929" />`
+`<txp::media from="ia" url="v" media="PiesAndaluzyjski" title="Luis Bunuel: Un Chien Andalou, 1929" />`
 
 The resultig code before cookie is accepted
 
@@ -642,15 +642,6 @@ Resulting code after cookie is accepted
 	</div>
 
 You may have noticed that the parsed code of the embed-container, after the cookie is accepted, does not include ARIA. This is because the Object types (video or audio) need to be specified. You can do that by typing: `url="v"` or `url="a"`, where `v` is for video and `a` is for audio. 
-
-`<txp::media from="ia" media="PiesAndaluzyjski" title="Luis Bunuel: Un Chien Andalou, 1929" url="v" />`
-
-Resulting code after cookie is accepted
-
-	<div class="embed-container" id="m_PiesAndaluzyjski" itemscope itemtype="http://schema.org/VideoObject">
-		<iframe src="https://archive.org/embed/PiesAndaluzyjski" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
-	</div>
-
 
 ### 8. Embed from Bandcamp
 

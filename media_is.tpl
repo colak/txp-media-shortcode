@@ -3,7 +3,7 @@
 		<txp:oui_cookie name='<txp:variable name="sitename" />_indiesound' duration='<txp:variable name="cookielife" />' values="yes" />
 			<txp:oui_if_cookie name='<txp:variable name="sitename" />_indiesound'>
 				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/AudioObject">
-					<iframe width="100%" scrolling="no" src="https://www.indiesound.com/embed/<txp:yield name="media" />"></iframe>
+					<iframe loading="lazy" width="100%" scrolling="no" src="https://www.indiesound.com/embed/<txp:yield name="media" />"></iframe>
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>

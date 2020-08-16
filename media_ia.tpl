@@ -1,5 +1,4 @@
 <txp:hide>Internet Archive (Audio and Video)</txp:hide>
-<txp:if_yield name="from" value="ia">
 	<txp:if_yield name="media">
 		<txp:oui_cookie name='<txp:variable name="sitename" />_iarchive' duration='<txp:variable name="cookielife" />' values="yes" />
 			<txp:oui_if_cookie name='<txp:variable name="sitename" />_iarchive'>
@@ -34,4 +33,3 @@
 				</div>
 			</txp:oui_if_cookie>
 	</txp:if_yield>
-</txp:if_yield>

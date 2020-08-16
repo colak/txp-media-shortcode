@@ -3,7 +3,7 @@
 		<txp:oui_cookie name='<txp:variable name="sitename" />_datawrapper' duration='<txp:variable name="cookielife" />' values="yes" />
 			<txp:oui_if_cookie name='<txp:variable name="sitename" />_datawrapper'>
 				<div class="embed-container" id="m_<txp:yield name="media" />">
-					<iframe aria-label="Interactive line chart" id="datawrapper-chart-<txp:yield name="media" />" src="https://datawrapper.dwcdn.net/<txp:yield name="media" />/1/" scrolling="no" style="width: 0; min-width: 100% !important; border: none;" height="422"></iframe>
+					<iframe  loading="lazy" aria-label="Interactive line chart" id="datawrapper-chart-<txp:yield name="media" />" src="https://datawrapper.dwcdn.net/<txp:yield name="media" />/1/" scrolling="no" style="width: 0; min-width: 100% !important; border: none;" height="422"></iframe>
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
@@ -19,7 +19,7 @@
 				<div class="gdpr">
 					<txp:if_yield name="img">
 						<txp:images id='<txp:yield name="img" />'>
-							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" default="Chart" />" />
+							<img itemscope itemtype="http://schema.org/ImageObject" loading="lazy" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" default="Chart" />" />
 						</txp:images>
 					</txp:if_yield>
 					<txp:if_yield name="title">

@@ -3,7 +3,7 @@
 		<txp:oui_cookie name='<txp:variable name="sitename" />_spotify' duration='<txp:variable name="cookielife" />' values="yes" />
 			<txp:oui_if_cookie name='<txp:variable name="sitename" />_spotify'>
 				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/AudioObject">
-					<iframe src="https://open.spotify.com/embed/album/<txp:yield name="media" />" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+					<iframe loading="lazy" src="https://open.spotify.com/embed/album/<txp:yield name="media" />" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>

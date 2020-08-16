@@ -12,7 +12,7 @@ https://github.com/colak/txp-media-shortcode
 <txp:hide>Hide warnings visible only to logged in users. Change the duration below to the one you prefer between warnings. A duration under +1 hour is recommended</txp:hide>
 <txp:oui_cookie name='<txp:variable name="sitename" />_hide' duration="+30 minutes" values="yes" />
 
-<txp:hide>Cooke life. Change the duration below to the one you prefer between warnings to a duration of up to +1 year. +3 months is recommended</txp:hide>
+<txp:hide>Cookie life. Change the duration below to the one you prefer between warnings to a duration of up to +1 year. +3 months is recommended</txp:hide>
 <txp:variable name="cookielife">+3 months</txp:variable>
 
 <txp:hide>Please keep the code below as is, although the default alt atribute could change.</txp:hide>

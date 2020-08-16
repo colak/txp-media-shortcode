@@ -18,9 +18,7 @@
 			<txp:else />
 				<div class="gdpr">
 					<txp:if_yield name="img">
-						<txp:images id='<txp:yield name="img" />'>
-							<img itemscope itemtype="http://schema.org/ImageObject" loading="lazy" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" default="Map" />" />" />
-						</txp:images>
+						<txp:variable name="img" />
 					</txp:if_yield>
 					<txp:if_yield name="title">
 						<txp:yield name="title" escape="textile" />

@@ -161,7 +161,7 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 		</tr>
 		<tr>
 			<td> <a href="https://peertube.video">PeerTube</a> </td>
-			<td> pt </td>
+			<td> peer </td>
 			<td> NA </td>
 			<td> &check; </td>
 			<td> &check; </td>

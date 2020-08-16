@@ -3,7 +3,7 @@
 		<txp:oui_cookie name='<txp:variable name="sitename" />_audioboom' duration='<txp:variable name="cookielife" />' values="yes" />
 			<txp:oui_if_cookie name='<txp:variable name="sitename" />_audioboom'>
 				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/AudioObject">
-					<iframe width="100%" height="300" src="https://embeds.audioboom.com/posts/<txp:yield name="media" />/embed/v4"  allowtransparency="allowtransparency" scrolling="no" title="Audioboom player" allow="autoplay"></iframe>
+					<iframe loading="lazy" width="100%" height="300" src="https://embeds.audioboom.com/posts/<txp:yield name="media" />/embed/v4"  allowtransparency="allowtransparency" scrolling="no" title="Audioboom player" allow="autoplay"></iframe>
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>

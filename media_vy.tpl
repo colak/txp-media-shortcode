@@ -3,7 +3,7 @@
 		<txp:oui_cookie name='<txp:variable name="sitename" />_vidyard' duration='<txp:variable name="cookielife" />' values="yes" />
 			<txp:oui_if_cookie name='<txp:variable name="sitename" />_vidyard'>
 				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
-					<iframe src="//play.vidyard.com/<txp:yield name="media" />.html" allowtransparency="true" allowfullscreen></iframe>
+					<iframe loading="lazy" src="//play.vidyard.com/<txp:yield name="media" />.html" allowtransparency="true" allowfullscreen></iframe>
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>

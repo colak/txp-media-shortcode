@@ -15,6 +15,8 @@ https://github.com/colak/txp-media-shortcode
 <txp:hide>Change the duration below to the one you prefer between warnings to a duration of up to +1 year. +3 months is recommended</txp:hide>
 <txp:variable name="cookielife">+3 months</txp:variable>
 
+<txp:variable name="img"><txp:images id='<txp:yield name="img" />'><img itemprop="image" loading="lazy" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" default="External video still" />" /></txp:images></txp:variable>
+
 <txp:evaluate>
 	<txp:output_form form='media_<txp:yield name="from" />' />
 <txp:else />

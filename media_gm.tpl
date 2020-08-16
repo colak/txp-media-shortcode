@@ -3,7 +3,7 @@
 		<txp:oui_cookie name='<txp:variable name="sitename" />_google_maps' duration='<txp:variable name="cookielife" />' values="yes" />
 			<txp:oui_if_cookie name='<txp:variable name="sitename" />_google_maps'>
 				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/hasMap">
-					<iframe src="https://www.google.com/maps/d/embed?mid=<txp:yield name="media" />" width="710" height="480"></iframe>
+					<iframe loading="lazy" src="https://www.google.com/maps/d/embed?mid=<txp:yield name="media" />" width="710" height="480"></iframe>
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
@@ -19,7 +19,7 @@
 				<div class="gdpr">
 					<txp:if_yield name="img">
 						<txp:images id='<txp:yield name="img" />'>
-							<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" default="Map" />" />" />
+							<img itemscope itemtype="http://schema.org/ImageObject" loading="lazy" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" default="Map" />" />" />
 						</txp:images>
 					</txp:if_yield>
 					<txp:if_yield name="title">

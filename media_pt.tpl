@@ -3,7 +3,7 @@
 		<txp:oui_cookie name='<txp:variable name="sitename" />_playtube' duration='<txp:variable name="cookielife" />' values="yes" />
 			<txp:oui_if_cookie name='<txp:variable name="sitename" />_playtube'>
 				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
-					<iframe width="600px" height="370px" src="https://playtube.pk/embed/<txp:yield name="media" />" scrolling="NO" frameborder="0" style="overflow:hidden; border: 0px;"  webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe>
+					<iframe loading="lazy" width="600px" height="370px" src="https://playtube.pk/embed/<txp:yield name="media" />" scrolling="NO" frameborder="0" style="overflow:hidden; border: 0px;"  webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe>
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>

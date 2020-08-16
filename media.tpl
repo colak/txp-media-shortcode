@@ -3,9 +3,6 @@ The latest source code, explanations, and examples on how to use this shortcode 
 https://github.com/colak/txp-media-shortcode
 </txp:hide>
 
-<txp:hide>Common variables</txp:hide>
-<txp:variable name="title"><p class="error">Warning: <b>title</b> is a recommended attribute.</p></txp:variable>
-
 <txp:hide>Change with a prefix you prefer. Default is the site name</txp:hide>
 <txp:variable name="sitename"><txp:site_name trim="/\s+/" replace="_" /></txp:variable>
 
@@ -15,10 +12,13 @@ https://github.com/colak/txp-media-shortcode
 <txp:hide>Cookie life. Change the duration below to the one you prefer between warnings to a duration of up to +1 year. +3 months is recommended</txp:hide>
 <txp:variable name="cookielife">+3 months</txp:variable>
 
+<txp:hide>Common variables</txp:hide>
+<txp:variable name="title"><p class="error">Warning: <b>title</b> is a recommended attribute.</p></txp:variable>
+
 <txp:hide>Please keep the code below as is, although the default alt atribute could change.</txp:hide>
 <txp:variable name="img"><txp:images id='<txp:yield name="img" />'><img itemprop="image" loading="lazy" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" default="External media preview image" />" /></txp:images></txp:variable>
 
-<txp:hide>Check if form, called by the 'from' attribute exists. Note that when the form does not exist, this code shows errors to not logged in users when the site is on Debug mode. On live mode, the errors are only visible when logged in.</txp:hide>
+<txp:hide>Check if form, called by the 'from' attribute, exists. Note that when the form does not exist, this code shows errors to not logged in users when the site is on Debug mode. On live mode, the errors are only visible when logged in.</txp:hide>
 <txp:evaluate>
 	<txp:output_form form='media_<txp:yield name="from" />' />
 <txp:else />

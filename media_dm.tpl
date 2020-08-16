@@ -19,9 +19,7 @@
 				<div class="gdpr">
 					<txp:if_yield name="0" not>
 						<txp:if_yield name="img">
-							<txp:images id='<txp:yield name="img" />'>
-								<img itemscope itemtype="http://schema.org/ImageObject" loading="lazy" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" default="External video still" />" />
-							</txp:images>
+							<txp:variable name="img" />
 						<txp:else />
 							<img itemscope itemtype="http://schema.org/ImageObject" loading="lazy" src="https://s1.dmcdn.net/v/<txp:yield name="media" />/x240" alt="<txp:yield name="title" escape="textile, tags" default="External video still" />" />
 						</txp:if_yield>

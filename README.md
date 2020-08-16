@@ -34,7 +34,8 @@ Shortcodes are normally slightly slower in execution than raw php, or txp plugin
 1. Copy the latest txp snippet from the [GitHub project page](https://github.com/colak/txp-media-shortcode/blob/master/media.tpl), 
 2. Create a new miscellaneous form in your Textpattern administration interface and name it `media`,
 3. Paste the code into the form you created, and save.
-4. Copy and paste the provided [css](https://github.com/colak/txp-media-shortcode/blob/master/css.css) in your style sheet and edit it to your liking.
+4. Copy the media providers you are using for your website and paste those codes in new miscellaneous forms, using the same names as the ones provided without the tpl extension. For example `media_yt.tpl`should be `media_yt`.
+5. Copy and paste the provided [css](https://github.com/colak/txp-media-shortcode/blob/master/css.css) in your style sheet and edit it to your liking.
 
 ## Cookies
 

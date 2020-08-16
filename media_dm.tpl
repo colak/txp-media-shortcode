@@ -3,7 +3,7 @@
 		<txp:oui_cookie name='<txp:variable name="sitename" />_dailymotion' duration='<txp:variable name="cookielife" />' values="yes" />
 			<txp:oui_if_cookie name='<txp:variable name="sitename" />_dailymotion'>
 				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
-					<iframe type="text/html" src="https://www.dailymotion.com/embed/video/<txp:yield name="media" />" allowfullscreen></iframe>
+					<iframe loading="lazy" type="text/html" src="https://www.dailymotion.com/embed/video/<txp:yield name="media" />" allowfullscreen></iframe>
 				</div>
 				<txp:if_logged_in>
 					<txp:if_yield name="title" not>
@@ -20,10 +20,10 @@
 					<txp:if_yield name="0" not>
 						<txp:if_yield name="img">
 							<txp:images id='<txp:yield name="img" />'>
-								<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" default="External video still" />" />
+								<img itemscope itemtype="http://schema.org/ImageObject" loading="lazy" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" default="External video still" />" />
 							</txp:images>
 						<txp:else />
-							<img src="https://s1.dmcdn.net/v/<txp:yield name="media" />/x240" alt="<txp:yield name="title" escape="textile, tags" default="External video still" />" />
+							<img itemscope itemtype="http://schema.org/ImageObject" loading="lazy" src="https://s1.dmcdn.net/v/<txp:yield name="media" />/x240" alt="<txp:yield name="title" escape="textile, tags" default="External video still" />" />
 						</txp:if_yield>
 					</txp:if_yield>
 					<txp:if_yield name="title">

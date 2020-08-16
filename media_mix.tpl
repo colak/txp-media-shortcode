@@ -4,7 +4,7 @@
 			<txp:oui_if_cookie name='<txp:variable name="sitename" />_mixcloud'>
 				<txp:if_yield name="url">
 					<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/AudioObject">
-						<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;light=1&amp;feed=%2F<txp:yield name="url" />%2F<txp:yield name="media" />%2F" frameborder="0" ></iframe>
+						<iframe loading="lazy" width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&amp;light=1&amp;feed=%2F<txp:yield name="url" />%2F<txp:yield name="media" />%2F" frameborder="0" ></iframe>
 					</div>
 					<txp:if_logged_in>
 						<txp:if_yield name="title" not>

@@ -19,9 +19,7 @@
 				<div class="gdpr">
 					<txp:if_yield name="0" not>
 						<txp:if_yield name="img">
-							<txp:images id='<txp:yield name="img" />'>
-								<img itemscope itemtype="http://schema.org/ImageObject" src="<txp:site_url />images/<txp:yield name="img" /><txp:image_info type="ext" />" widh="<txp:image_info type="w" />" height="<txp:image_info type="h" />" alt="<txp:image_info type="alt" default="External video still" />" />
-							</txp:images>
+							<txp:variable name="img" />
 						<txp:else />
 							<txp:variable name="id_num"><txp:yield name="media" /></txp:variable>
 							<txp:variable name="remote_file">https://cdn.mcstatic.com/contents/videos_screenshots/<txp:variable name="id_num" trim="/(.*)\d{3}/" replace="${1}000" />/<txp:yield name="media" />/preview.jpg</txp:variable>

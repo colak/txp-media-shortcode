@@ -251,7 +251,7 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 			<td> </td>
 		</tr>
 		<tr>
-			<td colspan="7"> <b>360 Vr Video</b> </td>
+			<td colspan="7"> <b>360 VR Video</b> </td>
 		</tr>
 		<tr>
 			<td> <a href="https://vimeo.com/">Vimeo</a> </td>

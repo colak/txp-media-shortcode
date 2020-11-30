@@ -251,6 +251,18 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 			<td> </td>
 		</tr>
 		<tr>
+			<td colspan="7"> <b>360 Vr Video</b> </td>
+		</tr>
+		<tr>
+			<td> <a href="https://vimeo.com/">Vimeo</a> </td>
+			<td> vvr </td>
+			<td> url="vvr" </td>
+			<td> &check; </td>
+			<td> &check; </td>
+			<td> a </td>
+			<td> </td>
+		</tr>
+		<tr>
 			<td colspan="7"> <b>Video and GIF</b> </td>
 		</tr>
 		<tr>

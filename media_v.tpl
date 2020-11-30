@@ -5,7 +5,11 @@
 				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
 					<txp:if_yield name="url" value="a">
 						<iframe loading="lazy" src='https://vimeo.com/showcase/<txp:yield name="media" />/embed' allowfullscreen frameborder='0' style='position:absolute;top:0;left:0;width:100%;height:100%;'></iframe>
-					<txp:else />
+					</txp:if_yield>
+					<txp:if_yield name="url" value="vr">
+						<iframe loading="lazy" src="https://player.vimeo.com/video/<txp:yield name="media" />" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; gyroscope; accelerometer" allowfullscreen></iframe>
+					</txp:if_yield>
+					<txp:if_yield name="url" value="">
 						<iframe loading="lazy" src="https://player.vimeo.com/video/<txp:yield name="media" />?title=0&amp;byline=0&amp;portrait=0" allowfullscreen></iframe>
 					</txp:if_yield>
 				</div>

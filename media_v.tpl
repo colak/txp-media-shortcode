@@ -9,7 +9,7 @@
 					<txp:if_yield name="url" value="vr">
 						<iframe loading="lazy" src="https://player.vimeo.com/video/<txp:yield name="media" />" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; gyroscope; accelerometer" allowfullscreen></iframe>
 					</txp:if_yield>
-					<txp:if_yield name="url" value="">
+					<txp:if_yield name="url" not>
 						<iframe loading="lazy" src="https://player.vimeo.com/video/<txp:yield name="media" />?title=0&amp;byline=0&amp;portrait=0" allowfullscreen></iframe>
 					</txp:if_yield>
 				</div>

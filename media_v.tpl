@@ -25,7 +25,7 @@
 				</txp:if_logged_in>
 			<txp:else />
 				<div class="gdpr">
-					<txp:etc_query url="https://vimeo.com/api/oembed.json?url=http%3A//vimeo.com/<txp:yield name="media" />" query="." markup="json">
+					<txp:etc_query url='https://vimeo.com/api/oembed.json?url=http%3A//vimeo.com/<txp:yield name="media" />' query="." markup="json">
    						<img src="{thumbnail_url?}" width="{thumbnail_width?}" height="{thumbnail_height?}" class="grid_24" />
     						{description?}
 					</txp:etc_query>

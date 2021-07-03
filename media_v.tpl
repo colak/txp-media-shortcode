@@ -25,9 +25,10 @@
 				</txp:if_logged_in>
 			<txp:else />
 				<div class="gdpr">
-					<txp:if_yield name="img">
-						<txp:variable name="img" />
-					</txp:if_yield>
+					<txp:etc_query url="https://vimeo.com/api/oembed.json?url=http%3A//vimeo.com/<txp:yield name="media" />" query="." markup="json">
+   						<img src="{thumbnail_url?}" width="{thumbnail_width?}" height="{thumbnail_height?}" class="grid_24" />
+    						{description?}
+					</txp:etc_query>
 					<txp:if_yield name="title">
 						<txp:yield name="title" escape="textile" />
 					<txp:else />

@@ -33,9 +33,10 @@
 					<txp:else />
 						<txp:if_logged_in><txp:variable name="title" /></txp:if_logged_in>
 					</txp:if_yield>
-					<p>Hosted by YouTube on <a rel="external noopener" href="https://youtu.be/<txp:yield name="media" />">youtu.be/<txp:yield name="media" /></a>.</p>
+					<p>Hosted by YouTube on 
+						<a rel="external noopener" href="<txp:if_yield name="url" value="pl">https://www.youtube.com/playlist?list=<txp:else />https://youtu.be/</txp:if_yield><txp:yield name="media" />"><txp:if_yield name="url" value="pl">https://www.youtube.com/playlist?list=<txp:else />youtu.be/</txp:if_yield><txp:yield name="media" /></a>.</p>
 					<p class="licence"><a rel="external noopener licence" href="https://youtube.com/privacy">YouTube&#8217;s privacy policy</a>.</p>
-					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename" />_youtube=yes#m_<txp:yield name="media" />">View it here</a></p>
+					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename" />_youtube=yes#m_<txp:yield name="media" />">View <txp:if_yield name="url" value="pl">them<txp:else />it</txp:if_yield> here</a></p>
 				</div>
 			</txp:oui_if_cookie>
 	</txp:if_yield>

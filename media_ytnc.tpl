@@ -1,6 +1,6 @@
 <txp:hide>YouTube nocookie</txp:hide>
 	<txp:if_yield name="media">
-		<txp:oui_cookie name='<txp:variable name="sitename" />_youtubenocookie' duration='<txp:variable name="cookielife" />' values="yes" />
+		<txp:oui_cookie name='<txp:variable name="sitename" />_youtube' duration='<txp:variable name="cookielife" />' values="yes" />
 			<txp:oui_if_cookie name='<txp:variable name="sitename" />_youtube'>
 				<div class="embed-container" id="m_<txp:yield name="media" />" itemscope itemtype="http://schema.org/VideoObject">
 					<iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/<txp:yield name="media" />?rel=0" allowfullscreen></iframe>
@@ -31,7 +31,7 @@
 					</txp:if_yield>
 					<p>Served by YouTube-nocookie but originally resides on <a rel="external noopener" href="https://youtu.be/<txp:yield name="media" />">youtu.be/<txp:yield name="media" /></a>.</p>
 					<p>We could not find YouTube-nocookie&#8217;s privacy policy.</p>
-					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename" />_youtubenocookie=yes#m_<txp:yield name="media" />">View it here</a></p>
+					<p class="accept"><a rel="nofollow noindex noodp noydir noarchive nocache" href="?<txp:variable name="sitename" />_youtube=yes#m_<txp:yield name="media" />">View it here</a></p>
 				</div>
 			</txp:oui_if_cookie>
 	</txp:if_yield>

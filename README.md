@@ -178,8 +178,8 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 			<td> rum </td>
 			<td> NA </td>
 			<td> &check; </td>
-			<td> &check; </td>
-			<td> 0 </td>
+			<td> NA </td>
+			<td> NA </td>
 			<td> </td>
 		</tr>
 		<tr>

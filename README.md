@@ -174,6 +174,15 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 			<td> </td>
 		</tr>
 		<tr>
+			<td> <a href="https://rumble.com/">Rumble</a> </td>
+			<td> rum </td>
+			<td> NA </td>
+			<td> &check; </td>
+			<td> &check; </td>
+			<td> 0 </td>
+			<td> </td>
+		</tr>
+		<tr>
 			<td> <a href="https://ted.com">TED</a> </td>
 			<td> ted </td>
 			<td> NA </td>

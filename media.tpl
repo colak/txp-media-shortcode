@@ -23,6 +23,6 @@ https://github.com/colak/txp-media-shortcode
 	<txp:output_form form='media_<txp:yield name="from" />' />
 <txp:else />
 	<txp:if_logged_in>
-		<div class="gdpr"><p class="error">Error: There is no <b><txp:yield name="from" /></b> host using the <b>from</b> attribute.</p></div>
+		<div class="gdpr"><p class="error">Error: There is no <strong><txp:yield name="from" /></strong> host using the <b>from</b> attribute.</p></div>
 	</txp:if_logged_in>
 </txp:evaluate>

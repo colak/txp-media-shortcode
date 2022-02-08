@@ -252,7 +252,7 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 			<td> &check; </td>
 			<td> &check; </td>
 			<td> 0 </td>
-			<td> </td>
+			<td> Rebranded as <a href="https://videoshub.com">Videoshub</a></td>
 		</tr>
 		<tr>
 			<td> <a href="https://coub.com/">Coub</a> </td>

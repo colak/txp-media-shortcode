@@ -165,6 +165,15 @@ You may see some errors and warnings after posting your shortcodes. These can ap
 			<td> </td>
 		</tr>
 		<tr>
+			<td> <a href="https://utreon.com">Utreon</a> </td>
+			<td> u </td>
+			<td> NA </td>
+			<td> &check; </td>
+			<td> &check; </td>
+			<td> 0 </td>
+			<td> </td>
+		</tr
+		<tr>
 			<td> <a href="https://peertube.video">PeerTube</a> </td>
 			<td> peer </td>
 			<td> NA </td>
